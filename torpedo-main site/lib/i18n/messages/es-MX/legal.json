@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Política de privacidad",
+    "metaDescription": "Política de privacidad de Torpedo Web: cómo recopilamos, usamos y protegemos tus datos.",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+    "intro": "TorpedoWeb LLC explica cómo recopilamos, usamos, divulgamos y protegemos información personal cuando visitas nuestro sitio o contratas servicios de ingeniería digital.",
+    "authoritativeNotice": "La versión legalmente vinculante es el texto completo en inglés en torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Alcance y nuestro rol",
+    "scopeBody": "Según el contexto, TorpedoWeb actúa como responsable del tratamiento para visitantes y prospectos, o como encargado al procesar datos de clientes bajo un Anexo de Tratamiento de Datos (DPA).",
+    "collectHeading": "2. Información que recopilamos",
+    "collectBody": "Podemos recopilar identificadores, registros comerciales, actividad en internet y datos de contacto profesional mediante formularios, contratos o tecnologías automatizadas (cookies, analytics).",
+    "rightsHeading": "3. Tus derechos",
+    "rightsBody": "Cuando la ley aplicable lo permita (GDPR, UK GDPR, CCPA/CPRA, etc.), puedes solicitar acceso, rectificación, eliminación, portabilidad u oposición. Respondemos en los plazos legales.",
+    "contactHeading": "4. Contacto",
+    "contactBody": "Consultas: privacy@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Estados Unidos."
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "metaDescription": "Términos de servicio de Torpedo Web — socio de infraestructura de crecimiento.",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+    "intro": "Estos términos rigen el uso de TorpedoWeb.org y nuestros servicios de ingeniería digital, marketing y relacionados.",
+    "authoritativeNotice": "La versión legalmente vinculante es el texto completo en inglés en torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Acuerdo y servicios",
+    "scopeBody": "Al usar el sitio o contratar TorpedoWeb, aceptas estos términos y cualquier orden de trabajo firmada. Los servicios se definen en propuestas y contratos acordados.",
+    "collectHeading": "2. Responsabilidades del cliente",
+    "collectBody": "Proporcionas acceso oportuno, información precisa y uso lícito de entregables. Eres responsable de respaldos, cuentas de terceros y cumplimiento aplicable a tu negocio.",
+    "rightsHeading": "3. Honorarios, PI y responsabilidad",
+    "rightsBody": "Honorarios, calendarios de pago y propiedad intelectual se definen en tu contrato. La responsabilidad se limita en la medida permitida por la ley.",
+    "contactHeading": "4. Contacto",
+    "contactBody": "Consultas: legal@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Estados Unidos."
+  },
+  "dmca": {
+    "title": "Política DMCA",
+    "metaDescription": "Política DMCA de Torpedo Web — avisos de infracción y contra-notificaciones.",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+    "intro": "TorpedoWeb respeta la propiedad intelectual y atiende avisos válidos bajo la Digital Millennium Copyright Act (DMCA) de EE. UU.",
+    "authoritativeNotice": "La versión legalmente vinculante es el texto completo en inglés en torpedoweb.org/dmca.",
+    "scopeHeading": "1. Agente designado",
+    "scopeBody": "Los titulares pueden enviar avisos con la información exigida por 17 U.S.C. § 512(c)(3). Podemos retirar o deshabilitar material presuntamente infractor.",
+    "collectHeading": "2. Contra-notificación",
+    "collectBody": "Si crees que el contenido se retiró por error, puedes enviar una contra-notificación con tus datos y declaración bajo pena de perjurio.",
+    "rightsHeading": "3. Reincidencia",
+    "rightsBody": "Podemos terminar el acceso a usuarios reincidentes cuando corresponda según la ley aplicable.",
+    "contactHeading": "4. Contacto",
+    "contactBody": "Avisos DMCA: dmca@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Estados Unidos."
+  }
+}

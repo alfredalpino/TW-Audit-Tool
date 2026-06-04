@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web 代理 | 網站開發同增長基礎設施",
+    "description": "Torpedo Web 為需要可衡量增長嘅創辦人設計同構建高性能網站、技術 SEO 系統同轉化基礎設施。",
+    "ogTitle": "Torpedo Web 代理 | 網站開發同增長基礎設施",
+    "ogDescription": "面向需要可衡量增長創辦人嘅高意圖網站開發、技術 SEO 同轉化系統。",
+    "keywords": "網站開發代理, 技術SEO, 轉化率優化, Next.js開發, 增長基礎設施, 創辦人主導網站代理"
+  },
+  "services": {
+    "title": "網站開發同數碼服務 | Torpedo Web",
+    "description": "性能工程、技術 SEO、自動化同轉化系統——作為基礎設施構建，而唔係一次性項目。",
+    "ogTitle": "能力 | Torpedo Web 代理",
+    "ogDescription": "面向衡量成果創辦人嘅 Web 基座、自動化層同執行引擎。",
+    "keywords": "網站開發服務, 技術SEO代理, 轉化率優化, Next.js代理"
+  },
+  "process": {
+    "title": "我哋嘅流程 | Torpedo Web 代理",
+    "description": "結構化構建流程：診斷、架構、交付同複利——每個階段創辦人級問責。",
+    "ogTitle": "我哋點樣構建 | Torpedo Web",
+    "ogDescription": "診斷優先嘅網站開發流程，為速度、搜尋可見性同轉化而設計。",
+    "keywords": "網站開發流程, 代理工作流, 技術發現, 性能優先構建"
+  },
+  "systems": {
+    "title": "系統同作品集 | Torpedo Web",
+    "description": "我哋構建嘅收入系統——已投入生產嘅性能、搜尋同轉化基礎設施。",
+    "ogTitle": "系統 | Torpedo Web 代理",
+    "ogDescription": "為可衡量增長而構建嘅案例同系統。",
+    "keywords": "網站代理作品集, 轉化系統, 性能案例"
+  },
+  "blog": {
+    "title": "洞察同快訊 | Torpedo Web 網誌",
+    "description": "關於網站性能、技術 SEO 同轉化基礎設施嘅戰略洞察——零噪音。",
+    "ogTitle": "Torpedo Web 網誌",
+    "ogDescription": "面向創辦人嘅數碼基礎設施同增長系統洞察。",
+    "keywords": "網站開發網誌, 技術SEO洞察, 轉化策略"
+  },
+  "whatWeDo": {
+    "title": "我哋構建乜 | Torpedo Web",
+    "description": "收入同運營系統、網站開發、設計系統，同為認真品牌打造嘅可擴展基礎設施。",
+    "ogTitle": "我哋構建乜 | Torpedo Web",
+    "ogDescription": "面向衡量成果運營者嘅收入系統、網站開發同可擴展基礎設施。",
+    "keywords": "網站開發服務, 設計系統, 收入基礎設施, 增長系統"
+  },
+  "privacyPolicy": {
+    "title": "私隱政策 | Torpedo Web",
+    "description": "Torpedo Web 私隱政策。我哋點樣收集、使用同保護你嘅數據。",
+    "ogTitle": "私隱政策 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web 點樣收集、使用同保護你嘅個人數據。",
+    "keywords": "私隱政策, 數據保護, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "服務條款 | Torpedo Web",
+    "description": "Torpedo Web 服務條款。增長基礎設施合作夥伴。",
+    "ogTitle": "服務條款 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web 服務同網站使用條款。",
+    "keywords": "服務條款, Torpedo Web 條款"
+  },
+  "dmca": {
+    "title": "DMCA 政策 | Torpedo Web",
+    "description": "Torpedo Web DMCA 政策。我哋點樣處理版權侵權通知同反通知。",
+    "ogTitle": "DMCA 政策 | TORPEDO WEB",
+    "ogDescription": "版權侵權通知同反通知流程。",
+    "keywords": "DMCA政策, 版權, Torpedo Web"
+  }
+}

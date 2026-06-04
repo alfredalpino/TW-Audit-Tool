@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "metaDescription": "Politique de confidentialité Torpedo Web : collecte, utilisation et protection de vos données.",
+    "lastUpdated": "Dernière mise à jour : 5 mars 2026",
+    "intro": "TorpedoWeb LLC explique comment nous collectons, utilisons, divulguons et protégeons les données personnelles lorsque vous visitez notre site ou utilisez nos services d'ingénierie digitale.",
+    "authoritativeNotice": "La version juridiquement contraignante est le texte intégral en anglais publié sur torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Champ d'application et rôle",
+    "scopeBody": "Selon le contexte, TorpedoWeb agit en tant que responsable de traitement pour les visiteurs et prospects, ou en sous-traitant lors du traitement de données pour le compte de clients via un accord de traitement (DPA).",
+    "collectHeading": "2. Données collectées",
+    "collectBody": "Nous pouvons collecter des identifiants, des informations commerciales, l'activité en ligne et des coordonnées professionnelles via formulaires, contrats ou technologies automatisées (cookies, analytics).",
+    "rightsHeading": "3. Vos droits",
+    "rightsBody": "Lorsque le droit applicable le prévoit (RGPD, UK GDPR, CCPA/CPRA, etc.), vous pouvez demander l'accès, la rectification, l'effacement, la portabilité ou vous opposer au traitement. Nous répondons dans les délais légaux.",
+    "contactHeading": "4. Nous contacter",
+    "contactBody": "Questions ou demandes : privacy@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, États-Unis."
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "metaDescription": "Conditions d'utilisation Torpedo Web — partenaire d'infrastructure de croissance.",
+    "lastUpdated": "Dernière mise à jour : 5 mars 2026",
+    "intro": "Ces conditions régissent l'utilisation de TorpedoWeb.org et nos services d'ingénierie digitale, marketing et prestations associées.",
+    "authoritativeNotice": "La version juridiquement contraignante est le texte intégral en anglais sur torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Accord et prestations",
+    "scopeBody": "En utilisant le site ou en engageant TorpedoWeb, vous acceptez ces conditions et tout bon de commande signé. Les prestations sont définies dans les propositions et contrats convenus.",
+    "collectHeading": "2. Obligations du client",
+    "collectBody": "Vous fournissez accès, informations exactes et usage licite des livrables. Vous êtes responsable des sauvegardes, comptes tiers et conformité applicable à votre activité.",
+    "rightsHeading": "3. Honoraires, PI et responsabilité",
+    "rightsBody": "Les tarifs, échéanciers et droits de propriété intellectuelle figurent dans votre contrat. La responsabilité est limitée dans les limites permises par la loi.",
+    "contactHeading": "4. Nous contacter",
+    "contactBody": "Questions : legal@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, États-Unis."
+  },
+  "dmca": {
+    "title": "Politique DMCA",
+    "metaDescription": "Politique DMCA Torpedo Web — avis de violation et contre-notifications.",
+    "lastUpdated": "Dernière mise à jour : 5 mars 2026",
+    "intro": "TorpedoWeb respecte les droits de propriété intellectuelle et traite les avis valides au titre du Digital Millennium Copyright Act (DMCA) des États-Unis.",
+    "authoritativeNotice": "La version juridiquement contraignante est le texte intégral en anglais sur torpedoweb.org/dmca.",
+    "scopeHeading": "1. Agent désigné",
+    "scopeBody": "Les titulaires de droits peuvent envoyer un avis d'infraction à notre agent avec les informations requises par la loi américaine. Nous pouvons retirer ou désactiver l'accès au contenu concerné.",
+    "collectHeading": "2. Contre-notification",
+    "collectBody": "Si vous estimez qu'un retrait est erroné, vous pouvez soumettre une contre-notification avec vos coordonnées et une déclaration sous peine de parjure.",
+    "rightsHeading": "3. Récidive",
+    "rightsBody": "Nous pouvons résilier l'accès en cas de récidive d'infraction, conformément au droit applicable.",
+    "contactHeading": "4. Nous contacter",
+    "contactBody": "Avis DMCA : dmca@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, États-Unis."
+  }
+}

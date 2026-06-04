@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Polyphasic roadmap ]",
+    "heading": "From Idea to Execution, Engineered for Outcomes",
+    "intro": "Structured phases to design, build, and scale digital systems that perform.",
+    "closingP": "Each phase moves you toward measurable outcomes, not just a finished site.",
+    "startProject": "Start Your Project",
+    "bookIntroCall": "Book Intro Call"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Phase 1",
+      "title": "Audit & Deconstruction",
+      "description": "Technical audit of assets, competitor context, and gap mapping across performance, UX, and conversion goals."
+    },
+    "phase2": {
+      "label": "Phase 2",
+      "title": "Architecture & Strategy",
+      "description": "IA, conversion-first wires, SEO hierarchy, and scalable system decisions. Not page-by-page guesswork."
+    },
+    "phase3": {
+      "label": "Phase 3",
+      "title": "Design System & UI",
+      "description": "High-fidelity UI, a real design system (type, spacing, components), and prototypes when the flow needs them."
+    },
+    "phase4": {
+      "label": "Phase 4",
+      "title": "Build & Optimization",
+      "description": "Modern stack build, Core Web Vitals, CMS and integrations, plus responsive and cross-browser QA."
+    },
+    "phase5": {
+      "label": "Phase 5",
+      "title": "Launch & Scale",
+      "description": "Ship with QA, analytics, CRO, and an iteration roadmap. Launch is the start of improvement."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Positioning ]",
+    "heading": "A different kind of agency",
+    "intro": "Most agencies focus on design and delivery. We focus on systems, performance, and outcomes.",
+    "contextP": "Choosing a partner is not about freelancers versus agencies. It is about the level of thinking, execution, and long-term impact you need.",
+    "tableCaption": "Capability comparison: Torpedo Web versus typical freelancers and traditional agencies",
+    "columnCapability": "Capability",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Typical freelancers",
+    "columnAgencies": "Traditional agencies",
+    "rows": {
+      "approach": {
+        "capability": "Approach",
+        "torpedo": "Systems-first, engineering-led",
+        "freelancers": "Task-based execution",
+        "agencies": "Design-led, process-driven"
+      },
+      "projectThinking": {
+        "capability": "Project Thinking",
+        "torpedo": "Business + performance focused",
+        "freelancers": "Scope-limited delivery",
+        "agencies": "Brand + visual focus"
+      },
+      "executionDepth": {
+        "capability": "Execution Depth",
+        "torpedo": "Full-stack, scalable systems",
+        "freelancers": "Narrow specialization",
+        "agencies": "Team-based but fragmented"
+      },
+      "performanceOptimization": {
+        "capability": "Performance Optimization",
+        "torpedo": "Built-in from day one",
+        "freelancers": "Rarely prioritized",
+        "agencies": "Often post-launch add-on"
+      },
+      "speedAgility": {
+        "capability": "Speed & Agility",
+        "torpedo": "Fast, founder-level execution",
+        "freelancers": "Fast but inconsistent",
+        "agencies": "Slower due to layers"
+      },
+      "longTermScalability": {
+        "capability": "Long-Term Scalability",
+        "torpedo": "Designed for growth and iteration",
+        "freelancers": "Limited scalability",
+        "agencies": "Scalable but rigid"
+      },
+      "clientExperience": {
+        "capability": "Client Experience",
+        "torpedo": "Direct, strategic collaboration",
+        "freelancers": "Informal communication",
+        "agencies": "Account-managed, less direct"
+      }
+    },
+    "closingP": "We operate as a focused engineering partner: freelancer agility with agency structure and reliability, without the usual trade-offs.",
+    "startProject": "Start your project",
+    "bookIntroCall": "Book intro call"
+  }
+}

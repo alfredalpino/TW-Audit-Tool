@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web | Агентство Web-разработки и Growth-инфраструктуры",
+    "description": "Проектируем и создаём высокопроизводительные сайты, технический SEO и conversion-инфраструктуру для основателей, которым нужен измеримый рост.",
+    "ogTitle": "Torpedo Web | Web-разработка и Growth-инфраструктура",
+    "ogDescription": "Performance-first web-разработка, технический SEO и conversion-системы для основателей в России и СНГ.",
+    "keywords": "агентство web разработки Москва, технический SEO, разработка Next.js, оптимизация конверсии, digital инфраструктура для бизнеса"
+  },
+  "services": {
+    "title": "Услуги Web-разработки | Torpedo Web",
+    "description": "Performance engineering, технический SEO, автоматизация и conversion-системы — инфраструктура, а не разовые проекты.",
+    "ogTitle": "Компетенции | Torpedo Web",
+    "ogDescription": "Web-фундамент, автоматизация и execution engine для измеримого роста.",
+    "keywords": "услуги web разработки, SEO агентство Россия, оптимизация конверсии"
+  },
+  "process": {
+    "title": "Наш процесс | Torpedo Web",
+    "description": "Структурированный процесс: диагностика, архитектура, запуск, оптимизация — с ответственностью founder на каждом этапе.",
+    "ogTitle": "Как мы строим | Torpedo Web",
+    "ogDescription": "Diagnosis-first web-разработка для скорости, видимости и конверсии.",
+    "keywords": "процесс web разработки, workflow агентства, техническая discovery"
+  },
+  "systems": {
+    "title": "Системы и портфолио | Torpedo Web",
+    "description": "Revenue-системы в production — performance, search и conversion.",
+    "ogTitle": "Системы | Torpedo Web",
+    "ogDescription": "Кейсы и системы для измеримого роста.",
+    "keywords": "портфолио web агентства, conversion системы, performance кейсы"
+  },
+  "blog": {
+    "title": "Insights & Dispatch | Блог Torpedo Web",
+    "description": "Стратегические материалы о web-performance, техническом SEO и conversion-инфраструктуре.",
+    "ogTitle": "Блог Torpedo Web",
+    "ogDescription": "Insights для основателей о цифровой инфраструктуре и росте.",
+    "keywords": "блог web разработки, технический SEO Россия, стратегия конверсии"
+  },
+  "whatWeDo": {
+    "title": "Что Мы Строим | Torpedo Web",
+    "description": "Revenue- и operations-системы, web-разработка, design systems и масштабируемая инфраструктура для серьёзных брендов.",
+    "ogTitle": "Что Мы Строим | Torpedo Web",
+    "ogDescription": "Revenue-системы, web-разработка и масштабируемая инфраструктура для операторов, которые измеряют результаты.",
+    "keywords": "web разработка Россия, design systems, revenue инфраструктура, системы роста"
+  },
+  "privacyPolicy": {
+    "title": "Политика Конфиденциальности | Torpedo Web",
+    "description": "Политика конфиденциальности Torpedo Web. Как мы собираем, используем и защищаем ваши данные.",
+    "ogTitle": "Политика Конфиденциальности | TORPEDO WEB",
+    "ogDescription": "Как Torpedo Web собирает, использует и защищает ваши персональные данные.",
+    "keywords": "политика конфиденциальности, защита данных, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Условия Использования | Torpedo Web",
+    "description": "Условия использования Torpedo Web. Партнёр по growth-инфраструктуре.",
+    "ogTitle": "Условия Использования | TORPEDO WEB",
+    "ogDescription": "Условия использования услуг и сайта Torpedo Web.",
+    "keywords": "условия использования, правила Torpedo Web"
+  },
+  "dmca": {
+    "title": "Политика DMCA | Torpedo Web",
+    "description": "Политика DMCA Torpedo Web. Как мы обрабатываем уведомления о нарушении авторских прав и встречные уведомления.",
+    "ogTitle": "Политика DMCA | TORPEDO WEB",
+    "ogDescription": "Процесс уведомлений о нарушении авторских прав и встречных уведомлений.",
+    "keywords": "политика DMCA, авторские права, Torpedo Web"
+  }
+}

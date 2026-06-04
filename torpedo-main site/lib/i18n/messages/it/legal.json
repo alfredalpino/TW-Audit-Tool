@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "metaDescription": "Informativa sulla privacy di Torpedo Web: come raccogliamo, usiamo e proteggiamo i tuoi dati.",
+    "lastUpdated": "Ultimo aggiornamento: 5 marzo 2026",
+    "intro": "TorpedoWeb LLC spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo i dati personali quando visiti il sito o utilizzi i nostri servizi di ingegneria digitale.",
+    "authoritativeNotice": "La versione legalmente vincolante è il testo integrale in inglese su torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Ambito e nostro ruolo",
+    "scopeBody": "A seconda del contesto, TorpedoWeb agisce come titolare del trattamento per visitatori e prospect, o come responsabile del trattamento per conto dei clienti con un Data Processing Addendum (DPA).",
+    "collectHeading": "2. Informazioni raccolte",
+    "collectBody": "Possiamo raccogliere identificativi, dati commerciali, attività online e contatti professionali tramite moduli, contratti o tecnologie automatizzate (cookie, analytics).",
+    "rightsHeading": "3. I tuoi diritti",
+    "rightsBody": "Ove previsto dalla legge (GDPR, UK GDPR, CCPA/CPRA, ecc.), puoi richiedere accesso, rettifica, cancellazione, portabilità o opposizione. Rispondiamo nei termini di legge.",
+    "contactHeading": "4. Contatti",
+    "contactBody": "Richieste privacy: privacy@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Stati Uniti."
+  },
+  "terms": {
+    "title": "Termini di servizio",
+    "metaDescription": "Termini di servizio di Torpedo Web — partner per l'infrastruttura di crescita.",
+    "lastUpdated": "Ultimo aggiornamento: 5 marzo 2026",
+    "intro": "Questi termini regolano l'uso di TorpedoWeb.org e i nostri servizi di ingegneria digitale, marketing e correlati.",
+    "authoritativeNotice": "La versione legalmente vincolante è il testo integrale in inglese su torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Accordo e servizi",
+    "scopeBody": "Usando il sito o ingaggiando TorpedoWeb, accetti questi termini e qualsiasi ordine di lavoro firmato. I servizi sono definiti in proposte e contratti concordati.",
+    "collectHeading": "2. Responsabilità del cliente",
+    "collectBody": "Fornisci accesso tempestivo, informazioni accurate e uso lecito dei deliverable. Sei responsabile di backup, account di terze parti e conformità del tuo business.",
+    "rightsHeading": "3. Compensi, IP e responsabilità",
+    "rightsBody": "Compensi, pagamenti e proprietà intellettuale sono definiti nel contratto. La responsabilità è limitata nei limiti consentiti dalla legge.",
+    "contactHeading": "4. Contatti",
+    "contactBody": "Domande: legal@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Stati Uniti."
+  },
+  "dmca": {
+    "title": "Politica DMCA",
+    "metaDescription": "Politica DMCA di Torpedo Web — segnalazioni di violazione e contro-notifiche.",
+    "lastUpdated": "Ultimo aggiornamento: 5 marzo 2026",
+    "intro": "TorpedoWeb rispetta i diritti di proprietà intellettuale e gestisce segnalazioni valide ai sensi del Digital Millennium Copyright Act (DMCA) statunitense.",
+    "authoritativeNotice": "La versione legalmente vincolante è il testo integrale in inglese su torpedoweb.org/dmca.",
+    "scopeHeading": "1. Agente designato",
+    "scopeBody": "I titolari possono inviare segnalazioni con le informazioni richieste da 17 U.S.C. § 512(c)(3). Possiamo rimuovere o disabilitare materiale presumibilmente illecito.",
+    "collectHeading": "2. Contro-notifica",
+    "collectBody": "Se ritieni che un contenuto sia stato rimosso per errore, puoi inviare una contro-notifica con i tuoi dati e una dichiarazione sotto pena di falsa testimonianza.",
+    "rightsHeading": "3. Recidiva",
+    "rightsBody": "Possiamo terminare l'accesso in caso di recidiva, conformemente alla legge applicabile.",
+    "contactHeading": "4. Contatti",
+    "contactBody": "Segnalazioni DMCA: dmca@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Stati Uniti."
+  }
+}

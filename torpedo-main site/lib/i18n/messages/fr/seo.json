@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web | Agence Web Technique & Infrastructure de Croissance",
+    "description": "Nous concevons des sites haute performance, du SEO technique et des systèmes de conversion pour fondateurs exigeant des résultats mesurables.",
+    "ogTitle": "Torpedo Web | Développement Web & Infrastructure de Croissance",
+    "ogDescription": "Développement web orienté performance, SEO technique et systèmes de conversion pour fondateurs en France.",
+    "keywords": "agence web technique Paris, développement web sur mesure, SEO technique, agence Next.js, optimisation conversion, infrastructure digitale PME"
+  },
+  "services": {
+    "title": "Services de Développement Web | Torpedo Web",
+    "description": "Ingénierie performance, SEO technique, automatisation et systèmes de conversion — une infrastructure, pas des projets isolés.",
+    "ogTitle": "Capacités | Torpedo Web",
+    "ogDescription": "Fondation web, automatisation et moteur d'exécution pour une croissance mesurable.",
+    "keywords": "prestations développement web, agence SEO technique France, optimisation taux conversion"
+  },
+  "process": {
+    "title": "Notre Processus | Torpedo Web",
+    "description": "Processus structuré : diagnostiquer, architecturer, livrer et optimiser — avec responsabilité founder à chaque étape.",
+    "ogTitle": "Notre Méthode | Torpedo Web",
+    "ogDescription": "Processus de développement web orienté vitesse, visibilité et conversion.",
+    "keywords": "processus agence web, méthode développement site, audit technique SEO"
+  },
+  "systems": {
+    "title": "Systèmes & Réalisations | Torpedo Web",
+    "description": "Systèmes de revenus que nous avons conçus — performance, recherche et conversion en production.",
+    "ogTitle": "Systèmes | Torpedo Web",
+    "ogDescription": "Études de cas et systèmes construits pour une croissance mesurable.",
+    "keywords": "portfolio agence web, systèmes conversion, cas clients performance"
+  },
+  "blog": {
+    "title": "Insights & Dispatch | Blog Torpedo Web",
+    "description": "Analyses stratégiques sur performance web, SEO technique et infrastructure de conversion — sans bruit.",
+    "ogTitle": "Blog Torpedo Web",
+    "ogDescription": "Insights pour fondateurs sur l'infrastructure digitale et la croissance.",
+    "keywords": "blog développement web, SEO technique France, stratégie conversion"
+  },
+  "whatWeDo": {
+    "title": "Ce Que Nous Construisons | Torpedo Web",
+    "description": "Systèmes de revenus et d'opérations, développement web, design systems et infrastructure scalable pour marques exigeantes.",
+    "ogTitle": "Ce Que Nous Construisons | Torpedo Web",
+    "ogDescription": "Systèmes de revenue, développement web et infrastructure scalable pour opérateurs qui mesurent les résultats.",
+    "keywords": "développement web France, design systems, infrastructure revenus, systèmes croissance"
+  },
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité | Torpedo Web",
+    "description": "Politique de confidentialité de Torpedo Web. Comment nous collectons, utilisons et protégeons vos données.",
+    "ogTitle": "Politique de Confidentialité | TORPEDO WEB",
+    "ogDescription": "Comment Torpedo Web collecte, utilise et protège vos données personnelles.",
+    "keywords": "politique confidentialité, protection données, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Conditions d'Utilisation | Torpedo Web",
+    "description": "Conditions d'utilisation de Torpedo Web. Partenaire d'infrastructure de croissance.",
+    "ogTitle": "Conditions d'Utilisation | TORPEDO WEB",
+    "ogDescription": "Conditions régissant l'utilisation des services et du site Torpedo Web.",
+    "keywords": "conditions utilisation, CGU Torpedo Web"
+  },
+  "dmca": {
+    "title": "Politique DMCA | Torpedo Web",
+    "description": "Politique DMCA de Torpedo Web. Comment nous traitons les avis d'infraction de droits d'auteur et les contre-notifications.",
+    "ogTitle": "Politique DMCA | TORPEDO WEB",
+    "ogDescription": "Processus d'avis d'infraction copyright et de contre-notification.",
+    "keywords": "politique DMCA, droits auteur, Torpedo Web"
+  }
+}

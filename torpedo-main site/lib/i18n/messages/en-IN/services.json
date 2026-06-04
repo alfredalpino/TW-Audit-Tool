@@ -1,0 +1,93 @@
+{
+  "carousel": {
+    "eyebrow": "What We Do",
+    "heading": "Four service lines. One growth stack.",
+    "description": "Web development, digital marketing, custom software you own, and AI agents — built for Indian search and revenue growth.",
+    "items": {
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": "Fast, conversion-ready websites, web apps, and ecommerce engineered for performance and Indian search intent.",
+        "highlight1": "Next.js and React architecture",
+        "highlight2": "Ecommerce and checkout optimization",
+        "highlight3": "Conversion-focused page systems",
+        "highlight4": "Core Web Vitals and analytics"
+      },
+      "digitalMarketing": {
+        "title": "Digital Marketing",
+        "description": "Paid media, brand systems, and technical SEO run as one connected growth layer for Indian markets.",
+        "highlight1": "Meta and Google Ads",
+        "highlight2": "Branding and trust signal systems",
+        "highlight3": "Technical SEO and city-page clusters",
+        "highlight4": "Shared tracking and attribution"
+      },
+      "customSoftware": {
+        "title": "Custom Software",
+        "description": "Billing, ops, lead management, and data orchestration you own for life — no subscription lock-in.",
+        "highlight1": "Billing and business management",
+        "highlight2": "Lead and pipeline tooling",
+        "highlight3": "On-demand features, pay once",
+        "highlight4": "Monthly EMI available during build"
+      },
+      "aiAgents": {
+        "title": "AI Agents and Automations",
+        "description": "AI agents and workflow automations that qualify leads, route follow-ups, and reduce manual ops.",
+        "highlight1": "Lead qualification agents",
+        "highlight2": "WhatsApp and CRM automations",
+        "highlight3": "Reporting and alert systems",
+        "highlight4": "Integrates with your existing stack"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "India growth stack",
+    "title": "Services built for Indian search and revenue growth",
+    "description": "Four integrated service lines — web, marketing, custom software, and AI automation — built for Indian search intent, city-level SEO, and conversion operations that scale.",
+    "servicesHeading": "Service lines",
+    "servicesSubheading": "Each line is a full delivery stack — strategy, build, and iteration — not a menu of disconnected tasks.",
+    "cardCta": "Explore service",
+    "faqHeading": "Frequently asked questions"
+  },
+  "cards": {
+    "web-development": {
+      "name": "Web Development",
+      "headline": "Fast, conversion-ready sites and web apps",
+      "intro": "We build fast, scalable websites and web apps engineered for organic visibility, conversion rate, and operational efficiency — from marketing sites to ecommerce storefronts.",
+      "feature1": "Next.js and React architecture",
+      "feature2": "Ecommerce and checkout optimization",
+      "feature3": "Conversion-focused UX and page systems",
+      "feature4": "Core Web Vitals and analytics instrumentation",
+      "cta": "Explore web development"
+    },
+    "digital-marketing": {
+      "name": "Digital Marketing",
+      "headline": "Ads, brand systems, and search that compound",
+      "intro": "Paid media, brand systems, and technical SEO as one connected growth engine — messaging, audiences, and measurement aligned from first click to qualified pipeline.",
+      "feature1": "Meta and Google Ads with shared tracking",
+      "feature2": "Branding systems and trust signal architecture",
+      "feature3": "Technical SEO, schema, and local search clusters",
+      "cta": "Explore digital marketing"
+    },
+    "custom-software": {
+      "name": "Custom Software",
+      "headline": "Built for your ops — own it for life",
+      "intro": "Billing, business management, lead management, internal ops, and data orchestration — no subscription lock-in. On-demand features; monthly EMI available during build, then yours for life.",
+      "badge": "No subscription · EMI available",
+      "feature1": "Billing and invoicing systems",
+      "feature2": "Lead and pipeline management",
+      "feature3": "Internal ops and admin dashboards",
+      "feature4": "Data orchestration and API integrations",
+      "feature5": "On-demand features — pay once, own forever",
+      "cta": "Explore custom software"
+    },
+    "ai-agents-automations": {
+      "name": "AI Agents and Automations",
+      "headline": "Agents that qualify, route, and follow up",
+      "intro": "AI agents and automation workflows across lead capture, qualification, follow-ups, and reporting — faster response without replacing relationship-driven sales.",
+      "feature1": "AI-assisted lead qualification and routing",
+      "feature2": "WhatsApp, email, and CRM workflow automations",
+      "feature3": "Operational reporting and alert systems",
+      "feature4": "Secure API integrations with your existing stack",
+      "cta": "Explore AI automation"
+    }
+  }
+}

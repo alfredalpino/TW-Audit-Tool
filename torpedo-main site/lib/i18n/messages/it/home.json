@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ PARTNER INFRASTRUTTURA DIGITALE ]",
+  "heroTitlePrefix": "La tua azienda è",
+  "heroTitleHighlight": "invisibile",
+  "heroTitleMiddle": "senza un sito web che",
+  "heroTitleEnd": "performa.",
+  "heroSubtitle": "La maggior parte delle aziende perde il 60–80% dei lead qualificati a favore di competitor con infrastruttura digitale migliore. Non prodotti migliori. Siti web migliori.",
+  "scrollHint": "Scorri",
+  "services": {
+    "webFoundation": {
+      "title": "Fondazione Web",
+      "subtitle": "Il layer di performance",
+      "description": "Pagine architettate per convertire: veloci, visibili in SEO e con una sola azione misurabile per percorso."
+    },
+    "automation": {
+      "title": "Layer di Automazione",
+      "subtitle": "Il layer operativo",
+      "description": "Acquisizione lead, routing CRM, sequenze di follow-up. Il tuo sito lavora mentre tu avanzi."
+    },
+    "execution": {
+      "title": "Motore di Esecuzione",
+      "subtitle": "Il layer di crescita composta",
+      "description": "Iterazione settimanale, test A/B, SEO composto — un sistema in miglioramento continuo."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals ottimizzati",
+    "seo": "SEO tecnico incluso fin dall'inizio",
+    "conversion": "Architettura di conversione nativa",
+    "founderLed": "Delivery founder-to-founder"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ LA TASSA INVISIBILE ]",
+    "heading": "Aziende profittevoli perdono fatturato online ogni giorno.",
+    "scenarioIntro": "Ecco uno scenario che la maggior parte dei founder riconosce ma raramente quantifica.",
+    "scenarioP1": "Un buyer serio cerca il tuo servizio. Trova prima un competitor — non perché sia migliore, ma perché il suo sito carica in 1,2 secondi invece di 6,4. Il titolo risponde alla domanda. La CTA è visibile subito. Il tuo no.",
+    "scenarioP2": "Non sapevi che quel lead esisteva. Il competitor ha chiuso l'affare.",
+    "scenarioP3": "Non è un problema di marketing. È un problema di infrastruttura.",
+    "stat1Value": "75%",
+    "stat1Caption": "degli utenti giudica la credibilità di un'azienda in base al design del sito web.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88%",
+    "stat2Caption": "dei consumatori online è meno propenso a tornare su un sito dopo una brutta esperienza.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 secondo",
+    "stat3Caption": "di ritardo nel caricamento riduce le conversioni di circa il 7% per ogni secondo.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3,5×",
+    "stat4Caption": "più lead qualificati per aziende con siti performanti e ottimizzati SEO.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "Non avere un ottimo sito non compare in un foglio di calcolo. È il fatturato che non è mai arrivato.",
+    "cta": "Costruisci l'infrastruttura che lo cattura"
+  },
+  "paradox": {
+    "quoteOpen": "La mia azienda va benissimo",
+    "quoteHighlight": "senza",
+    "quoteClose": "un sito web adeguato.",
+    "bodyIntro": "Ogni business offline fiorente ha un tetto.",
+    "bodyP1": "Il passaparola scala finché non lo fa più. Le referenze si esauriscono. Un competitor apre un sito da 40 €/mese e inizia a catturare ricerche che non sapevi esistessero.",
+    "bodyP2": "Il ristorante stellato senza pagina prenotazioni perde coperti rispetto al bistro decente con OpenTable. L'artigiano che non ranka localmente perde contro un'azienda più giovane con un sito da 3.000 € e 12 recensioni Google.",
+    "bodyP3": "La visibilità si compone. Anche l'invisibilità.",
+    "bodyP4": "La domanda non è mai \"Ho bisogno di un sito web?\" Ma: \"Quanto ho già perso aspettando?\""
+  },
+  "socialProof": {
+    "eyebrow": "[ RISULTATI CLIENTI ]",
+    "heading": "Eseguito per founder, operatori e brand seri.",
+    "carouselLabel": "Storie di risultati clienti",
+    "prevReview": "Recensione precedente",
+    "nextReview": "Recensione successiva",
+    "chooseReview": "Scegli una recensione",
+    "showReview": "Mostra recensione"
+  },
+  "manifesto": {
+    "headingLine1": "Il web non è rotto.",
+    "headingLine2": "La maggior parte delle aziende non ha mai ingegnerizzato il proprio.",
+    "ctaSecondary": "Scopri il pensiero sistemico"
+  },
+  "processTeaser": {
+    "srHeading": "Panoramica del processo di build",
+    "seeFullLink": "Vedi l'intero sistema di build",
+    "phase1": {
+      "name": "Audit e decostruzione",
+      "duration": "Settimana 1",
+      "line": "Audit tecnico, struttura SEO, gap di conversione, matrice competitor. Benchmark prima dei pixel."
+    },
+    "phase2": {
+      "name": "Architettura e strategia",
+      "duration": "Settimane 1–2",
+      "line": "IA, gerarchia conversion-first, architettura URL + CMS, topologia keyword così ogni pagina mappa a una metrica."
+    },
+    "phase3": {
+      "name": "Design system e UI",
+      "duration": "Settimane 2–3",
+      "line": "Sistema a livello token in Figma, componenti, prototipi con regole che scalano oltre il lancio."
+    },
+    "phase4": {
+      "name": "Build e ottimizzazione",
+      "duration": "Settimane 3–6",
+      "line": "Ingegneria Next.js, CMS, analytics, QA verso target LCP sotto 1,5 s."
+    },
+    "phase5": {
+      "name": "Lancio e crescita composta",
+      "duration": "Settimana 6 → continuo",
+      "line": "Monitoraggio, iterazione settimanale, SEO + CRO composto. Il lancio è la baseline, non il traguardo."
+    }
+  },
+  "faq": {
+    "heading": "Domande frequenti",
+    "items": [
+      {
+        "question": "Perché Torpedo Web invece di un freelancer o agenzia tradizionale?",
+        "answer": "La maggior parte dei freelancer ottimizza i deliverable. Le agenzie tradizionali ottimizzano le ore. Torpedo Web ottimizza l'infrastruttura: budget di performance, architettura di conversione, SEO tecnico di default, analytics e ritmi di iterazione gestibili come sistema — non come progetto una tantum."
+      },
+      {
+        "question": "Potete migliorare un sito esistente senza rifarlo da zero?",
+        "answer": "Sì. Partiamo da audit tecnici e di conversione, correggiamo colli di bottiglia strutturali, stringiamo l'architettura informativa e strumentiamo l'analytics. Consigliamo un rebuild completo solo quando lo stack impedisce latency, SEO o obiettivi di conversione."
+      },
+      {
+        "question": "Cosa devo preparare prima di una call conoscitiva?",
+        "answer": "URL principale, canali di traffico, obiettivo di conversione (lead, prenotazione, vendita), strumenti (CRM, form, ads) e metriche di cui ti fidi — anche approssimative. Le traduciamo in una mappa di sistema priorizzata, non in una slide deck generica."
+      },
+      {
+        "question": "Lavorate con aziende indiane o solo a livello internazionale?",
+        "answer": "Entrambi. Operiamo in USA e India con linee locali e workflow di delivery adattati. Gli standard di ingegneria restano gli stessi; le tattiche si adattano alla geografia."
+      },
+      {
+        "question": "Cosa fa performare i vostri siti nella ricerca?",
+        "answer": "Il SEO tecnico è infrastruttura: topologia URL, schema, chiarezza di crawl, linking interno, Core Web Vitals come leva di ranking e contenuti mappati sull'intent — non una checklist a fine progetto."
+      },
+      {
+        "question": "La mia azienda va già bene. Perché un sito migliore adesso?",
+        "answer": "Il passaparola scala finché si ferma. I competitor catturano domanda che non vedi. La domanda non è se ti serve una vetrina digitale, ma quanto fatturato si è già spostato verso operatori più veloci e meglio strumentati."
+      }
+    ]
+  }
+}

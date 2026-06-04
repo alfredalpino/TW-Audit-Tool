@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web エージェンシー | Web開発と成長インフラ",
+    "description": "Torpedo Webは、測定可能な成長を必要とする創業者向けに、高性能Webサイト、テクニカルSEO、コンバージョン基盤を設計・構築します。",
+    "ogTitle": "Torpedo Web エージェンシー | Web開発と成長インフラ",
+    "ogDescription": "測定可能な成長を求める創業者向けの高意図Web開発、テクニカルSEO、コンバージョンシステム。",
+    "keywords": "Web開発エージェンシー, テクニカルSEO, コンバージョン最適化, Next.js開発, 成長インフラ, 創業者主導Webエージェンシー"
+  },
+  "services": {
+    "title": "Web開発とデジタルサービス | Torpedo Web",
+    "description": "パフォーマンスエンジニアリング、テクニカルSEO、自動化、コンバージョンシステム——単発プロジェクトではなくインフラとして構築。",
+    "ogTitle": "提供能力 | Torpedo Web エージェンシー",
+    "ogDescription": "成果を測る創業者向けのWeb基盤、自動化レイヤー、実行エンジン。",
+    "keywords": "Web開発サービス, テクニカルSEOエージェンシー, コンバージョン率最適化, Next.jsエージェンシー"
+  },
+  "process": {
+    "title": "プロセス | Torpedo Web エージェンシー",
+    "description": "構造化された構築プロセス：診断、アーキテクチャ、リリース、複利——各段階で創業者レベルの責任。",
+    "ogTitle": "構築方法 | Torpedo Web",
+    "ogDescription": "速度、検索可視性、コンバージョンのための診断ファーストWeb開発プロセス。",
+    "keywords": "Web開発プロセス, エージェンシーワークフロー, 技術ディスカバリー, パフォーマンスファースト構築"
+  },
+  "systems": {
+    "title": "システムとポートフォリオ | Torpedo Web",
+    "description": "構築した収益システム——本番稼働中のパフォーマンス、検索、コンバージョンインフラ。",
+    "ogTitle": "システム | Torpedo Web エージェンシー",
+    "ogDescription": "測定可能な成長のために構築した事例とシステム。",
+    "keywords": "Webエージェンシーポートフォリオ, コンバージョンシステム, パフォーマンス事例"
+  },
+  "blog": {
+    "title": "インサイトとDispatch | Torpedo Web ブログ",
+    "description": "Webパフォーマンス、テクニカルSEO、コンバージョンインフラに関する戦略的インサイト——ノイズゼロ。",
+    "ogTitle": "Torpedo Web ブログ",
+    "ogDescription": "創業者向けのデジタルインフラと成長システムの洞察。",
+    "keywords": "Web開発ブログ, テクニカルSEOインサイト, コンバージョン戦略"
+  },
+  "whatWeDo": {
+    "title": "構築内容 | Torpedo Web",
+    "description": "収益・運用システム、Web開発、デザインシステム、本格ブランド向けスケーラブルインフラ。",
+    "ogTitle": "構築内容 | Torpedo Web",
+    "ogDescription": "成果を測るオペレーター向けの収益システム、Web開発、スケーラブルインフラ。",
+    "keywords": "Web開発サービス, デザインシステム, 収益インフラ, 成長システム"
+  },
+  "privacyPolicy": {
+    "title": "プライバシーポリシー | Torpedo Web",
+    "description": "Torpedo Web プライバシーポリシー。データの収集、利用、保護について。",
+    "ogTitle": "プライバシーポリシー | TORPEDO WEB",
+    "ogDescription": "Torpedo Web が個人データを収集・利用・保護する方法。",
+    "keywords": "プライバシーポリシー, データ保護, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "利用規約 | Torpedo Web",
+    "description": "Torpedo Web 利用規約。成長インフラパートナー。",
+    "ogTitle": "利用規約 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web サービスとWebサイト利用に関する規約。",
+    "keywords": "利用規約, Torpedo Web 規約"
+  },
+  "dmca": {
+    "title": "DMCA ポリシー | Torpedo Web",
+    "description": "Torpedo Web DMCA ポリシー。著作権侵害通知と反通知の取り扱い。",
+    "ogTitle": "DMCA ポリシー | TORPEDO WEB",
+    "ogDescription": "著作権侵害通知と反通知のプロセス。",
+    "keywords": "DMCAポリシー, 著作権, Torpedo Web"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "隐私政策",
+    "metaDescription": "Torpedo Web 隐私政策。我们如何收集、使用和保护您的数据。",
+    "lastUpdated": "最后更新：2026年3月5日",
+    "intro": "TorpedoWeb LLC 说明在您访问我们的网站或使用我们的数字工程服务时，我们如何收集、使用、披露和保护个人信息。",
+    "authoritativeNotice": "具有法律约束力的正式版本为 torpedoweb.org/privacy-policy 发布的完整英文文本。",
+    "scopeHeading": "1. 适用范围与我们的角色",
+    "scopeBody": "根据具体情况，TorpedoWeb 作为网站访客和潜在客户的控制者，或在数据处理附录下代表客户处理个人数据时作为处理者。",
+    "collectHeading": "2. 我们收集的信息",
+    "collectBody": "我们可能通过表单、合同或 Cookie 与分析等自动化技术，收集您提供的标识符、商业记录、互联网活动及专业联系信息。",
+    "rightsHeading": "3. 您的权利",
+    "rightsBody": "在适用法律授予访问、更正、删除、可携带或反对权利的情况下，您可联系我们行使。我们将在 GDPR、英国 GDPR、CCPA/CPRA 及其他适用法律要求的期限内回复。",
+    "contactHeading": "4. 联系我们",
+    "contactBody": "隐私相关问题或请求请发送至 privacy@torpedoweb.org，或邮寄至 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  },
+  "terms": {
+    "title": "服务条款",
+    "metaDescription": "Torpedo Web 服务条款。增长基础设施合作伙伴。",
+    "lastUpdated": "最后更新：2026年3月5日",
+    "intro": "本条款适用于您对 TorpedoWeb.org 的使用以及我们的数字工程、营销及相关专业服务。",
+    "authoritativeNotice": "具有法律约束力的正式版本为 torpedoweb.org/terms-of-service 发布的完整英文文本。",
+    "scopeHeading": "1. 协议与服务",
+    "scopeBody": "使用我们的网站或与 TorpedoWeb 合作，即表示您同意本条款及双方签署的任何工作说明书。服务按提案、合同或订单中的描述提供。",
+    "collectHeading": "2. 客户责任",
+    "collectBody": "您同意及时提供访问权限、准确信息，并合法使用交付成果。您负责备份、第三方账户，以及适用于您业务与终端用户的法律合规。",
+    "rightsHeading": "3. 费用、知识产权与责任限制",
+    "rightsBody": "费用、付款 schedule 与知识产权归属由您的合同定义。责任在法律允许范围内受限；间接或后果性损害被排除，除非强制性法律另有规定。",
+    "contactHeading": "4. 联系我们",
+    "contactBody": "有关本条款的问题请发送至 legal@torpedoweb.org，或邮寄至 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  },
+  "dmca": {
+    "title": "DMCA 政策",
+    "metaDescription": "Torpedo Web DMCA 政策。版权侵权通知与反通知。",
+    "lastUpdated": "最后更新：2026年3月5日",
+    "intro": "TorpedoWeb 尊重知识产权，并响应美国《数字千年版权法》（DMCA）下的有效通知。",
+    "authoritativeNotice": "具有法律约束力的正式版本为 torpedoweb.org/dmca 发布的完整英文文本。",
+    "scopeHeading": "1. 指定代理人",
+    "scopeBody": "版权所有人可向我们的指定代理人提交侵权通知，并包含 17 U.S.C. § 512(c)(3) 要求的信息。我们可能移除或禁用涉嫌侵权材料。",
+    "collectHeading": "2. 反通知",
+    "collectBody": "若您认为内容被错误移除，可提交反通知，包含您的联系方式、材料标识，以及在伪证处罚下的声明，说明移除有误。",
+    "rightsHeading": "3. 重复侵权者",
+    "rightsBody": "在适当情况下，我们可终止重复侵权者的账户或访问，符合适用法律及我们的合同关系。",
+    "contactHeading": "4. 联系我们",
+    "contactBody": "DMCA 通知请发送至 dmca@torpedoweb.org 或 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  }
+}

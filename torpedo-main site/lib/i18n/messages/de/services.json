@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "Was wir tun",
+    "heading": "Webentwicklung, Design Systems und Wachstums-Infrastruktur",
+    "description": "Individuelle Webentwicklung, Design Systems und Infrastruktur, die mit ernsthaften Marken skaliert.",
+    "items": {
+      "websites": {
+        "title": "Websites & Web-Apps",
+        "description": "Wir entwerfen und bauen schnelle, zuverlässige Websites und Web-Apps, die mit Ihrem Business wachsen.",
+        "highlight1": "Individuelle Websites und plattformübergreifende Apps",
+        "highlight2": "Dashboards und interne Tools",
+        "highlight3": "Sicheres Backend und Integrationen",
+        "highlight4": "Für Geschwindigkeit und Langzeitnutzung gebaut"
+      },
+      "design": {
+        "title": "Design & Nutzererlebnis",
+        "description": "Wir machen Ihr Produkt einfach, klar und leicht nutzbar — damit Nutzer nicht verloren gehen.",
+        "highlight1": "Klares UI und flüssige User Flows",
+        "highlight2": "Mobile-first Layouts",
+        "highlight3": "Design Systems für Konsistenz",
+        "highlight4": "Für echtes Nutzerverhalten gebaut"
+      },
+      "growth": {
+        "title": "Wachstum & Conversion",
+        "description": "Wir strukturieren Ihre Site, um Traffic anzuziehen und Besucher in Kunden zu verwandeln.",
+        "highlight1": "SEO-Setup ab Tag eins",
+        "highlight2": "Landing Pages, die konvertieren",
+        "highlight3": "Klare Botschaften und CTAs",
+        "highlight4": "Content für Suche und Sales"
+      },
+      "brand": {
+        "title": "Marke & visuelles Design",
+        "description": "Wir prägen Look & Feel Ihrer Marke, damit sie auffällt und kanalübergreifend konsistent bleibt.",
+        "highlight1": "Logo und visuelle Identität",
+        "highlight2": "Farben, Schriften und Style-Systeme",
+        "highlight3": "Grafiken für Web und Marketing",
+        "highlight4": "Sauberes, konsistentes Design auf allen Seiten"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web Service-Stack ]",
+    "title": "Digital Engineering und Wachstums-Umsetzung",
+    "description": "Wir bauen Systeme, die Web-Performance, Sichtbarkeit in der Suche und Conversion-Operationen verbinden — für vorhersehbares, messbares, skalierbares Wachstum.",
+    "servicesHeading": "Kernservices",
+    "faqHeading": "Häufig gestellte Fragen"
+  }
+}

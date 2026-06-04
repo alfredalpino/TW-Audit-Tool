@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ DIGITALE INFRASTRUKTUR PARTNER ]",
+  "heroTitlePrefix": "Ihr Unternehmen ist",
+  "heroTitleHighlight": "unsichtbar",
+  "heroTitleMiddle": "ohne eine Website, die",
+  "heroTitleEnd": "performt.",
+  "heroSubtitle": "Die meisten Unternehmen verlieren 60–80 % qualifizierter Leads an Wettbewerber mit besserer digitaler Infrastruktur. Nicht bessere Produkte. Bessere Websites.",
+  "scrollHint": "Scrollen",
+  "services": {
+    "webFoundation": {
+      "title": "Web-Fundament",
+      "subtitle": "Performance-Schicht",
+      "description": "Conversion-architektierte Seiten: schnell, suchmaschinenstark, mit einer klaren messbaren Aktion."
+    },
+    "automation": {
+      "title": "Automatisierungsschicht",
+      "subtitle": "Operations-Schicht",
+      "description": "Lead-Erfassung, CRM-Routing, Follow-up-Sequenzen. Ihre Website arbeitet, während Sie schlafen."
+    },
+    "execution": {
+      "title": "Umsetzungsmotor",
+      "subtitle": "Schicht für zusammengesetztes Wachstum",
+      "description": "Wöchentliche Iteration, A/B-Tests, SEO-Compounding — ein System in kontinuierlicher Verbesserung."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals optimiert",
+    "seo": "Technisches SEO von Anfang an",
+    "conversion": "Conversion-Architektur standardmässig",
+    "founderLed": "Umsetzung von Gründer zu Gründer"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ DIE UNSICHTBARE STEUER ]",
+    "heading": "Profitable Unternehmen verlieren jeden Tag online Umsatz.",
+    "scenarioIntro": "Hier ein Szenario, das die meisten Gründer kennen, aber selten beziffern.",
+    "scenarioP1": "Ein ernsthafter Käufer sucht nach Ihrer Dienstleistung. Er findet zuerst einen Wettbewerber — nicht weil der besser ist, sondern weil dessen Website in 1,2 Sekunden statt 6,4 lädt. Die Überschrift beantwortet die Frage. Der CTA ist sofort sichtbar. Ihrer nicht.",
+    "scenarioP2": "Sie wussten nicht, dass dieser Lead existierte. Der Wettbewerber hat den Deal abgeschlossen.",
+    "scenarioP3": "Das ist kein Marketingproblem. Es ist ein Infrastrukturproblem.",
+    "stat1Value": "75 %",
+    "stat1Caption": "der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand des Website-Designs.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88 %",
+    "stat2Caption": "der Online-Konsumenten kehren nach einer schlechten Erfahrung seltener auf eine Website zurück.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 Sekunde",
+    "stat3Caption": "Verzögerung bei der Ladezeit reduziert Conversions um rund 7 % pro Sekunde.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3,5×",
+    "stat4Caption": "mehr qualifizierte Leads für Unternehmen mit SEO-optimierten, leistungsstarken Websites.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "Keine starke Website taucht nicht in einer Tabelle auf. Es ist der Umsatz, der nie angekommen ist.",
+    "cta": "Bauen Sie die Infrastruktur, die ihn einfängt"
+  },
+  "paradox": {
+    "quoteOpen": "Mein Unternehmen läuft gut",
+    "quoteHighlight": "ohne",
+    "quoteClose": "eine richtige Website.",
+    "bodyIntro": "Jedes florierende Offline-Geschäft hat eine Obergrenze.",
+    "bodyP1": "Mundpropaganda skaliert — bis sie es nicht mehr tut. Empfehlungen versiegen. Ein Wettbewerber startet mit einer Website für 40 €/Monat und fängt Suchanfragen ab, von denen Sie nichts wussten.",
+    "bodyP2": "Das Michelin-Restaurant ohne Reservierungsseite verliert Buchungen an das solide Bistro mit OpenTable. Der Handwerker ohne lokales Ranking verliert gegen eine jüngere Firma mit einer 3.000-€-Website und 12 Google-Bewertungen.",
+    "bodyP3": "Sichtbarkeit compoundet. Unsichtbarkeit auch.",
+    "bodyP4": "Die Frage ist nie «Brauche ich eine Website?» Sondern: «Wie viel habe ich bereits verloren, indem ich gewartet habe?»"
+  },
+  "socialProof": {
+    "eyebrow": "[ KUNDENERGEBNISSE ]",
+    "heading": "Umgesetzt für Gründer, Betreiber und ernsthafte Marken.",
+    "carouselLabel": "Kundenerfolgsgeschichten",
+    "prevReview": "Vorherige Bewertung",
+    "nextReview": "Nächste Bewertung",
+    "chooseReview": "Bewertung auswählen",
+    "showReview": "Bewertung anzeigen"
+  },
+  "manifesto": {
+    "headingLine1": "Das Web ist nicht kaputt.",
+    "headingLine2": "Die meisten Unternehmen haben ihres nie als System gebaut.",
+    "ctaSecondary": "Systemdenken entdecken"
+  },
+  "processTeaser": {
+    "srHeading": "Überblick Build-Prozess",
+    "seeFullLink": "Das vollständige Build-System ansehen",
+    "phase1": {
+      "name": "Audit & Dekonstruktion",
+      "duration": "Woche 1",
+      "line": "Technisches Audit, SEO-Struktur, Conversion-Lücken, Wettbewerbsmatrix. Benchmarks vor Pixeln."
+    },
+    "phase2": {
+      "name": "Architektur & Strategie",
+      "duration": "Wochen 1–2",
+      "line": "IA, Conversion-first-Hierarchie, URL- + CMS-Architektur, Keyword-Topologie — jede Seite mappt auf eine Metrik."
+    },
+    "phase3": {
+      "name": "Designsystem & Benutzeroberfläche",
+      "duration": "Wochen 2–3",
+      "line": "Token-Level-System in Figma, Komponenten, Prototypen mit Regeln, die über den Launch hinaus skalieren."
+    },
+    "phase4": {
+      "name": "Build & Optimierung",
+      "duration": "Wochen 3–6",
+      "line": "Next.js-Engineering, CMS, Analytics, QA Richtung LCP unter 1,5 s."
+    },
+    "phase5": {
+      "name": "Launch & zusammengesetztes Wachstum",
+      "duration": "Woche 6 → laufend",
+      "line": "Monitoring, wöchentliche Iteration, SEO + CRO Compounding. Launch ist die Baseline, nicht das Ziel."
+    }
+  },
+  "faq": {
+    "heading": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Warum Torpedo Web statt Freelancer oder klassischer Agentur?",
+        "answer": "Die meisten Freelancer optimieren Deliverables. Klassische Agenturen optimieren Stunden. Torpedo Web optimiert Infrastruktur: Performance-Budgets, Conversion-Architektur, technisches SEO als Standard, Analytics-Baselines und Iterationsrhythmen, die Sie als System betreiben — nicht als Einzelprojekt."
+      },
+      {
+        "question": "Können Sie eine bestehende Website verbessern, ohne sie neu aufzubauen?",
+        "answer": "Ja. Wir starten mit technischen und Conversion-Audits, beheben strukturelle Engpässe, straffen die Informationsarchitektur und instrumentieren Analytics. Eine vollständige Neuentwicklung empfehlen wir nur, wenn Ihr Stack Latenz-, SEO- oder Conversion-Ziele verhindert."
+      },
+      {
+        "question": "Was sollte ich vor einem Discovery-Call vorbereiten?",
+        "answer": "Ihre Haupt-URL, aktuelle Traffic-Kanäle, Conversion-Ziel (Lead, Buchung, Verkauf), Tools (CRM, Formulare, Ads) und Metriken, denen Sie vertrauen — auch grobe. Daraus entsteht eine priorisierte Systemkarte, kein generisches Slide-Deck."
+      },
+      {
+        "question": "Arbeiten Sie mit indischen Unternehmen oder nur international?",
+        "answer": "Beides. Wir sind in den USA und Indien aktiv — mit lokalen Telefonleitungen und Delivery-Workflows für jeden Markt. Engineering-Standards und Performance-Ziele bleiben gleich; Taktiken passen sich Geografie und Suchintention an."
+      },
+      {
+        "question": "Was lässt Ihre Websites in der Suche wirklich performen?",
+        "answer": "Technisches SEO ist Infrastruktur: URL-Topologie, Schema, Crawl-Klarheit, interne Verlinkung, Core Web Vitals als Ranking-Hebel und Inhalte nach Intent — keine Checkliste am Ende."
+      },
+      {
+        "question": "Mein Unternehmen läuft bereits gut. Warum jetzt eine bessere Website?",
+        "answer": "Mundpropaganda skaliert, bis sie stoppt. Wettbewerber fangen Suchnachfrage ab, die Sie nie sehen. Die Frage ist nicht, ob Sie ein digitales Schaufenster brauchen. Sondern, wie viel Umsatz bereits an schnellere, klarere, besser instrumentierte Betreiber abgeflossen ist, während Sie gewartet haben."
+      }
+    ]
+  }
+}

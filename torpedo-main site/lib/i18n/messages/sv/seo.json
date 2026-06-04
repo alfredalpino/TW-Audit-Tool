@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web Agency | Webbutveckling och tillväxtinfrastruktur",
+    "description": "Torpedo Web Agency designar och bygger högpresterande webbplatser, teknisk SEO och konverteringsinfrastruktur för grundare som behöver mätbar tillväxt.",
+    "ogTitle": "Torpedo Web Agency | Webbutveckling och tillväxtinfrastruktur",
+    "ogDescription": "Webbutveckling med hög intent, teknisk SEO och konverteringssystem för grundare som behöver mätbar tillväxt.",
+    "keywords": "webbutvecklingsbyrå, teknisk SEO, konverteringsoptimering, Next.js utveckling, tillväxtinfrastruktur, webbyrå Sverige"
+  },
+  "services": {
+    "title": "Webbutveckling och digitala tjänster | Torpedo Web",
+    "description": "Prestandaingenjörskonst, teknisk SEO, automation och konverteringssystem — byggda som infrastruktur, inte engångsprojekt.",
+    "ogTitle": "Kompetens | Torpedo Web Agency",
+    "ogDescription": "Webbfundament, automationslager och exekveringsmotor för grundare som mäter resultat.",
+    "keywords": "webbutvecklingstjänster, teknisk SEO byrå, konverteringsoptimering, Next.js byrå"
+  },
+  "process": {
+    "title": "Vår process | Torpedo Web Agency",
+    "description": "En strukturerad byggprocess: diagnostisera, arkitektera, lansera och compounda — med grundaransvar i varje steg.",
+    "ogTitle": "Hur vi bygger | Torpedo Web",
+    "ogDescription": "Diagnostik-först webbutvecklingsprocess byggd för hastighet, sökbarhet och konvertering.",
+    "keywords": "webbutvecklingsprocess, byråworkflow, teknisk discovery, prestandaförst bygg"
+  },
+  "systems": {
+    "title": "System och portfolio | Torpedo Web",
+    "description": "Intäktssystem vi har byggt — prestanda, sök och konverteringsinfrastruktur i produktion.",
+    "ogTitle": "System | Torpedo Web Agency",
+    "ogDescription": "Fallstudier och system byggda för mätbar tillväxt.",
+    "keywords": "webbyrå portfolio, konverteringssystem, prestanda fallstudier"
+  },
+  "blog": {
+    "title": "Insikter och Dispatch | Torpedo Web Blogg",
+    "description": "Strategiska insikter om webbprestanda, teknisk SEO och konverteringsinfrastruktur — noll brus.",
+    "ogTitle": "Torpedo Web Blogg",
+    "ogDescription": "Grundarfokuserade insikter om digital infrastruktur och tillväxtsystem.",
+    "keywords": "webbutvecklingsblogg, teknisk SEO insikter, konverteringsstrategi"
+  },
+  "whatWeDo": {
+    "title": "Vad Vi Bygger | Torpedo Web",
+    "description": "Intäkts- och operationssystem, webbutveckling, designsystem och skalbar infrastruktur för seriösa varumärken.",
+    "ogTitle": "Vad Vi Bygger | Torpedo Web",
+    "ogDescription": "Intäktssystem, webbutveckling och skalbar infrastruktur för operatörer som mäter resultat.",
+    "keywords": "webbutveckling Sverige, designsystem, intäktsinfrastruktur, tillväxtsystem"
+  },
+  "privacyPolicy": {
+    "title": "Integritetspolicy | Torpedo Web",
+    "description": "Integritetspolicy för Torpedo Web. Hur vi samlar in, använder och skyddar dina data.",
+    "ogTitle": "Integritetspolicy | TORPEDO WEB",
+    "ogDescription": "Hur Torpedo Web samlar in, använder och skyddar dina personuppgifter.",
+    "keywords": "integritetspolicy, dataskydd, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Användarvillkor | Torpedo Web",
+    "description": "Användarvillkor för Torpedo Web. Tillväxtinfrastrukturpartner.",
+    "ogTitle": "Användarvillkor | TORPEDO WEB",
+    "ogDescription": "Villkor för användning av Torpedo Webs tjänster och webbplats.",
+    "keywords": "användarvillkor, Torpedo Web villkor"
+  },
+  "dmca": {
+    "title": "DMCA-policy | Torpedo Web",
+    "description": "DMCA-policy för Torpedo Web. Hur vi hanterar meddelanden om upphovsrättsintrång och motmeddelanden.",
+    "ogTitle": "DMCA-policy | TORPEDO WEB",
+    "ogDescription": "Process för meddelanden om upphovsrättsintrång och motmeddelanden.",
+    "keywords": "DMCA policy, upphovsrätt, Torpedo Web"
+  }
+}

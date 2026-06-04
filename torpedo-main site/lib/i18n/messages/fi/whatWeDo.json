@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ INFRASTRUKTUURI, EI KORISTELUA ]",
+  "heading": "Emme rakenna verkkosivuja. Rakennamme liikevaihtojärjestelmiä.",
+  "cards": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "subtitle": "Suorituskykykerros",
+      "body": "Konversioarkkitehtuuriin suunnitellut sivut, jotka latautuvat nopeasti, rankkaavat hyvin ja ohjaavat mitattavaan toimintaan. Ei kaunista. Toimivaa.",
+      "bullet1": "Next.js / React -stack",
+      "bullet2": "Core Web Vitals -tavoitteet",
+      "bullet3": "Schema + tekninen SEO-perusta",
+      "bullet4": "Mobile-first responsiivinen insinöörityö"
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "subtitle": "Operaatiokerros",
+      "body": "Liidien keruu, CRM-reititys, follow-up-sekvenssit, operatiiviset workflowt. Sivustosi työskentelee kun nukut.",
+      "bullet1": "Lomakkeet → CRM-reititys",
+      "bullet2": "Ilmoitukset + SLA:t",
+      "bullet3": "Workflow-hookit (Zapier / Make / custom)",
+      "bullet4": "Operatiiviset dashboardit"
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "subtitle": "Yhdistelmäkasvukerros",
+      "body": "Viikoittainen iterointi. A/B-testaus. Core Web Vitals -seuranta. SEO-yhdistelmävaikutus. Ei projekti vaan jatkuvasti parantuva järjestelmä.",
+      "bullet1": "Viikoittaiset suorituskykykatsaukset",
+      "bullet2": "Kokeilubacklog",
+      "bullet3": "SEO-yhdistelmämalli",
+      "bullet4": "Kuukausittainen raportointisilmukka"
+    }
+  }
+}

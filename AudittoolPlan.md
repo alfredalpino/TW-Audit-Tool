@@ -62,12 +62,12 @@ Good:
 
 # TECH STACK
 
-Build using:
+Build using (Use the latest updated version of the libraries and apps.):
 
 Frontend:
 
 ```text
-Next.js 15
+Next.js 16.2.7
 React
 TypeScript
 Tailwind CSS
@@ -86,7 +86,7 @@ TypeScript
 Database:
 
 ```text
-Supabase PostgreSQL
+PostgreSQL (local Docker Compose for dev; managed Postgres in production)
 ```
 
 ORM:
@@ -729,7 +729,7 @@ Phone
 Company
 ```
 
-Store in Supabase.
+Store in PostgreSQL via Drizzle ORM.
 
 Send report via email.
 

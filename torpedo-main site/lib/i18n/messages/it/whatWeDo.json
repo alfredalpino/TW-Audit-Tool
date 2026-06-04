@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ INFRASTRUTTURA, NON DECORAZIONE ]",
+  "heading": "Non costruiamo siti web. Costruiamo sistemi di revenue.",
+  "cards": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "subtitle": "Il layer performance",
+      "body": "Pagine progettate per convertire: caricano veloce, rankano alto e guidano verso un'azione misurabile. Non belle. Funzionali.",
+      "bullet1": "Stack Next.js / React",
+      "bullet2": "Target Core Web Vitals",
+      "bullet3": "Schema + baseline SEO tecnica",
+      "bullet4": "Ingegneria responsive mobile-first"
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "subtitle": "Il layer operativo",
+      "body": "Lead capture, routing CRM, sequenze follow-up, workflow operativi. Il tuo sito lavora mentre dormi.",
+      "bullet1": "Form → routing CRM",
+      "bullet2": "Notifiche + SLA",
+      "bullet3": "Hook workflow (Zapier / Make / custom)",
+      "bullet4": "Dashboard operative"
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "subtitle": "Il layer compound growth",
+      "body": "Iterazione settimanale. A/B testing. Monitoraggio Core Web Vitals. SEO compounding. Non un progetto ma un sistema in miglioramento continuo.",
+      "bullet1": "Review performance settimanali",
+      "bullet2": "Backlog esperimenti",
+      "bullet3": "Modello SEO compounding",
+      "bullet4": "Loop reporting mensile"
+    }
+  }
+}

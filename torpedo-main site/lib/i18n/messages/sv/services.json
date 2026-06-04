@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "What We Do",
+    "heading": "Web Development, Design Systems, and Growth Infrastructure",
+    "description": "Custom web development, design systems, and infrastructure built to scale with serious brands.",
+    "items": {
+      "websites": {
+        "title": "Websites & Web Apps",
+        "description": "We design and build fast, reliable websites and web apps that scale with your business.",
+        "highlight1": "Custom websites and cross-platform applications",
+        "highlight2": "Dashboards and internal tools",
+        "highlight3": "Secure backend and integrations",
+        "highlight4": "Built for speed and long-term use"
+      },
+      "design": {
+        "title": "Design & User Experience",
+        "description": "We make your product simple, clear, and easy to use so users do not get lost.",
+        "highlight1": "Clean UI and smooth user flows",
+        "highlight2": "Mobile-first layouts",
+        "highlight3": "Design systems for consistency",
+        "highlight4": "Built for real user behavior"
+      },
+      "growth": {
+        "title": "Growth & Conversion",
+        "description": "We structure your site to attract traffic and turn visitors into customers.",
+        "highlight1": "SEO setup from day one",
+        "highlight2": "Landing pages that convert",
+        "highlight3": "Clear messaging and CTAs",
+        "highlight4": "Content built for search and sales"
+      },
+      "brand": {
+        "title": "Brand & Visual Design",
+        "description": "We shape how your brand looks and feels so it stands out and stays consistent across channels.",
+        "highlight1": "Logo and visual identity",
+        "highlight2": "Colors, fonts, and style systems",
+        "highlight3": "Graphics for web and marketing",
+        "highlight4": "Clean, consistent design across all pages"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web service stack ]",
+    "title": "Digital engineering and growth execution",
+    "description": "We build systems that combine web performance, search visibility, and conversion operations so growth is predictable, measurable, and scalable for high-intent demand.",
+    "servicesHeading": "Core services",
+    "faqHeading": "Frequently asked questions"
+  }
+}

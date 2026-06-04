@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "Ce que nous faisons",
+    "heading": "Développement web, design systems et infrastructure de croissance",
+    "description": "Développement web sur mesure, design systems et infrastructure conçus pour évoluer avec des marques sérieuses.",
+    "items": {
+      "websites": {
+        "title": "Sites web et applications",
+        "description": "Nous concevons et construisons des sites et apps rapides, fiables et adaptés à votre croissance.",
+        "highlight1": "Sites sur mesure et applications multiplateformes",
+        "highlight2": "Tableaux de bord et outils internes",
+        "highlight3": "Backend sécurisé et intégrations",
+        "highlight4": "Conçu pour la vitesse et la durée"
+      },
+      "design": {
+        "title": "Design et expérience utilisateur",
+        "description": "Nous rendons votre produit simple, clair et facile à utiliser pour que les utilisateurs ne se perdent pas.",
+        "highlight1": "UI épurée et parcours fluides",
+        "highlight2": "Mises en page mobile-first",
+        "highlight3": "Design systems pour la cohérence",
+        "highlight4": "Conçu pour le comportement réel des utilisateurs"
+      },
+      "growth": {
+        "title": "Croissance et conversion",
+        "description": "Nous structurons votre site pour attirer du trafic et convertir les visiteurs en clients.",
+        "highlight1": "SEO intégré dès le départ",
+        "highlight2": "Landing pages qui convertissent",
+        "highlight3": "Messages clairs et CTA visibles",
+        "highlight4": "Contenu pensé pour la recherche et la vente"
+      },
+      "brand": {
+        "title": "Marque et design visuel",
+        "description": "Nous façonnons l'apparence et le ressenti de votre marque pour qu'elle se démarque et reste cohérente.",
+        "highlight1": "Logo et identité visuelle",
+        "highlight2": "Couleurs, typographies et systèmes de style",
+        "highlight3": "Visuels pour le web et le marketing",
+        "highlight4": "Design cohérent sur toutes les pages"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Stack services Torpedo Web ]",
+    "title": "Ingénierie digitale et exécution de la croissance",
+    "description": "Nous construisons des systèmes qui combinent performance web, visibilité search et opérations de conversion pour une croissance prévisible, mesurable et scalable.",
+    "servicesHeading": "Services clés",
+    "faqHeading": "Questions fréquentes"
+  }
+}

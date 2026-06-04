@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Polyphasige Roadmap ]",
+    "heading": "Von der Idee zur Umsetzung — für Ergebnisse konstruiert",
+    "intro": "Strukturierte Phasen zum Entwerfen, Bauen und Skalieren leistungsfähiger digitaler Systeme.",
+    "closingP": "Jede Phase bringt Sie näher an messbare Ergebnisse — nicht nur an eine fertige Website.",
+    "startProject": "Projekt starten",
+    "bookIntroCall": "Intro-Call buchen"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Schritt 1",
+      "title": "Audit & Dekonstruktion",
+      "description": "Technisches Audit der Assets, Wettbewerbskontext und Gap-Mapping über Performance, UX und Conversion-Ziele."
+    },
+    "phase2": {
+      "label": "Schritt 2",
+      "title": "Architektur & Strategie",
+      "description": "IA, conversion-first Wireframes, SEO-Hierarchie und skalierbare Systementscheidungen. Kein Seiten-für-Seiten-Raten."
+    },
+    "phase3": {
+      "label": "Schritt 3",
+      "title": "Design System & Benutzeroberfläche",
+      "description": "High-Fidelity-UI, ein echtes Design System (Typo, Abstände, Komponenten) und Prototypen, wenn der Flow sie braucht."
+    },
+    "phase4": {
+      "label": "Schritt 4",
+      "title": "Build & Optimierung",
+      "description": "Moderner Stack, Core Web Vitals, CMS und Integrationen plus responsive und Cross-Browser-QA."
+    },
+    "phase5": {
+      "label": "Schritt 5",
+      "title": "Launch & Skalierung",
+      "description": "Go-live mit QA, Analytics, CRO und Iterations-Roadmap. Launch ist der Start der Verbesserung."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Positionierung ]",
+    "heading": "Eine andere Art Agentur",
+    "intro": "Die meisten Agenturen fokussieren Design und Delivery. Wir fokussieren Systeme, Performance und Ergebnisse.",
+    "contextP": "Bei der Partnerwahl geht es nicht um Freelancer versus Agentur. Es geht um das Niveau an Denken, Umsetzung und langfristiger Wirkung, das Sie brauchen.",
+    "tableCaption": "Fähigkeitsvergleich: Torpedo Web versus typische Freelancer und traditionelle Agenturen",
+    "columnCapability": "Fähigkeit",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Typische Freelancer",
+    "columnAgencies": "Traditionelle Agenturen",
+    "rows": {
+      "approach": {
+        "capability": "Ansatz",
+        "torpedo": "System-first, engineering-geführt",
+        "freelancers": "Aufgabenbasierte Ausführung",
+        "agencies": "Design-first, prozessgetrieben"
+      },
+      "projectThinking": {
+        "capability": "Projektdenken",
+        "torpedo": "Business- und performance-fokussiert",
+        "freelancers": "Scope-begrenzte Lieferung",
+        "agencies": "Marken- und visueller Fokus"
+      },
+      "executionDepth": {
+        "capability": "Umsetzungstiefe",
+        "torpedo": "Full-Stack, skalierbare Systeme",
+        "freelancers": "Enge Spezialisierung",
+        "agencies": "Team-basiert, aber fragmentiert"
+      },
+      "performanceOptimization": {
+        "capability": "Performance-Optimierung",
+        "torpedo": "Von Tag eins integriert",
+        "freelancers": "Selten priorisiert",
+        "agencies": "Oft Post-Launch-Add-on"
+      },
+      "speedAgility": {
+        "capability": "Geschwindigkeit & Agilität",
+        "torpedo": "Schnelle Umsetzung auf Gründer-Niveau",
+        "freelancers": "Schnell, aber inkonsistent",
+        "agencies": "Langsamer durch Ebenen"
+      },
+      "longTermScalability": {
+        "capability": "Langfristige Skalierbarkeit",
+        "torpedo": "Für Wachstum und Iteration gebaut",
+        "freelancers": "Begrenzte Skalierbarkeit",
+        "agencies": "Skalierbar, aber starr"
+      },
+      "clientExperience": {
+        "capability": "Kundenerlebnis",
+        "torpedo": "Direkte, strategische Zusammenarbeit",
+        "freelancers": "Informelle Kommunikation",
+        "agencies": "Account-Management, weniger direkt"
+      }
+    },
+    "closingP": "Wir arbeiten als fokussierter Engineering-Partner: Freelancer-Agilität mit Agentur-Struktur und Zuverlässigkeit — ohne die üblichen Kompromisse.",
+    "startProject": "Projekt starten",
+    "bookIntroCall": "Intro-Call buchen"
+  }
+}

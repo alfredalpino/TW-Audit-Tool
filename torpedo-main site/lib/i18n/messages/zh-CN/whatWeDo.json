@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ 基础设施，而非装饰 ]",
+  "heading": "我们不建网站。我们构建收入系统。",
+  "cards": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "subtitle": "性能层",
+      "body": "快速加载、排名靠前、引导用户完成单一可衡量行动的转化架构页面。不是好看，是有效。",
+      "bullet1": "Next.js / React 技术栈",
+      "bullet2": "Core Web Vitals 目标",
+      "bullet3": "Schema + 技术 SEO 基线",
+      "bullet4": "移动优先响应式工程"
+    },
+    "automation": {
+      "title": "自动化层",
+      "subtitle": "运营层",
+      "body": "线索捕获、CRM 路由、跟进序列、业务工作流。网站在您休息时仍在工作。",
+      "bullet1": "表单 → CRM 路由",
+      "bullet2": "通知 + SLA",
+      "bullet3": "工作流钩子（Zapier / Make / 定制）",
+      "bullet4": "运营仪表盘"
+    },
+    "execution": {
+      "title": "执行引擎",
+      "subtitle": "复合增长层",
+      "body": "每周迭代。A/B 测试。Core Web Vitals 监控。SEO 复利。不是项目，而是持续改进的系统。",
+      "bullet1": "每周性能复盘",
+      "bullet2": "实验 backlog",
+      "bullet3": "SEO 复利模型",
+      "bullet4": "月度报告循环"
+    }
+  }
+}

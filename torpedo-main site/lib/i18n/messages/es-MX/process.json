@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Hoja de ruta polifásica ]",
+    "heading": "De la idea a la ejecución, diseñado para resultados",
+    "intro": "Fases estructuradas para diseñar, construir y escalar sistemas digitales que rinden.",
+    "closingP": "Cada fase te acerca a resultados medibles, no solo a un sitio terminado.",
+    "startProject": "Iniciar tu proyecto",
+    "bookIntroCall": "Agendar llamada intro"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Fase 1",
+      "title": "Auditoría y deconstrucción",
+      "description": "Auditoría técnica de activos, contexto competitivo y mapeo de brechas en performance, UX y conversión."
+    },
+    "phase2": {
+      "label": "Fase 2",
+      "title": "Arquitectura y estrategia",
+      "description": "IA, wireframes orientados a conversión, jerarquía SEO y decisiones de sistema escalables. Sin adivinar página por página."
+    },
+    "phase3": {
+      "label": "Fase 3",
+      "title": "Design system y UI",
+      "description": "UI de alta fidelidad, un design system real (tipografía, espaciado, componentes) y prototipos cuando el flujo lo requiere."
+    },
+    "phase4": {
+      "label": "Fase 4",
+      "title": "Build y optimización",
+      "description": "Stack moderno, Core Web Vitals, CMS e integraciones, más QA responsive y cross-browser."
+    },
+    "phase5": {
+      "label": "Fase 5",
+      "title": "Lanzamiento y escala",
+      "description": "Lanzamiento con QA, analytics, CRO y hoja de ruta de iteración. El launch es el inicio de la mejora."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Posicionamiento ]",
+    "heading": "Un tipo diferente de agencia",
+    "intro": "La mayoría de agencias se enfocan en diseño y entrega. Nosotros en sistemas, performance y resultados.",
+    "contextP": "Elegir un partner no es freelancers versus agencias. Es el nivel de pensamiento, ejecución e impacto a largo plazo que necesitas.",
+    "tableCaption": "Comparación de capacidades: Torpedo Web versus freelancers típicos y agencias tradicionales",
+    "columnCapability": "Capacidad",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Freelancers típicos",
+    "columnAgencies": "Agencias tradicionales",
+    "rows": {
+      "approach": {
+        "capability": "Enfoque",
+        "torpedo": "Sistemas primero, liderado por ingeniería",
+        "freelancers": "Ejecución por tareas",
+        "agencies": "Diseño primero, proceso rígido"
+      },
+      "projectThinking": {
+        "capability": "Pensamiento de proyecto",
+        "torpedo": "Enfocado en negocio y performance",
+        "freelancers": "Entrega limitada al alcance",
+        "agencies": "Enfoque en marca y visual"
+      },
+      "executionDepth": {
+        "capability": "Profundidad de ejecución",
+        "torpedo": "Full-stack, sistemas escalables",
+        "freelancers": "Especialización estrecha",
+        "agencies": "Por equipos pero fragmentado"
+      },
+      "performanceOptimization": {
+        "capability": "Optimización de performance",
+        "torpedo": "Integrada desde el día uno",
+        "freelancers": "Rara vez priorizada",
+        "agencies": "A menudo add-on post-lanzamiento"
+      },
+      "speedAgility": {
+        "capability": "Velocidad y agilidad",
+        "torpedo": "Ejecución rápida a nivel founder",
+        "freelancers": "Rápido pero inconsistente",
+        "agencies": "Más lento por capas"
+      },
+      "longTermScalability": {
+        "capability": "Escalabilidad a largo plazo",
+        "torpedo": "Diseñado para crecimiento e iteración",
+        "freelancers": "Escalabilidad limitada",
+        "agencies": "Escalable pero rígido"
+      },
+      "clientExperience": {
+        "capability": "Experiencia del cliente",
+        "torpedo": "Colaboración directa y estratégica",
+        "freelancers": "Comunicación informal",
+        "agencies": "Gestión de cuenta, menos directo"
+      }
+    },
+    "closingP": "Operamos como un partner de ingeniería enfocado: agilidad de freelancer con estructura y confiabilidad de agencia, sin los trade-offs habituales.",
+    "startProject": "Iniciar tu proyecto",
+    "bookIntroCall": "Agendar llamada intro"
+  }
+}

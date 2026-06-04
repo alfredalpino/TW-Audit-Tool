@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web India | Web Engineering, SEO & Growth Infrastructure",
+    "description": "Torpedo Web builds high-performance websites, technical SEO systems, and conversion infrastructure for Indian founders and growth teams.",
+    "ogTitle": "Torpedo Web India | Web Engineering & Growth Infrastructure",
+    "ogDescription": "Performance-first web development, technical SEO, and conversion systems for India’s most ambitious founders.",
+    "keywords": "web development company India, SEO agency India, web design agency Lucknow, technical SEO India, conversion focused website development"
+  },
+  "services": {
+    "title": "Web Development Services India | Torpedo Web",
+    "description": "Performance engineering, technical SEO, automation, and conversion systems for Indian businesses.",
+    "ogTitle": "Capabilities | Torpedo Web India",
+    "ogDescription": "Web foundation, automation, and execution engine for measurable growth in India.",
+    "keywords": "web development services India, SEO agency Lucknow, Next.js development India"
+  },
+  "process": {
+    "title": "Our Process | Torpedo Web India",
+    "description": "Diagnostic-first build process: architect, ship, and compound — with founder-level accountability.",
+    "ogTitle": "How We Build | Torpedo Web India",
+    "ogDescription": "Structured web development process built for speed, search, and conversion.",
+    "keywords": "web development process India, agency workflow, performance-first build"
+  },
+  "systems": {
+    "title": "Systems & Portfolio | Torpedo Web India",
+    "description": "Revenue systems engineered for Indian markets — performance, search, and conversion in production.",
+    "ogTitle": "Systems | Torpedo Web India",
+    "ogDescription": "Case studies and growth systems built for Indian founders.",
+    "keywords": "web agency portfolio India, conversion systems, performance case studies"
+  },
+  "blog": {
+    "title": "Insights & Dispatch | Torpedo Web Blog",
+    "description": "Strategic insights on web performance, technical SEO, and conversion — zero noise.",
+    "ogTitle": "Torpedo Web Blog",
+    "ogDescription": "Founder-focused insights on digital infrastructure.",
+    "keywords": "web development blog India, technical SEO insights, conversion strategy"
+  },
+  "whatWeDo": {
+    "title": "What We Build | Torpedo Web India",
+    "description": "Revenue and operations systems, web development, design systems, and scalable infrastructure for Indian brands.",
+    "ogTitle": "What We Build | Torpedo Web India",
+    "ogDescription": "Revenue systems, web development, and scalable infrastructure for Indian operators who measure outcomes.",
+    "keywords": "web development India, design systems, revenue infrastructure, growth systems India"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy | Torpedo Web India",
+    "description": "Privacy Policy for Torpedo Web India. How we collect, use, and protect your data.",
+    "ogTitle": "Privacy Policy | Torpedo Web India",
+    "ogDescription": "How Torpedo Web India collects, uses, and protects your personal data.",
+    "keywords": "privacy policy India, data protection, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Terms of Service | Torpedo Web India",
+    "description": "Terms of Service for Torpedo Web India. Growth infrastructure partner.",
+    "ogTitle": "Terms of Service | Torpedo Web India",
+    "ogDescription": "Terms governing use of Torpedo Web India services and website.",
+    "keywords": "terms of service, Torpedo Web India terms"
+  },
+  "dmca": {
+    "title": "DMCA Policy | Torpedo Web India",
+    "description": "DMCA Policy for Torpedo Web India. How we handle copyright infringement notices and counter-notifications.",
+    "ogTitle": "DMCA Policy | Torpedo Web India",
+    "ogDescription": "Copyright infringement notice and counter-notification process.",
+    "keywords": "DMCA policy, copyright, Torpedo Web India"
+  }
+}

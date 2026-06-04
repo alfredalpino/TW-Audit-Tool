@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Monivaiheinen tiekartta ]",
+    "heading": "Ideasta toteutukseen — tuloksia varten suunniteltu",
+    "intro": "Rakenteiset vaiheet digitaalisten järjestelmien suunnitteluun, rakentamiseen ja skaalaamiseen.",
+    "closingP": "Jokainen vaihe vie sinua mitattaviin tuloksiin — ei vain valmiiseen sivustoon.",
+    "startProject": "Aloita projekti",
+    "bookIntroCall": "Varaa intro-puhelu"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Vaihe 1",
+      "title": "Auditointi ja purku",
+      "description": "Tekninen auditointi, kilpailukonteksti ja aukkojen kartoitus suorituskyvyn, UX:n ja konversion osalta."
+    },
+    "phase2": {
+      "label": "Vaihe 2",
+      "title": "Arkkitehtuuri ja strategia",
+      "description": "IA, konversio-first wireframet, SEO-hierarkia ja skaalautuvat järjestelmäpäätökset. Ei sivu kerrallaan arvaamista."
+    },
+    "phase3": {
+      "label": "Vaihe 3",
+      "title": "Design system ja UI",
+      "description": "Korkealaatuinen UI, oikea design system (typografia, spacing, komponentit) ja prototyypit tarvittaessa."
+    },
+    "phase4": {
+      "label": "Vaihe 4",
+      "title": "Rakennus ja optimointi",
+      "description": "Moderni stack, Core Web Vitals, CMS ja integraatiot sekä responsiivinen ja cross-browser QA."
+    },
+    "phase5": {
+      "label": "Vaihe 5",
+      "title": "Julkaisu ja skaalaus",
+      "description": "Julkaisu QA:lla, analytiikalla, CRO:lla ja iterointitiekartalla. Julkaisu on parantamisen alku."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Positionointi ]",
+    "heading": "Erilainen toimisto",
+    "intro": "Useimmat toimistot keskittyvät designiin ja toimitukseen. Me keskitymme järjestelmiin, suorituskykyyn ja tuloksiin.",
+    "contextP": "Kumppanin valinta ei ole freelancereita vastaan toimistoja. Kyse on ajattelun, toteutuksen ja pitkän aikavälin vaikutuksen tasosta, jota tarvitset.",
+    "tableCaption": "Kyvykkyysvertailu: Torpedo Web versus tyypilliset freelancerit ja perinteiset toimistot",
+    "columnCapability": "Kyvykkyys",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Tyypilliset freelancerit",
+    "columnAgencies": "Perinteiset toimistot",
+    "rows": {
+      "approach": {
+        "capability": "Lähestymistapa",
+        "torpedo": "Järjestelmät ensin, insinöörilähtöinen",
+        "freelancers": "Tehtäväpohjainen toteutus",
+        "agencies": "Design-first, prosessivetoinen"
+      },
+      "projectThinking": {
+        "capability": "Projektiajattelu",
+        "torpedo": "Liiketoiminta- ja suorituskykykeskeinen",
+        "freelancers": "Laajuusrajoitteinen toimitus",
+        "agencies": "Brändi- ja visuaalinen fokus"
+      },
+      "executionDepth": {
+        "capability": "Toteutuksen syvyys",
+        "torpedo": "Full-stack, skaalautuvat järjestelmät",
+        "freelancers": "Kapea erikoistuminen",
+        "agencies": "Tiimipohjainen mutta pirstaloitunut"
+      },
+      "performanceOptimization": {
+        "capability": "Suorituskyvyn optimointi",
+        "torpedo": "Sisäänrakennettu alusta alkaen",
+        "freelancers": "Harvoin priorisoitu",
+        "agencies": "Usein julkaisun jälkeinen lisä"
+      },
+      "speedAgility": {
+        "capability": "Nopeus ja ketteryys",
+        "torpedo": "Nopea, perustajatasoinen toteutus",
+        "freelancers": "Nopea mutta epäjohdonmukainen",
+        "agencies": "Hitaampi kerrosten vuoksi"
+      },
+      "longTermScalability": {
+        "capability": "Pitkän aikavälin skaalautuvuus",
+        "torpedo": "Suunniteltu kasvuun ja iterointiin",
+        "freelancers": "Rajoitettu skaalautuvuus",
+        "agencies": "Skaalautuva mutta jäykkä"
+      },
+      "clientExperience": {
+        "capability": "Asiakaskokemus",
+        "torpedo": "Suora, strateginen yhteistyö",
+        "freelancers": "Epämuodollinen viestintä",
+        "agencies": "Asiakkuusjohto, vähemmän suoraa"
+      }
+    },
+    "closingP": "Toimimme keskittyneenä insinöörkumppanina: freelancerin ketteryys toimistorakenteen ja luotettavuuden kanssa — ilman tavanomaisia kompromisseja.",
+    "startProject": "Aloita projekti",
+    "bookIntroCall": "Varaa intro-puhelu"
+  }
+}

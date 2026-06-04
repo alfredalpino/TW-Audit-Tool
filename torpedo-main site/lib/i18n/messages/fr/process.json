@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Feuille de route polyphasée ]",
+    "heading": "De l'idée à l'exécution, conçu pour des résultats",
+    "intro": "Des phases structurées pour concevoir, construire et faire évoluer des systèmes digitaux performants.",
+    "closingP": "Chaque phase vous rapproche de résultats mesurables, pas seulement d'un site livré.",
+    "startProject": "Démarrer votre projet",
+    "bookIntroCall": "Réserver un appel intro"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Étape 1",
+      "title": "Audit et déconstruction",
+      "description": "Audit technique des actifs, contexte concurrentiel et cartographie des écarts en performance, UX et conversion."
+    },
+    "phase2": {
+      "label": "Étape 2",
+      "title": "Architecture et stratégie",
+      "description": "IA, wireframes orientés conversion, hiérarchie SEO et décisions système scalables. Pas de devinettes page par page."
+    },
+    "phase3": {
+      "label": "Étape 3",
+      "title": "Design system et UI",
+      "description": "UI haute fidélité, un vrai design system (typo, espacements, composants) et prototypes quand le parcours l'exige."
+    },
+    "phase4": {
+      "label": "Étape 4",
+      "title": "Build et optimisation",
+      "description": "Stack moderne, Core Web Vitals, CMS et intégrations, plus QA responsive et multi-navigateurs."
+    },
+    "phase5": {
+      "label": "Étape 5",
+      "title": "Lancement et scale",
+      "description": "Mise en ligne avec QA, analytics, CRO et feuille de route d'itération. Le lancement est le début de l'amélioration."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Positionnement ]",
+    "heading": "Une agence différente",
+    "intro": "La plupart des agences se concentrent sur le design et la livraison. Nous, sur les systèmes, la performance et les résultats.",
+    "contextP": "Choisir un partenaire ne se résume pas à freelance versus agence. C'est le niveau de réflexion, d'exécution et d'impact long terme dont vous avez besoin.",
+    "tableCaption": "Comparaison des capacités : Torpedo Web versus freelances typiques et agences traditionnelles",
+    "columnCapability": "Capacité",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Freelances typiques",
+    "columnAgencies": "Agences traditionnelles",
+    "rows": {
+      "approach": {
+        "capability": "Approche",
+        "torpedo": "Systèmes d'abord, pilotée par l'ingénierie",
+        "freelancers": "Exécution par tâches",
+        "agencies": "Design d'abord, processus rigide"
+      },
+      "projectThinking": {
+        "capability": "Vision projet",
+        "torpedo": "Orientée business et performance",
+        "freelancers": "Livraison limitée au périmètre",
+        "agencies": "Focus marque et visuel"
+      },
+      "executionDepth": {
+        "capability": "Profondeur d'exécution",
+        "torpedo": "Full-stack, systèmes scalables",
+        "freelancers": "Spécialisation étroite",
+        "agencies": "Équipe mais fragmentée"
+      },
+      "performanceOptimization": {
+        "capability": "Optimisation performance",
+        "torpedo": "Intégrée dès le jour 1",
+        "freelancers": "Rarement priorisée",
+        "agencies": "Souvent en option post-lancement"
+      },
+      "speedAgility": {
+        "capability": "Vitesse et agilité",
+        "torpedo": "Exécution rapide, niveau fondateur",
+        "freelancers": "Rapide mais inconstant",
+        "agencies": "Plus lent à cause des couches"
+      },
+      "longTermScalability": {
+        "capability": "Scalabilité long terme",
+        "torpedo": "Conçu pour la croissance et l'itération",
+        "freelancers": "Scalabilité limitée",
+        "agencies": "Scalable mais rigide"
+      },
+      "clientExperience": {
+        "capability": "Expérience client",
+        "torpedo": "Collaboration directe et stratégique",
+        "freelancers": "Communication informelle",
+        "agencies": "Gestion de compte, moins direct"
+      }
+    },
+    "closingP": "Nous opérons comme un partenaire d'ingénierie focalisé : l'agilité du freelance avec la structure et la fiabilité d'une agence, sans les compromis habituels.",
+    "startProject": "Démarrer votre projet",
+    "bookIntroCall": "Réserver un appel intro"
+  }
+}

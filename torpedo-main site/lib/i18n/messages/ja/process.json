@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ 多相ロードマップ ]",
+    "heading": "アイデアから実行まで、成果に最適化された設計",
+    "intro": "パフォーマンスを発揮するデジタルシステムを設計・構築・スケールするための構造化フェーズ。",
+    "closingP": "各フェーズは、単なるサイト完成ではなく、測定可能な成果へ向けて前進します。",
+    "startProject": "プロジェクトを開始",
+    "bookIntroCall": "イントロコールを予約"
+  },
+  "phases": {
+    "phase1": {
+      "label": "フェーズ 1",
+      "title": "監査と分解",
+      "description": "資産の技術監査、競合コンテキスト、パフォーマンス・UX・コンバージョン目標にわたるギャップ分析。"
+    },
+    "phase2": {
+      "label": "フェーズ 2",
+      "title": "アーキテクチャと戦略",
+      "description": "IA、コンバージョン優先ワイヤー、SEO階層、スケーラブルなシステム判断。ページ単位の当て推量ではありません。"
+    },
+    "phase3": {
+      "label": "フェーズ 3",
+      "title": "デザインシステムとUI",
+      "description": "高忠実度UI、本物のデザインシステム（タイポ、スペーシング、コンポーネント）、必要に応じたプロトタイプ。"
+    },
+    "phase4": {
+      "label": "フェーズ 4",
+      "title": "構築と最適化",
+      "description": "モダンスタックでの構築、Core Web Vitals、CMSと連携、レスポンシブ・クロスブラウザQA。"
+    },
+    "phase5": {
+      "label": "フェーズ 5",
+      "title": "ローンチとスケール",
+      "description": "QA、分析、CRO、イテレーションロードマップとともにリリース。ローンチは改善の始まりです。"
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ ポジショニング ]",
+    "heading": "ひと味違うエージェンシー",
+    "intro": "多くのエージェンシーはデザインと納品に注力します。私たちはシステム、パフォーマンス、成果に注力します。",
+    "contextP": "パートナー選びは、フリーランス対エージェンシーではなく、必要な思考の深さ、実行力、長期的インパクトの問題です。",
+    "tableCaption": "能力比較：Torpedo Web vs 一般的なフリーランス vs 従来型エージェンシー",
+    "columnCapability": "能力",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "一般的なフリーランス",
+    "columnAgencies": "従来型エージェンシー",
+    "rows": {
+      "approach": {
+        "capability": "アプローチ",
+        "torpedo": "システムファースト、エンジニアリング主導",
+        "freelancers": "タスクベースの実行",
+        "agencies": "デザイン主導、プロセス重視"
+      },
+      "projectThinking": {
+        "capability": "プロジェクト思考",
+        "torpedo": "ビジネス＋パフォーマンス重視",
+        "freelancers": "スコープ限定の納品",
+        "agencies": "ブランド＋ビジュアル重視"
+      },
+      "executionDepth": {
+        "capability": "実行の深さ",
+        "torpedo": "フルスタック、スケーラブルなシステム",
+        "freelancers": "狭い専門分野",
+        "agencies": "チームベースだが断片化"
+      },
+      "performanceOptimization": {
+        "capability": "パフォーマンス最適化",
+        "torpedo": "初日から組み込み",
+        "freelancers": "優先されにくい",
+        "agencies": "ローンチ後のアドオンになりがち"
+      },
+      "speedAgility": {
+        "capability": "スピードと機敏性",
+        "torpedo": "迅速、創業者レベルの実行",
+        "freelancers": "速いが一貫性に欠ける",
+        "agencies": "レイヤーが多く遅い"
+      },
+      "longTermScalability": {
+        "capability": "長期スケーラビリティ",
+        "torpedo": "成長とイテレーション向けに設計",
+        "freelancers": "スケールに限界",
+        "agencies": "スケール可能だが硬直"
+      },
+      "clientExperience": {
+        "capability": "クライアント体験",
+        "torpedo": "直接的で戦略的な協働",
+        "freelancers": "非公式なコミュニケーション",
+        "agencies": "アカウント管理、間接的"
+      }
+    },
+    "closingP": "私たちは集中型エンジニアリングパートナーとして、フリーランスの機敏性とエージェンシーの構造・信頼性を、通常のトレードオフなしに提供します。",
+    "startProject": "プロジェクトを開始",
+    "bookIntroCall": "イントロコールを予約"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "metaDescription": "Torpedo Web プライバシーポリシー。データの収集、利用、保護について。",
+    "lastUpdated": "最終更新：2026年3月5日",
+    "intro": "TorpedoWeb LLCは、当社Webサイトへの訪問またはデジタルエンジニアリングサービスの利用時に、個人情報をどのように収集・利用・開示・保護するかを説明します。",
+    "authoritativeNotice": "法的拘束力のある正式版は、torpedoweb.org/privacy-policy に掲載されている英語全文です。",
+    "scopeHeading": "1. 適用範囲と当社の役割",
+    "scopeBody": "文脈に応じて、TorpedoWebはWebサイト訪問者および見込みクライアントに対するデータ管理者として、またはデータ処理追加契約に基づきクライアントに代わって個人データを処理するデータ処理者として機能します。",
+    "collectHeading": "2. 収集する情報",
+    "collectBody": "フォーム、契約、Cookieや分析などの自動化技術を通じて提供いただく識別情報、取引記録、インターネット活動、業務連絡先を収集する場合があります。",
+    "rightsHeading": "3. お客様の権利",
+    "rightsBody": "適用法令によりアクセス、訂正、削除、ポータビリティ、異議申立ての権利が認められる場合、当社までご連絡ください。GDPR、英国GDPR、CCPA/CPRAその他適用法令が定める期限内に回答します。",
+    "contactHeading": "4. お問い合わせ",
+    "contactBody": "プライバシーに関するご質問・ご請求は privacy@torpedoweb.org または TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States までご連絡ください。"
+  },
+  "terms": {
+    "title": "利用規約",
+    "metaDescription": "Torpedo Web 利用規約。成長インフラパートナー。",
+    "lastUpdated": "最終更新：2026年3月5日",
+    "intro": "本規約は、TorpedoWeb.org の利用および当社のデジタルエンジニアリング、マーケティング関連の専門サービスに適用されます。",
+    "authoritativeNotice": "法的拘束力のある正式版は、torpedoweb.org/terms-of-service に掲載されている英語全文です。",
+    "scopeHeading": "1. 合意とサービス",
+    "scopeBody": "当社Webサイトの利用またはTorpedoWebとの契約により、本規約および双方が署名した作業内容書に同意したものとみなされます。サービスは提案書、契約、注文書に記載のとおり提供されます。",
+    "collectHeading": "2. クライアントの責任",
+    "collectBody": "適時のアクセス、正確な情報、成果物の適法な利用を提供することに同意します。バックアップ、第三者アカウント、貴社ビジネスおよびエンドユーザーに適用される法令の遵守はお客様の責任です。",
+    "rightsHeading": "3. 料金、知的財産、責任制限",
+    "rightsBody": "料金、支払スケジュール、知的財産の帰属は契約で定義されます。責任は法令で認められる範囲に限定され、間接損害・結果損害は除外されます（強行法規の場合を除く）。",
+    "contactHeading": "4. お問い合わせ",
+    "contactBody": "本規約に関するご質問は legal@torpedoweb.org または TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States までご連絡ください。"
+  },
+  "dmca": {
+    "title": "DMCA ポリシー",
+    "metaDescription": "Torpedo Web DMCA ポリシー。著作権侵害通知と反通知。",
+    "lastUpdated": "最終更新：2026年3月5日",
+    "intro": "TorpedoWebは知的財産権を尊重し、米国デジタルミレニアム著作権法（DMCA）に基づく有効な通知に対応します。",
+    "authoritativeNotice": "法的拘束力のある正式版は、torpedoweb.org/dmca に掲載されている英語全文です。",
+    "scopeHeading": "1. 指定代理人",
+    "scopeBody": "著作権者は、17 U.S.C. § 512(c)(3) で要求される情報とともに、指定代理人へ侵害通知を提出できます。当社は侵害の疑いのある素材へのアクセスを削除または無効化する場合があります。",
+    "collectHeading": "2. 反通知",
+    "collectBody": "コンテンツが誤って削除されたと考える場合、連絡先、該当素材の特定、削除が誤りであった旨の偽証罪の下での声明を含む反通知を提出できます。",
+    "rightsHeading": "3. 反復侵害者",
+    "rightsBody": "適用法令および契約関係に従い、反復侵害者のアカウントまたはアクセスを終了する場合があります。",
+    "contactHeading": "4. お問い合わせ",
+    "contactBody": "DMCA通知は dmca@torpedoweb.org または TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States までお送りください。"
+  }
+}

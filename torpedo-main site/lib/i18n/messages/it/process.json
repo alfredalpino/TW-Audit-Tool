@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ Roadmap polifasica ]",
+    "heading": "Dall'idea all'esecuzione, progettato per i risultati",
+    "intro": "Fasi strutturate per progettare, costruire e scalare sistemi digitali performanti.",
+    "closingP": "Ogni fase ti avvicina a risultati misurabili, non solo a un sito consegnato.",
+    "startProject": "Avvia il tuo progetto",
+    "bookIntroCall": "Prenota intro call"
+  },
+  "phases": {
+    "phase1": {
+      "label": "Fase 1",
+      "title": "Audit e deconstruzione",
+      "description": "Audit tecnico degli asset, contesto competitivo e mappatura dei gap su performance, UX e conversione."
+    },
+    "phase2": {
+      "label": "Fase 2",
+      "title": "Architettura e strategia",
+      "description": "IA, wireframe conversion-first, gerarchia SEO e decisioni di sistema scalabili. Niente congetture pagina per pagina."
+    },
+    "phase3": {
+      "label": "Fase 3",
+      "title": "Design system e UI",
+      "description": "UI ad alta fedeltà, un vero design system (tipografia, spacing, componenti) e prototipi quando il flusso li richiede."
+    },
+    "phase4": {
+      "label": "Fase 4",
+      "title": "Build e ottimizzazione",
+      "description": "Stack moderno, Core Web Vitals, CMS e integrazioni, più QA responsive e cross-browser."
+    },
+    "phase5": {
+      "label": "Fase 5",
+      "title": "Lancio e scale",
+      "description": "Go-live con QA, analytics, CRO e roadmap di iterazione. Il lancio è l'inizio del miglioramento."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Posizionamento ]",
+    "heading": "Un'agenzia diversa",
+    "intro": "La maggior parte delle agenzie si concentra su design e delivery. Noi su sistemi, performance e risultati.",
+    "contextP": "Scegliere un partner non è freelancer versus agenzie. È il livello di pensiero, esecuzione e impatto a lungo termine di cui hai bisogno.",
+    "tableCaption": "Confronto capacità: Torpedo Web versus freelancer tipici e agenzie tradizionali",
+    "columnCapability": "Capacità",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "Freelancer tipici",
+    "columnAgencies": "Agenzie tradizionali",
+    "rows": {
+      "approach": {
+        "capability": "Approccio",
+        "torpedo": "Sistemi first, guidato dall'ingegneria",
+        "freelancers": "Esecuzione task-based",
+        "agencies": "Design-first, process-driven"
+      },
+      "projectThinking": {
+        "capability": "Pensiero di progetto",
+        "torpedo": "Focalizzato su business e performance",
+        "freelancers": "Delivery limitato allo scope",
+        "agencies": "Focus brand e visivo"
+      },
+      "executionDepth": {
+        "capability": "Profondità di esecuzione",
+        "torpedo": "Full-stack, sistemi scalabili",
+        "freelancers": "Specializzazione ristretta",
+        "agencies": "Team-based ma frammentato"
+      },
+      "performanceOptimization": {
+        "capability": "Ottimizzazione performance",
+        "torpedo": "Integrata dal giorno uno",
+        "freelancers": "Raramente prioritaria",
+        "agencies": "Spesso add-on post-lancio"
+      },
+      "speedAgility": {
+        "capability": "Velocità e agilità",
+        "torpedo": "Esecuzione rapida a livello founder",
+        "freelancers": "Veloce ma inconsistente",
+        "agencies": "Più lento per i livelli"
+      },
+      "longTermScalability": {
+        "capability": "Scalabilità a lungo termine",
+        "torpedo": "Progettato per crescita e iterazione",
+        "freelancers": "Scalabilità limitata",
+        "agencies": "Scalabile ma rigido"
+      },
+      "clientExperience": {
+        "capability": "Esperienza cliente",
+        "torpedo": "Collaborazione diretta e strategica",
+        "freelancers": "Comunicazione informale",
+        "agencies": "Account-managed, meno diretto"
+      }
+    },
+    "closingP": "Operiamo come partner di ingegneria focalizzato: agilità da freelancer con struttura e affidabilità da agenzia, senza i soliti compromessi.",
+    "startProject": "Avvia il tuo progetto",
+    "bookIntroCall": "Prenota intro call"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ 인프라, 장식이 아님 ]",
+  "heading": "웹사이트를 만들지 않습니다. 수익 시스템을 구축합니다.",
+  "cards": {
+    "webFoundation": {
+      "title": "웹 기반",
+      "subtitle": "성능 레이어",
+      "body": "빠르게 로드되고 상위에 노출되며, 단일 측정 가능한 행동으로 사용자를 이끄는 전환 설계 페이지. 예쁜 것이 아니라 기능합니다.",
+      "bullet1": "Next.js / React 스택",
+      "bullet2": "Core Web Vitals 목표",
+      "bullet3": "스키마 + 기술 SEO 기준",
+      "bullet4": "모바일 우선 반응형 엔지니어링"
+    },
+    "automation": {
+      "title": "자동화 레이어",
+      "subtitle": "운영 레이어",
+      "body": "리드 캡처, CRM 라우팅, 후속 시퀀스, 업무 워크플로. 웹사이트가 잠든 사이에도 일합니다.",
+      "bullet1": "폼 → CRM 라우팅",
+      "bullet2": "알림 + SLA",
+      "bullet3": "워크플로 훅(Zapier / Make / 맞춤)",
+      "bullet4": "운영 대시보드"
+    },
+    "execution": {
+      "title": "실행 엔진",
+      "subtitle": "복합 성장 레이어",
+      "body": "주간 반복. A/B 테스트. Core Web Vitals 모니터링. SEO 복리. 프로젝트가 아니라 지속 개선의 시스템입니다.",
+      "bullet1": "주간 성능 리뷰",
+      "bullet2": "실험 백로그",
+      "bullet3": "SEO 복리 모델",
+      "bullet4": "월간 리포트 루프"
+    }
+  }
+}

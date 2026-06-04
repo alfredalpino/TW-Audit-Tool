@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web 代理 | 网站开发与增长基础设施",
+    "description": "Torpedo Web 为需要可衡量增长的创始人设计并构建高性能网站、技术 SEO 系统与转化基础设施。",
+    "ogTitle": "Torpedo Web 代理 | 网站开发与增长基础设施",
+    "ogDescription": "面向需要可衡量增长创始人的高意图网站开发、技术 SEO 与转化系统。",
+    "keywords": "网站开发代理, 技术SEO, 转化率优化, Next.js开发, 增长基础设施, 创始人主导网站代理"
+  },
+  "services": {
+    "title": "网站开发与数字服务 | Torpedo Web",
+    "description": "性能工程、技术 SEO、自动化与转化系统——作为基础设施构建，而非一次性项目。",
+    "ogTitle": "能力 | Torpedo Web 代理",
+    "ogDescription": "面向衡量成果的创始人的 Web 基座、自动化层与执行引擎。",
+    "keywords": "网站开发服务, 技术SEO代理, 转化率优化, Next.js代理"
+  },
+  "process": {
+    "title": "我们的流程 | Torpedo Web 代理",
+    "description": "结构化构建流程：诊断、架构、交付与复利——每个阶段创始人级问责。",
+    "ogTitle": "我们如何构建 | Torpedo Web",
+    "ogDescription": "诊断优先的网站开发流程，为速度、搜索可见性与转化而设计。",
+    "keywords": "网站开发流程, 代理工作流, 技术发现, 性能优先构建"
+  },
+  "systems": {
+    "title": "系统与作品集 | Torpedo Web",
+    "description": "我们构建的收入系统——已投入生产的性能、搜索与转化基础设施。",
+    "ogTitle": "系统 | Torpedo Web 代理",
+    "ogDescription": "为可衡量增长而构建的案例与系统。",
+    "keywords": "网站代理作品集, 转化系统, 性能案例"
+  },
+  "blog": {
+    "title": "洞察与快讯 | Torpedo Web 博客",
+    "description": "关于网站性能、技术 SEO 与转化基础设施的战略洞察——零噪音。",
+    "ogTitle": "Torpedo Web 博客",
+    "ogDescription": "面向创始人的数字基础设施与增长系统洞察。",
+    "keywords": "网站开发博客, 技术SEO洞察, 转化策略"
+  },
+  "whatWeDo": {
+    "title": "我们构建什么 | Torpedo Web",
+    "description": "收入与运营系统、网站开发、设计系统，以及为严肃品牌打造的可扩展基础设施。",
+    "ogTitle": "我们构建什么 | Torpedo Web",
+    "ogDescription": "面向衡量成果运营者的收入系统、网站开发与可扩展基础设施。",
+    "keywords": "网站开发服务, 设计系统, 收入基础设施, 增长系统"
+  },
+  "privacyPolicy": {
+    "title": "隐私政策 | Torpedo Web",
+    "description": "Torpedo Web 隐私政策。我们如何收集、使用和保护您的数据。",
+    "ogTitle": "隐私政策 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web 如何收集、使用和保护您的个人数据。",
+    "keywords": "隐私政策, 数据保护, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "服务条款 | Torpedo Web",
+    "description": "Torpedo Web 服务条款。增长基础设施合作伙伴。",
+    "ogTitle": "服务条款 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web 服务与网站使用条款。",
+    "keywords": "服务条款, Torpedo Web 条款"
+  },
+  "dmca": {
+    "title": "DMCA 政策 | Torpedo Web",
+    "description": "Torpedo Web DMCA 政策。我们如何处理版权侵权通知与反通知。",
+    "ogTitle": "DMCA 政策 | TORPEDO WEB",
+    "ogDescription": "版权侵权通知与反通知流程。",
+    "keywords": "DMCA政策, 版权, Torpedo Web"
+  }
+}

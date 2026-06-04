@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ DIGITAL INFRASTRUKTURPARTNER ]",
+  "heroTitlePrefix": "Ditt företag är",
+  "heroTitleHighlight": "osynligt",
+  "heroTitleMiddle": "utan en webbplats som",
+  "heroTitleEnd": "presterar.",
+  "heroSubtitle": "De flesta företag förlorar 60–80 % av sina kvalificerade leads till konkurrenter med bättre digital infrastruktur. Inte bättre produkter. Bättre webbplatser.",
+  "scrollHint": "Scrolla",
+  "services": {
+    "webFoundation": {
+      "title": "Webbfundament",
+      "subtitle": "Prestandalagret",
+      "description": "Konverteringsarkitekterade sidor: snabba, sökbara och styr mot en mätbar handling."
+    },
+    "automation": {
+      "title": "Automationslager",
+      "subtitle": "Operationslagret",
+      "description": "Lead capture, CRM-routing, uppföljningssekvenser. Din webbplats arbetar medan du sover."
+    },
+    "execution": {
+      "title": "Exekveringsmotor",
+      "subtitle": "Compound-tillväxtlagret",
+      "description": "Veckovis iteration, A/B-tester, SEO-compound — ett system i kontinuerlig förbättring."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals optimerade",
+    "seo": "Teknisk SEO inkluderad från start",
+    "conversion": "Konverteringsarkitektur som standard",
+    "founderLed": "Grundare-till-grundare-leverans"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ DEN OSYNLIGA SKATTEN ]",
+    "heading": "Lönsamma företag blöder intäkter online varje dag.",
+    "scenarioIntro": "Ett scenario de flesta grundare känner igen men sällan kvantifierar.",
+    "scenarioP1": "En seriös köpare söker din tjänst. Hen hittar en konkurrent först — inte för att konkurrenten är bättre, utan för att deras webbplats laddar på 1,2 sekunder istället för 6,4. Rubriken svarar på frågan. CTA:n syns direkt. Din gör inte det.",
+    "scenarioP2": "Du visste inte att leadet fanns. Konkurrenten stängde affären.",
+    "scenarioP3": "Det här är inte ett marknadsföringsproblem. Det är ett infrastrukturproblem.",
+    "stat1Value": "75 %",
+    "stat1Caption": "av användare bedömer ett företags trovärdighet utifrån webbplatsens design.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88 %",
+    "stat2Caption": "av onlinekonsumenter återvänder sällan efter en dålig upplevelse.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 sekund",
+    "stat3Caption": "fördröjning i laddningstid minskar konverteringar med cirka 7 % per sekund.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3,5×",
+    "stat4Caption": "fler kvalificerade leads för företag med SEO-optimerade, högpresterande webbplatser.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "Att sakna en bra webbplats syns inte i ett kalkylblad. Det är intäkter som aldrig kom.",
+    "cta": "Bygg infrastrukturen som fångar dem"
+  },
+  "paradox": {
+    "quoteOpen": "Mitt företag går bra",
+    "quoteHighlight": "utan",
+    "quoteClose": "en ordentlig webbplats.",
+    "bodyIntro": "Varje blomstrande offline-verksamhet har ett tak.",
+    "bodyP1": "Mun-till-mun skalar tills det inte gör det. Rekommendationer sina. En konkurrent startar en webbplats för 400 kr/mån och börjar fånga sökningar du inte visste fanns.",
+    "bodyP2": "Michelin-restaurangen utan bokningssida förlorar bord till bistron med OpenTable. Entreprenören som inte rankar lokalt förlorar mot ett nyare bolag med en 30 000 kr webbplats och 12 Google-recensioner.",
+    "bodyP3": "Synlighet compoundar. Osynlighet också.",
+    "bodyP4": "Frågan är aldrig \"Behöver jag en webbplats?\" Utan: \"Hur mycket har jag redan förlorat genom att vänta?\""
+  },
+  "socialProof": {
+    "eyebrow": "[ KUNDRESULTAT ]",
+    "heading": "Levererat för grundare, operatörer och seriösa varumärken.",
+    "carouselLabel": "Kundberättelser",
+    "prevReview": "Föregående omdöme",
+    "nextReview": "Nästa omdöme",
+    "chooseReview": "Välj omdöme",
+    "showReview": "Visa omdöme"
+  },
+  "manifesto": {
+    "headingLine1": "Webben är inte trasig.",
+    "headingLine2": "De flesta företag har aldrig byggt sin som ett system.",
+    "ctaSecondary": "Se systemtänkande"
+  },
+  "processTeaser": {
+    "srHeading": "Översikt av byggprocessen",
+    "seeFullLink": "Se hela byggsystemet",
+    "phase1": {
+      "name": "Audit och dekonstruktion",
+      "duration": "Vecka 1",
+      "line": "Teknisk audit, SEO-struktur, konverteringsgap, konkurrentmatris. Benchmarks före pixlar."
+    },
+    "phase2": {
+      "name": "Arkitektur och strategi",
+      "duration": "Vecka 1–2",
+      "line": "IA, conversion-first-hierarki, URL + CMS-arkitektur, keyword-topologi så varje sida mappar till en metric."
+    },
+    "phase3": {
+      "name": "Design system och UI",
+      "duration": "Vecka 2–3",
+      "line": "Token-nivåsystem i Figma, komponenter, prototyper med regler som skalar efter lansering."
+    },
+    "phase4": {
+      "name": "Bygg och optimering",
+      "duration": "Vecka 3–6",
+      "line": "Next.js-engineering, CMS, analytics, QA mot LCP under 1,5 s."
+    },
+    "phase5": {
+      "name": "Lansering och sammansatt tillväxt",
+      "duration": "Vecka 6 → löpande",
+      "line": "Övervakning, veckovis iteration, SEO + CRO compounding. Lansering är baslinjen, inte mållinjen."
+    }
+  },
+  "faq": {
+    "heading": "Vanliga frågor",
+    "items": [
+      {
+        "question": "Varför Torpedo Web framför freelancer eller traditionell byrå?",
+        "answer": "De flesta freelancers optimerar leverabler. Traditionella byråer optimerar timmar. Torpedo Web optimerar infrastruktur: prestandabudgetar, konverteringsarkitektur, teknisk SEO som standard, analytics och iterationsrytmer du kan köra som system — inte engångsprojekt."
+      },
+      {
+        "question": "Kan ni förbättra en befintlig webbplats utan att bygga om?",
+        "answer": "Ja. Vi börjar med teknisk och konverteringsaudit, fixar strukturella flaskhalsar, skärper informationsarkitekturen och instrumenterar analytics. Vi rekommenderar full ombyggnad bara när er stack hindrar latency-, SEO- eller konverteringsmål."
+      },
+      {
+        "question": "Vad ska jag förbereda inför ett upptäcktsamtal?",
+        "answer": "Er primära URL, trafikkanaler, konverteringsmål (lead, bokning, försäljning), verktyg (CRM, formulär, annonser) och metrics ni litar på — även ungefärliga. Vi översätter det till en prioriterad systemkarta, inte en generisk presentation."
+      },
+      {
+        "question": "Arbetar ni med indiska företag eller bara internationellt?",
+        "answer": "Båda. Vi verkar i USA och Indien med lokala linjer och leveransflöden. Ingenjörsstandarder och prestandamål är samma; taktik anpassas till geografi."
+      },
+      {
+        "question": "Vad får era webbplatser att faktiskt prestera i sök?",
+        "answer": "Teknisk SEO behandlas som infrastruktur: URL-topologi, schema, crawl-klarhet, internlänkning, Core Web Vitals som ranking-spak och innehåll mappat till intent — inte en checklist i slutet."
+      },
+      {
+        "question": "Mitt företag går redan bra. Varför en bättre webbplats nu?",
+        "answer": "Mun-till-mun skalar tills det stannar. Konkurrenter fångar efterfrågan du inte ser. Frågan är inte om du behöver en digital dörr, utan hur mycket intäkter som redan dirigerats till snabbare och bättre instrumenterade aktörer."
+      }
+    ]
+  }
+}

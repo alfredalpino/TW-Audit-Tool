@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "metaDescription": "Torpedo Web 개인정보 처리방침. 데이터 수집, 이용, 보호 방법.",
+    "lastUpdated": "최종 업데이트: 2026년 3월 5일",
+    "intro": "TorpedoWeb LLC는 웹사이트 방문 또는 디지털 엔지니어링 서비스 이용 시 개인정보를 수집·이용·공개·보호하는 방법을 설명합니다.",
+    "authoritativeNotice": "법적 구속력이 있는 공식 버전은 torpedoweb.org/privacy-policy에 게시된 전체 영문 텍스트입니다.",
+    "scopeHeading": "1. 적용 범위 및 당사 역할",
+    "scopeBody": "상황에 따라 TorpedoWeb은 웹사이트 방문자 및 잠재 고객에 대한 데이터 관리자로, 또는 데이터 처리 부록에 따라 고객을 대신해 개인정보를 처리하는 처리자로 기능합니다.",
+    "collectHeading": "2. 수집하는 정보",
+    "collectBody": "양식, 계약, 쿠키 및 분석 등 자동화 기술을 통해 제공하시는 식별 정보, 거래 기록, 인터넷 활동, 업무 연락처를 수집할 수 있습니다.",
+    "rightsHeading": "3. 귀하의 권리",
+    "rightsBody": "적용 법률에 따라 열람, 정정, 삭제, 이동, 이의 제기 권리가 부여되는 경우 당사에 연락하여 행사할 수 있습니다. GDPR, 영국 GDPR, CCPA/CPRA 및 기타 적용 법률이 정한 기한 내에 답변합니다.",
+    "contactHeading": "4. 문의",
+    "contactBody": "개인정보 관련 문의 또는 요청은 privacy@torpedoweb.org 또는 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States로 보내 주세요."
+  },
+  "terms": {
+    "title": "서비스 약관",
+    "metaDescription": "Torpedo Web 서비스 약관. 성장 인프라 파트너.",
+    "lastUpdated": "최종 업데이트: 2026년 3월 5일",
+    "intro": "본 약관은 TorpedoWeb.org 이용 및 당사의 디지털 엔지니어링, 마케팅 및 관련 전문 서비스에 적용됩니다.",
+    "authoritativeNotice": "법적 구속력이 있는 공식 버전은 torpedoweb.org/terms-of-service에 게시된 전체 영문 텍스트입니다.",
+    "scopeHeading": "1. 합의 및 서비스",
+    "scopeBody": "웹사이트를 이용하거나 TorpedoWeb과 계약하면 본 약관 및 양측이 서명한 작업 명세서에 동의한 것으로 봅니다. 서비스는 제안서, 계약 또는 주문서에 기술된 대로 제공됩니다.",
+    "collectHeading": "2. 고객 책임",
+    "collectBody": "적시에 접근 권한, 정확한 정보, 산출물의 적법한 이용을 제공하는 데 동의합니다. 백업, 제3자 계정, 귀사 비즈니스 및 최종 사용자에게 적용되는 법률 준수는 고객 책임입니다.",
+    "rightsHeading": "3. 수수료, 지적재산권 및 책임 제한",
+    "rightsBody": "수수료, 지급 일정, 지적재산권 귀속은 계약에서 정의됩니다. 책임은 법률이 허용하는 범위로 제한되며, 간접 또는 결과적 손해는 배제됩니다(강행법규가 달리 정하는 경우 제외).",
+    "contactHeading": "4. 문의",
+    "contactBody": "본 약관 관련 문의는 legal@torpedoweb.org 또는 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States로 보내 주세요."
+  },
+  "dmca": {
+    "title": "DMCA 정책",
+    "metaDescription": "Torpedo Web DMCA 정책. 저작권 침해 통지 및 반박 통지.",
+    "lastUpdated": "최종 업데이트: 2026년 3월 5일",
+    "intro": "TorpedoWeb은 지적재산권을 존중하며 미국 디지털 밀레니엄 저작권법(DMCA)에 따른 유효한 통지에 대응합니다.",
+    "authoritativeNotice": "법적 구속력이 있는 공식 버전은 torpedoweb.org/dmca에 게시된 전체 영문 텍스트입니다.",
+    "scopeHeading": "1. 지정 대리인",
+    "scopeBody": "저작권자는 17 U.S.C. § 512(c)(3)에서 요구하는 정보와 함께 지정 대리인에게 침해 통지를 제출할 수 있습니다. 당사는 침해가 의심되는 자료에 대한 접근을 제거하거나 비활성화할 수 있습니다.",
+    "collectHeading": "2. 반박 통지",
+    "collectBody": "콘텐츠가 오류로 제거되었다고 생각하시면 연락처, 해당 자료 식별, 제거가 잘못되었음을 위증죄 아래에서 진술하는 반박 통지를 제출할 수 있습니다.",
+    "rightsHeading": "3. 반복 침해자",
+    "rightsBody": "적절한 경우 적용 법률 및 계약 관계에 따라 반복 침해자의 계정 또는 접근을 종료할 수 있습니다.",
+    "contactHeading": "4. 문의",
+    "contactBody": "DMCA 통지는 dmca@torpedoweb.org 또는 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States로 보내 주세요."
+  }
+}

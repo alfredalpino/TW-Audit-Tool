@@ -1,0 +1,63 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+export function AuditUrlForm() {
+  const router = useRouter();
+  const [url, setUrl] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
+    try {
+      const res = await fetch("/api/audits", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error ?? "Failed to start audit");
+        return;
+      }
+      router.push(`/audit/${data.runId}`);
+    } catch {
+      setError("Network error — try again");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <form
+      id="audit"
+      onSubmit={handleSubmit}
+      className="flex w-full max-w-2xl flex-col gap-3 sm:flex-row"
+    >
+      <Input
+        type="text"
+        name="url"
+        placeholder="Enter website URL — e.g. example.com"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        required
+        aria-label="Website URL"
+        autoComplete="url"
+      />
+      <Button type="submit" variant="brand" size="lg" withArrow disabled={loading} className="shrink-0">
+        {loading ? "Starting…" : "Run Free Audit"}
+      </Button>
+      {error && (
+        <p className="w-full text-sm text-red-400 sm:col-span-2" role="alert">
+          {error}
+        </p>
+      )}
+    </form>
+  );
+}

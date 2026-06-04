@@ -1,0 +1,63 @@
+{
+  "name": "torpedo-web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "node scripts/start-dev-with-logging.mjs",
+    "dev:kill": "sh scripts/kill-dev.sh",
+    "build": "next build --webpack",
+    "start": "next start",
+    "preview": "next build && next start",
+    "analyze": "ANALYZE=true next build",
+    "seo:validate-local-dataset": "node --experimental-strip-types scripts/validate-local-seo-dataset.mjs",
+    "seo:export-local-master-sheet": "node --experimental-strip-types scripts/export-local-seo-master-sheet.mjs",
+    "seo:build-optimization-queue": "node scripts/build-seo-optimization-queue.mjs",
+    "create-admin": "node scripts/create-admin-user.mjs",
+    "indexnow:generate-key": "node scripts/generate-indexnow-key.mjs",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
+    "i18n:validate": "node scripts/validate-i18n.mjs"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "@upstash/ratelimit": "^1.2.1",
+    "@upstash/redis": "^1.34.9",
+    "@vercel/speed-insights": "^1.3.1",
+    "framer-motion": "^12.29.0",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.563.0",
+    "next": "16.2.7",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "resend": "^6.9.2",
+    "three": "^0.183.2"
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 111",
+      "edge >= 111",
+      "firefox >= 111",
+      "safari >= 16.4"
+    ],
+    "modern": [
+      "chrome >= 111",
+      "edge >= 111",
+      "firefox >= 111",
+      "safari >= 16.4"
+    ]
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "16.2.7",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.183.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "~5.8.2"
+  }
+}

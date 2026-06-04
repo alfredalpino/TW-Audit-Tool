@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web | Webentwicklung & Growth-Infrastruktur Schweiz",
+    "description": "Wir entwickeln hochperformante Websites, technisches SEO und Conversion-Infrastruktur für Gründer, die messbare Ergebnisse erwarten.",
+    "ogTitle": "Torpedo Web | Webentwicklung & Growth-Infrastruktur",
+    "ogDescription": "Performance-orientierte Webentwicklung, technisches SEO und Conversion-Systeme für die Schweiz.",
+    "keywords": "Webagentur Schweiz, Webentwicklung Zürich, technisches SEO, Next.js Entwicklung, Conversion Optimierung, digitale Infrastruktur KMU"
+  },
+  "services": {
+    "title": "Webentwicklung & Digital Services | Torpedo Web",
+    "description": "Performance Engineering, technisches SEO, Automatisierung und Conversion-Systeme — Infrastruktur statt Einzelprojekte.",
+    "ogTitle": "Leistungen | Torpedo Web",
+    "ogDescription": "Web-Fundament, Automatisierung und Execution Engine für messbares Wachstum.",
+    "keywords": "Webentwicklung Dienstleistungen Schweiz, SEO Agentur, Conversion Optimierung"
+  },
+  "process": {
+    "title": "Unser Prozess | Torpedo Web",
+    "description": "Strukturierter Build-Prozess: diagnostizieren, architektieren, liefern, optimieren — mit Founder-Verantwortung in jeder Phase.",
+    "ogTitle": "So bauen wir | Torpedo Web",
+    "ogDescription": "Diagnose-first Webentwicklung für Speed, Sichtbarkeit und Conversion.",
+    "keywords": "Webentwicklung Prozess, Agentur Workflow, technische Discovery"
+  },
+  "systems": {
+    "title": "Systeme & Portfolio | Torpedo Web",
+    "description": "Revenue-Systeme in Produktion — Performance, Search und Conversion.",
+    "ogTitle": "Systeme | Torpedo Web",
+    "ogDescription": "Case Studies und Systeme für messbares Wachstum.",
+    "keywords": "Webagentur Portfolio, Conversion Systeme, Performance Case Studies"
+  },
+  "blog": {
+    "title": "Einblicke & Dispatch | Torpedo Web Blog",
+    "description": "Strategische Insights zu Web-Performance, technischem SEO und Conversion-Infrastruktur.",
+    "ogTitle": "Torpedo Web Blog | Einblicke",
+    "ogDescription": "Founder-fokussierte Insights zu digitaler Infrastruktur.",
+    "keywords": "Webentwicklung Blog, technisches SEO Schweiz, Conversion Strategie"
+  },
+  "whatWeDo": {
+    "title": "Was Wir Bauen | Torpedo Web",
+    "description": "Revenue- und Operations-Systeme, Webentwicklung, Design Systems und skalierbare Infrastruktur für ernsthafte Marken.",
+    "ogTitle": "Was Wir Bauen | Torpedo Web",
+    "ogDescription": "Revenue-Systeme, Webentwicklung und skalierbare Infrastruktur für Operatoren, die Ergebnisse messen.",
+    "keywords": "Webentwicklung Schweiz, Design Systems, Revenue Infrastruktur, Wachstumssysteme"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung | Torpedo Web",
+    "description": "Datenschutzerklärung von Torpedo Web. Wie wir Ihre Daten erheben, nutzen und schützen.",
+    "ogTitle": "Datenschutzerklärung | TORPEDO WEB",
+    "ogDescription": "Wie Torpedo Web personenbezogene Daten erhebt, nutzt und schützt.",
+    "keywords": "Datenschutz, Datenschutzerklärung, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Nutzungsbedingungen | Torpedo Web",
+    "description": "Nutzungsbedingungen von Torpedo Web. Growth-Infrastruktur-Partner.",
+    "ogTitle": "Nutzungsbedingungen | TORPEDO WEB",
+    "ogDescription": "Bedingungen für die Nutzung der Torpedo Web Dienste und Website.",
+    "keywords": "Nutzungsbedingungen, AGB Torpedo Web"
+  },
+  "dmca": {
+    "title": "DMCA-Richtlinie | Torpedo Web",
+    "description": "DMCA-Richtlinie von Torpedo Web. Wie wir Urheberrechtsverletzungsmeldungen und Gegenmeldungen bearbeiten.",
+    "ogTitle": "DMCA-Richtlinie | TORPEDO WEB",
+    "ogDescription": "Verfahren für Urheberrechtsverletzungsmeldungen und Gegenmeldungen.",
+    "keywords": "DMCA Richtlinie, Urheberrecht, Torpedo Web"
+  }
+}

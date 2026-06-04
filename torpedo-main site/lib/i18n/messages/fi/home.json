@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ DIGITAALINEN INFRASTRUKTUURIPARTNERI ]",
+  "heroTitlePrefix": "Yrityksesi on",
+  "heroTitleHighlight": "näkymätön",
+  "heroTitleMiddle": "ilman verkkosivustoa, joka",
+  "heroTitleEnd": "suoriutuu.",
+  "heroSubtitle": "Useimmat yritykset menettävät 60–80 % pätevistä liideistään kilpailijoille, joilla on parempi digitaalinen infrastruktuuri. Ei parempaa tuotetta. Parempi verkkosivusto.",
+  "scrollHint": "Vieritä",
+  "services": {
+    "webFoundation": {
+      "title": "Verkkoperusta",
+      "subtitle": "Suorituskykykerros",
+      "description": "Konversioon suunnitellut sivut: nopeat, hakukoneystävälliset ja ohjaavat yhteen mitattavaan toimintoon."
+    },
+    "automation": {
+      "title": "Automaatiokerros",
+      "subtitle": "Operatiivinen kerros",
+      "description": "Liidien keruu, CRM-reititys, seurantaviestit. Verkkosivustosi työskentelee, kun sinä et."
+    },
+    "execution": {
+      "title": "Toteutusmoottori",
+      "subtitle": "Kasvun compound-kerros",
+      "description": "Viikoittainen iterointi, A/B-testit, SEO-compound — järjestelmä jatkuvassa parantamisessa."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals optimoitu",
+    "seo": "Tekninen SEO mukana alusta alkaen",
+    "conversion": "Konversioarkkitehtuuri oletuksena",
+    "founderLed": "Perustajalta perustajalle -toimitus"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ NÄKYMÄTÖN VEROTUS ]",
+    "heading": "Kannattavat yritykset vuotavat liikevaihtoa verkossa joka päivä.",
+    "scenarioIntro": "Tässä skenaario, jonka useimmat perustajat tunnistavat mutta harvoin kvantifioivat.",
+    "scenarioP1": "Vakava ostaja etsii palveluasi. Hän löytää kilpailijan ensin — ei siksi, että kilpailija olisi parempi, vaan koska sen sivusto latautuu 1,2 sekunnissa eikä 6,4:ssä. Otsikko vastaa kysymykseen. CTA näkyy heti. Sinun ei.",
+    "scenarioP2": "Et tiennyt, että liidi oli olemassa. Kilpailija sulki kaupan.",
+    "scenarioP3": "Tämä ei ole markkinointiongelma. Se on infrastruktuuriongelma.",
+    "stat1Value": "75 %",
+    "stat1Caption": "käyttäjistä arvioi yrityksen uskottavuuden verkkosivuston ulkoasun perusteella.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88 %",
+    "stat2Caption": "verkkokuluttajista palaa harvemmin sivustolle huonon kokemuksen jälkeen.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 sekunti",
+    "stat3Caption": "latausviive vähentää konversioita noin 7 % per viiveen sekunti.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3,5×",
+    "stat4Caption": "enemmän päteviä liidejä yrityksillä, joilla on SEO-optimoitu, suorituskykyinen verkkosivusto.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "Hyvän verkkosivuston puuttuminen ei näy taulukkolaskelmassa. Se on liikevaihto, joka ei koskaan saapunut.",
+    "cta": "Rakenna infrastruktuuri, joka sieppaa sen"
+  },
+  "paradox": {
+    "quoteOpen": "Yritykseni menee hyvin",
+    "quoteHighlight": "ilman",
+    "quoteClose": "kunnollista verkkosivustoa.",
+    "bodyIntro": "Jokaisella menestyvällä offline-yrityksellä on katto.",
+    "bodyP1": "Suusanallinen maininta skaalautuu, kunnes ei enää. Suositukset hiipuvat. Kilpailija avaa 40 €/kk sivuston ja alkaa siepata hakuja, joista et tiennyt.",
+    "bodyP2": "Michelin-ravintola ilman varaussivua menettää pöytiä kunnolliselle bistrolle, jolla on OpenTable. Urakoitsija, joka ei näy paikallisesti, häviää uudemmalle firmalle, jolla on 3 000 € sivusto ja 12 Google-arvostelua.",
+    "bodyP3": "Näkyvyys compoundaa. Näkymättömyys myös.",
+    "bodyP4": "Kysymys ei ole koskaan \"Tarvitsenko verkkosivuston?\" Vaan: \"Kuinka paljon olen jo menettänyt odottamalla?\""
+  },
+  "socialProof": {
+    "eyebrow": "[ ASIAKASTULOKSET ]",
+    "heading": "Toteutettu perustajille, operatiiville johtajille ja vakaville brändeille.",
+    "carouselLabel": "Asiakastarinat",
+    "prevReview": "Edellinen arvio",
+    "nextReview": "Seuraava arvio",
+    "chooseReview": "Valitse arvio",
+    "showReview": "Näytä arvio"
+  },
+  "manifesto": {
+    "headingLine1": "Verkko ei ole rikki.",
+    "headingLine2": "Useimmat yritykset eivät vain koskaan insinöineet omaansa.",
+    "ctaSecondary": "Katso järjestelmäajattelua"
+  },
+  "processTeaser": {
+    "srHeading": "Rakennusprosessin yleiskuva",
+    "seeFullLink": "Katso koko rakennusjärjestelmä",
+    "phase1": {
+      "name": "Auditointi ja purku",
+      "duration": "Viikko 1",
+      "line": "Tekninen auditointi, SEO-rakenne, konversioaukot, kilpailija-analyysi. Mittarit ennen pikseleitä."
+    },
+    "phase2": {
+      "name": "Arkkitehtuuri ja strategia",
+      "duration": "Viikot 1–2",
+      "line": "IA, konversio-first-hierarkia, URL + CMS -arkkitehtuuri, avainsanatopologia jotta jokainen sivu linkittyy metriikkaan."
+    },
+    "phase3": {
+      "name": "Design system ja UI",
+      "duration": "Viikot 2–3",
+      "line": "Token-tason järjestelmä Figmassa, komponentit, prototyypit säännöillä jotka skaalautuvat lanseerauksen jälkeen."
+    },
+    "phase4": {
+      "name": "Rakennus ja optimointi",
+      "duration": "Viikot 3–6",
+      "line": "Next.js-insinöörityö, CMS, analytiikka, QA kohti alle 1,5 s LCP -tavoitteita."
+    },
+    "phase5": {
+      "name": "Lanseeraus ja yhdistelmäkasvu",
+      "duration": "Viikko 6 → jatkuva",
+      "line": "Seuranta, viikoittainen iterointi, SEO + CRO -yhdistelmävaikutus. Lanseeraus on lähtökohta, ei maali."
+    }
+  },
+  "faq": {
+    "heading": "Usein kysytyt kysymykset",
+    "items": [
+      {
+        "question": "Miksi Torpedo Web freelancereiden tai perinteisten toimistojen sijaan?",
+        "answer": "Useimmat freelancerit optimoivat deliverableja. Perinteiset toimistot optimoivat tunteja. Torpedo Web optimoi infrastruktuuria: suorituskykybudjetit, konversioarkkitehtuuri, tekninen SEO oletuksena, analytiikka ja iterointirytmit, joita voit ajaa järjestelmänä — ei kertaprojektina."
+      },
+      {
+        "question": "Voitteko parantaa olemassa olevaa sivustoa ilman uudelleenrakennusta?",
+        "answer": "Kyllä. Aloitamme teknisestä ja konversioauditista, korjaamme rakenteelliset pullonkaulat, tiukennamme informaatioarkkitehtuuria ja instrumentoimme analytiikan. Suosittelemme täyttä uudelleenrakennusta vain, jos stack estää tarvitsemasi latenssin, SEO:n tai konversiotavoitteet."
+      },
+      {
+        "question": "Mitä valmistelen ennen kartoituspuhelua?",
+        "answer": "Pää-URL, nykyiset liikennekanavat, konversiotavoite (liidi, varaus, myynti), työkalut (CRM, lomakkeet, mainokset) ja luotettavat mittarit — vaikka karkeat. Muunnamme ne priorisoiduksi järjestelmäkartaksi, ei geneeriseksi diaesitykseksi."
+      },
+      {
+        "question": "Työskentelettekö Intian yritysten kanssa vai vain kansainvälisesti?",
+        "answer": "Molemmat. Toimimme Yhdysvalloissa ja Intiassa paikallisilla linjoilla ja toimitustyönkuluilla. Insinööristandardit ja suorituskykytavoitteet ovat samat; taktiikat mukautuvat maantieteeseen."
+      },
+      {
+        "question": "Mikä saa verkkosivustonne oikeasti menestymään haussa?",
+        "answer": "Tekninen SEO on infrastruktuuria: URL-topologia, schema, crawl-clarity, sisäiset linkit, Core Web Vitals ranking-vipuna ja sisältö intentin mukaan — ei checklist lopussa."
+      },
+      {
+        "question": "Yritykseni menestyy jo. Miksi parempi sivusto nyt?",
+        "answer": "Suusanallinen maininta skaalautuu, kunnes pysähtyy. Kilpailijat sieppaavat kysyntää, jota et näe. Kysymys ei ole digitaalisesta vitriinistä, vaan siitä, kuinka paljon liikevaihtoa on jo siirtynyt nopeammille ja paremmin instrumentoiduille toimijoille."
+      }
+    ]
+  }
+}

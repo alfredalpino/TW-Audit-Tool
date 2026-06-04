@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "metaDescription": "Datenschutzerklärung von Torpedo Web: Erhebung, Nutzung und Schutz Ihrer Daten.",
+    "lastUpdated": "Zuletzt aktualisiert: 5. März 2026",
+    "intro": "TorpedoWeb LLC erläutert, wie wir personenbezogene Daten erheben, nutzen, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere digitalen Engineering-Leistungen nutzen.",
+    "authoritativeNotice": "Die rechtsverbindliche Fassung ist der vollständige englische Text unter torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Geltungsbereich und Rolle",
+    "scopeBody": "Je nach Kontext handelt TorpedoWeb als Verantwortlicher für Website-Besucher und Interessenten oder als Auftragsverarbeiter gemäß AV-Vertrag (DPA) für Kundendaten.",
+    "collectHeading": "2. Erhobene Informationen",
+    "collectBody": "Wir können Identifikatoren, Geschäftsdaten, Internetaktivität und berufliche Kontaktdaten über Formulare, Verträge oder automatisierte Technologien (Cookies, Analytics) erheben.",
+    "rightsHeading": "3. Ihre Rechte",
+    "rightsBody": "Soweit anwendbar (DSGVO, UK GDPR, CCPA/CPRA u. a.) können Sie Auskunft, Berichtigung, Löschung, Portabilität oder Widerspruch verlangen. Wir antworten innerhalb der gesetzlichen Fristen.",
+    "contactHeading": "4. Kontakt",
+    "contactBody": "Datenschutzanfragen: privacy@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, USA."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "metaDescription": "Nutzungsbedingungen von Torpedo Web — Partner für Wachstumsinfrastruktur.",
+    "lastUpdated": "Zuletzt aktualisiert: 5. März 2026",
+    "intro": "Diese Bedingungen regeln die Nutzung von TorpedoWeb.org und unsere Leistungen in digitaler Entwicklung, Marketing und verwandten Bereichen.",
+    "authoritativeNotice": "Die rechtsverbindliche Fassung ist der vollständige englische Text unter torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Vertrag und Leistungen",
+    "scopeBody": "Mit Nutzung der Website oder Beauftragung akzeptieren Sie diese Bedingungen und unterzeichnete Aufträge. Leistungen ergeben sich aus Angeboten und Verträgen beider Parteien.",
+    "collectHeading": "2. Pflichten des Kunden",
+    "collectBody": "Sie stellen rechtzeitigen Zugang, korrekte Informationen und rechtmäßige Nutzung der Deliverables sicher. Sie sind für Backups, Drittkonten und Compliance Ihres Geschäfts verantwortlich.",
+    "rightsHeading": "3. Honorare, IP und Haftung",
+    "rightsBody": "Honorare, Zahlungspläne und geistiges Eigentum sind im Vertrag definiert. Die Haftung ist im gesetzlich zulässigen Umfang begrenzt.",
+    "contactHeading": "4. Kontakt",
+    "contactBody": "Fragen: legal@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, USA."
+  },
+  "dmca": {
+    "title": "DMCA-Richtlinie",
+    "metaDescription": "DMCA-Richtlinie von Torpedo Web — Urheberrechtsverletzungen und Gegendarstellungen.",
+    "lastUpdated": "Zuletzt aktualisiert: 5. März 2026",
+    "intro": "TorpedoWeb respektiert geistiges Eigentum und bearbeitet gültige Mitteilungen nach dem US Digital Millennium Copyright Act (DMCA).",
+    "authoritativeNotice": "Die rechtsverbindliche Fassung ist der vollständige englische Text unter torpedoweb.org/dmca.",
+    "scopeHeading": "1. Beauftragter Agent",
+    "scopeBody": "Rechteinhaber können Mitteilungen mit den nach 17 U.S.C. § 512(c)(3) erforderlichen Angaben einreichen. Wir können mutmaßlich rechtsverletzendes Material entfernen oder sperren.",
+    "collectHeading": "2. Gegendarstellung",
+    "collectBody": "Bei irrtümlicher Entfernung können Sie eine Gegendarstellung mit Kontaktdaten und eidesstattlicher Erklärung einreichen.",
+    "rightsHeading": "3. Wiederholungstäter",
+    "rightsBody": "Bei wiederholten Verstößen kann der Zugang beendet werden, soweit das Recht dies erlaubt.",
+    "contactHeading": "4. Kontakt",
+    "contactBody": "DMCA-Mitteilungen: dmca@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, USA."
+  }
+}

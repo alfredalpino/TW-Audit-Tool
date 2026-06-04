@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ SISTEMAS ]",
+    "heading": "Construido para operar el crecimiento de punta a punta",
+    "description": "No entregamos deliverables desconectados. Construimos sistemas donde web, automatización y ejecución funcionan como uno solo.",
+    "bookCall": "Agendar llamada de estrategia",
+    "exploreLink": "Explorar detalles de servicios →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "detail": "Sitios y apps rápidos y confiables, diseñados para crecimiento a largo plazo e iteración fácil."
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "detail": "Ruteo de leads, follow-ups y automatizaciones operativas para que los cuellos de botella manuales dejen de frenar ingresos."
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "detail": "Optimización continua en UX, SEO, conversión y analytics para que el performance se componga."
+    }
+  },
+  "closing": {
+    "text": "Empieza con una llamada de estrategia para mapear tus cuellos de botella actuales y próximas mejoras de sistema.",
+    "bookCall": "Agendar llamada de estrategia"
+  }
+}

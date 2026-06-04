@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ 다단계 로드맵 ]",
+    "heading": "아이디어에서 실행까지, 성과를 위해 설계",
+    "intro": "실제로 작동하는 디지털 시스템을 설계·구축·확장하기 위한 구조화된 단계입니다.",
+    "closingP": "각 단계는 단순히 사이트 완성이 아니라 측정 가능한 성과를 향해 나아갑니다.",
+    "startProject": "프로젝트 시작",
+    "bookIntroCall": "소개 콜 예약"
+  },
+  "phases": {
+    "phase1": {
+      "label": "1단계",
+      "title": "감사 및 분해",
+      "description": "자산 기술 감사, 경쟁 환경 분석, 성능·UX·전환 목표 전반의 격차 매핑."
+    },
+    "phase2": {
+      "label": "2단계",
+      "title": "아키텍처 및 전략",
+      "description": "IA, 전환 우선 와이어프레임, SEO 계층, 확장 가능한 시스템 결정. 페이지별 추측이 아닙니다."
+    },
+    "phase3": {
+      "label": "3단계",
+      "title": "디자인 시스템 및 UI",
+      "description": "고충실도 UI, 실제 디자인 시스템(타이포, 간격, 컴포넌트), 필요 시 프로토타입."
+    },
+    "phase4": {
+      "label": "4단계",
+      "title": "구축 및 최적화",
+      "description": "모던 스택 구축, Core Web Vitals, CMS 및 통합, 반응형·크로스 브라우저 QA."
+    },
+    "phase5": {
+      "label": "5단계",
+      "title": "런칭 및 확장",
+      "description": "QA, 분석, CRO, 반복 로드맵과 함께 출시. 런칭은 개선의 시작입니다."
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ 포지셔닝 ]",
+    "heading": "다른 종류의 에이전시",
+    "intro": "대부분의 에이전시는 디자인과 납품에 집중합니다. 우리는 시스템, 성능, 성과에 집중합니다.",
+    "contextP": "파트너 선택은 프리랜서 대 에이전시가 아니라, 필요한 사고의 깊이, 실행력, 장기적 영향의 문제입니다.",
+    "tableCaption": "역량 비교: Torpedo Web vs 일반 프리랜서 vs 전통 에이전시",
+    "columnCapability": "역량",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "일반 프리랜서",
+    "columnAgencies": "전통 에이전시",
+    "rows": {
+      "approach": {
+        "capability": "접근",
+        "torpedo": "시스템 우선, 엔지니어링 주도",
+        "freelancers": "태스크 기반 실행",
+        "agencies": "디자인 주도, 프로세스 중심"
+      },
+      "projectThinking": {
+        "capability": "프로젝트 사고",
+        "torpedo": "비즈니스+성능 중심",
+        "freelancers": "범위 제한 납품",
+        "agencies": "브랜드+비주얼 중심"
+      },
+      "executionDepth": {
+        "capability": "실행 깊이",
+        "torpedo": "풀스택, 확장 가능한 시스템",
+        "freelancers": "좁은 전문 분야",
+        "agencies": "팀 기반이지만 파편화"
+      },
+      "performanceOptimization": {
+        "capability": "성능 최적화",
+        "torpedo": "첫날부터 내장",
+        "freelancers": "거의 우선하지 않음",
+        "agencies": "런칭 후 부가 항목인 경우 많음"
+      },
+      "speedAgility": {
+        "capability": "속도와 민첩성",
+        "torpedo": "빠른 창업자급 실행",
+        "freelancers": "빠르지만 일관성 부족",
+        "agencies": "레이어가 많아 느림"
+      },
+      "longTermScalability": {
+        "capability": "장기 확장성",
+        "torpedo": "성장과 반복을 위해 설계",
+        "freelancers": "확장 한계",
+        "agencies": "확장 가능하지만 경직"
+      },
+      "clientExperience": {
+        "capability": "클라이언트 경험",
+        "torpedo": "직접적이고 전략적 협업",
+        "freelancers": "비공식적 소통",
+        "agencies": "어카운트 관리, 간접적"
+      }
+    },
+    "closingP": "우리는 집중형 엔지니어링 파트너로 운영합니다. 프리랜서의 민첩성과 에이전시의 구조·신뢰성을, 일반적인 트레이드오프 없이 제공합니다.",
+    "startProject": "프로젝트 시작",
+    "bookIntroCall": "소개 콜 예약"
+  }
+}

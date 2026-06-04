@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ 基礎設施，而唔係裝飾 ]",
+  "heading": "我哋唔建網站。我哋構建收入系統。",
+  "cards": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "subtitle": "性能層",
+      "body": "快速載入、排名靠前、引導用戶完成單一可衡量行動嘅轉化架構頁面。唔係好看，係有效。",
+      "bullet1": "Next.js / React 技術棧",
+      "bullet2": "Core Web Vitals 目標",
+      "bullet3": "Schema + 技術 SEO 基線",
+      "bullet4": "流動優先響應式工程"
+    },
+    "automation": {
+      "title": "自動化層",
+      "subtitle": "運營層",
+      "body": "線索捕獲、CRM 路由、跟進序列、業務工作流。網站喺你休息時仍然工作。",
+      "bullet1": "表單 → CRM 路由",
+      "bullet2": "通知 + SLA",
+      "bullet3": "工作流鈎子（Zapier / Make / 定制）",
+      "bullet4": "運營儀表盤"
+    },
+    "execution": {
+      "title": "執行引擎",
+      "subtitle": "複合增長層",
+      "body": "每週迭代。A/B 測試。Core Web Vitals 監控。SEO 複利。唔係項目，而係持續改進嘅系統。",
+      "bullet1": "每週性能覆盤",
+      "bullet2": "實驗 backlog",
+      "bullet3": "SEO 複利模型",
+      "bullet4": "月度報告循環"
+    }
+  }
+}

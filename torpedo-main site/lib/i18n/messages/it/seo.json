@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web Agency | Sviluppo web e infrastruttura di crescita",
+    "description": "Torpedo Web Agency progetta e costruisce siti ad alte prestazioni, SEO tecnico e infrastruttura di conversione per founder che vogliono crescita misurabile.",
+    "ogTitle": "Torpedo Web Agency | Sviluppo web e infrastruttura di crescita",
+    "ogDescription": "Sviluppo web ad alta intenzione, SEO tecnico e sistemi di conversione per founder che vogliono crescita misurabile.",
+    "keywords": "agenzia web, sviluppo siti web, SEO tecnico, ottimizzazione conversioni, Next.js, infrastruttura di crescita, agenzia web Italia"
+  },
+  "services": {
+    "title": "Sviluppo web e servizi digitali | Torpedo Web",
+    "description": "Ingegneria delle performance, SEO tecnico, automazione e sistemi di conversione — costruiti come infrastruttura, non progetti una tantum.",
+    "ogTitle": "Competenze | Torpedo Web Agency",
+    "ogDescription": "Fondazione web, layer di automazione e motore di esecuzione per founder che misurano i risultati.",
+    "keywords": "servizi sviluppo web, agenzia SEO tecnico, ottimizzazione conversioni, agenzia Next.js"
+  },
+  "process": {
+    "title": "Il nostro processo | Torpedo Web Agency",
+    "description": "Un processo strutturato: diagnosticare, architettare, lanciare e compoundare — con responsabilità founder-to-founder in ogni fase.",
+    "ogTitle": "Come costruiamo | Torpedo Web",
+    "ogDescription": "Processo di sviluppo web diagnostic-first per velocità, visibilità in ricerca e conversione.",
+    "keywords": "processo sviluppo web, workflow agenzia, discovery tecnica, build performance-first"
+  },
+  "systems": {
+    "title": "Sistemi e portfolio | Torpedo Web",
+    "description": "Sistemi di revenue che abbiamo ingegnerizzato — performance, ricerca e infrastruttura di conversione in produzione.",
+    "ogTitle": "Sistemi | Torpedo Web Agency",
+    "ogDescription": "Case study e sistemi costruiti per crescita misurabile.",
+    "keywords": "portfolio agenzia web, sistemi di conversione, case study performance"
+  },
+  "blog": {
+    "title": "Insight e Dispatch | Blog Torpedo Web",
+    "description": "Insight strategici su performance web, SEO tecnico e infrastruttura di conversione — zero rumore.",
+    "ogTitle": "Blog Torpedo Web",
+    "ogDescription": "Insight per founder su infrastruttura digitale e sistemi di crescita.",
+    "keywords": "blog sviluppo web, insight SEO tecnico, strategia conversioni"
+  },
+  "whatWeDo": {
+    "title": "Cosa Costruiamo | Torpedo Web",
+    "description": "Sistemi di revenue e operazioni, sviluppo web, design system e infrastruttura scalabile per brand seri.",
+    "ogTitle": "Cosa Costruiamo | Torpedo Web",
+    "ogDescription": "Sistemi di revenue, sviluppo web e infrastruttura scalabile per operatori che misurano i risultati.",
+    "keywords": "sviluppo web Italia, design system, infrastruttura revenue, sistemi di crescita"
+  },
+  "privacyPolicy": {
+    "title": "Informativa sulla Privacy | Torpedo Web",
+    "description": "Informativa sulla privacy di Torpedo Web. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati.",
+    "ogTitle": "Informativa sulla Privacy | TORPEDO WEB",
+    "ogDescription": "Come Torpedo Web raccoglie, utilizza e protegge i tuoi dati personali.",
+    "keywords": "informativa privacy, protezione dati, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Termini di Servizio | Torpedo Web",
+    "description": "Termini di servizio di Torpedo Web. Partner di infrastruttura di crescita.",
+    "ogTitle": "Termini di Servizio | TORPEDO WEB",
+    "ogDescription": "Termini che regolano l'uso dei servizi e del sito web Torpedo Web.",
+    "keywords": "termini di servizio, condizioni Torpedo Web"
+  },
+  "dmca": {
+    "title": "Politica DMCA | Torpedo Web",
+    "description": "Politica DMCA di Torpedo Web. Come gestiamo le segnalazioni di violazione del copyright e le contro-notifiche.",
+    "ogTitle": "Politica DMCA | TORPEDO WEB",
+    "ogDescription": "Processo per segnalazioni di violazione del copyright e contro-notifiche.",
+    "keywords": "politica DMCA, copyright, Torpedo Web"
+  }
+}

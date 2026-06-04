@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ JÄRJESTELMÄT ]",
+    "heading": "Rakennettu kasvun hallintaan päästä päähän",
+    "description": "Emme toimita irrallisia deliverableja. Rakennamme järjestelmiä, joissa web, automaatio ja toteutus toimivat yhtenä.",
+    "bookCall": "Varaa strategiapuhelu",
+    "exploreLink": "Tutustu palveluihin →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "detail": "Nopeat, luotettavat sivustot ja web-sovellukset pitkäaikaiseen kasvuun ja helppoon iterointiin."
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "detail": "Liidien reititys, follow-upit ja operatiiviset automaatiot, jotta manuaaliset pullonkaulat eivät hidasta liikevaihtoa."
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "detail": "Jatkuva optimointi UX:n, SEO:n, konversion ja analytiikan osalta, jotta suorituskyky kasvaa yhdistelmävaikutuksesta."
+    }
+  },
+  "closing": {
+    "text": "Aloita strategiapuhelulla kartoittaaksesi nykyiset pullonkaulat ja seuraavat järjestelmäpäivitykset.",
+    "bookCall": "Varaa strategiapuhelu"
+  }
+}

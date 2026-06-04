@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ 多阶段路线图 ]",
+    "heading": "从想法到执行，为成果而设计",
+    "intro": "结构化阶段，用于设计、构建和扩展真正有效的数字系统。",
+    "closingP": "每个阶段都指向可衡量的成果，而不仅仅是交付一个网站。",
+    "startProject": "启动项目",
+    "bookIntroCall": "预约介绍通话"
+  },
+  "phases": {
+    "phase1": {
+      "label": "阶段 1",
+      "title": "审计与解构",
+      "description": "资产技术审计、竞争环境分析，以及性能、体验与转化目标的全局差距梳理。"
+    },
+    "phase2": {
+      "label": "阶段 2",
+      "title": "架构与策略",
+      "description": "信息架构、转化优先线框、SEO层级与可扩展系统决策，而非逐页猜测。"
+    },
+    "phase3": {
+      "label": "阶段 3",
+      "title": "设计系统与界面",
+      "description": "高保真界面、真正的设计系统（字体、间距、组件），以及流程所需的原型。"
+    },
+    "phase4": {
+      "label": "阶段 4",
+      "title": "构建与优化",
+      "description": "现代技术栈构建、Core Web Vitals、CMS与集成，以及响应式与跨浏览器QA。"
+    },
+    "phase5": {
+      "label": "阶段 5",
+      "title": "上线与扩展",
+      "description": "伴随QA、分析、CRO与迭代路线图发布。上线是改进的起点，而非终点。"
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ 定位 ]",
+    "heading": "不一样的代理机构",
+    "intro": "多数代理机构聚焦设计与交付。我们聚焦系统、性能与成果。",
+    "contextP": "选择合作伙伴，不在于自由职业者还是代理机构，而在于您需要的思维深度、执行力度与长期影响。",
+    "tableCaption": "能力对比：Torpedo Web vs 典型自由职业者 vs 传统代理机构",
+    "columnCapability": "能力",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "典型自由职业者",
+    "columnAgencies": "传统代理机构",
+    "rows": {
+      "approach": {
+        "capability": "方法",
+        "torpedo": "系统优先、工程驱动",
+        "freelancers": "任务式执行",
+        "agencies": "设计驱动、流程导向"
+      },
+      "projectThinking": {
+        "capability": "项目思维",
+        "torpedo": "业务与性能并重",
+        "freelancers": "范围有限的交付",
+        "agencies": "品牌与视觉导向"
+      },
+      "executionDepth": {
+        "capability": "执行深度",
+        "torpedo": "全栈、可扩展系统",
+        "freelancers": "狭窄专精",
+        "agencies": "团队化但碎片化"
+      },
+      "performanceOptimization": {
+        "capability": "性能优化",
+        "torpedo": "从第一天内置",
+        "freelancers": "很少优先",
+        "agencies": "常为上线后附加项"
+      },
+      "speedAgility": {
+        "capability": "速度与敏捷",
+        "torpedo": "快速、创始人级执行",
+        "freelancers": "快但不稳定",
+        "agencies": "层级多、较慢"
+      },
+      "longTermScalability": {
+        "capability": "长期可扩展性",
+        "torpedo": "为增长与迭代而设计",
+        "freelancers": "扩展有限",
+        "agencies": "可扩展但僵化"
+      },
+      "clientExperience": {
+        "capability": "客户体验",
+        "torpedo": "直接、战略性协作",
+        "freelancers": "非正式沟通",
+        "agencies": "客户经理制、间接"
+      }
+    },
+    "closingP": "我们以专注的工程合作伙伴身份运作：自由职业者的敏捷，加上代理机构的结构与可靠性，却没有常见的取舍。",
+    "startProject": "启动项目",
+    "bookIntroCall": "预约介绍通话"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ INFRASTRUKTUR, KEINE DEKORATION ]",
+  "heading": "Wir bauen keine Websites. Wir bauen Umsatzsysteme.",
+  "cards": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "subtitle": "Die Performance-Schicht",
+      "body": "Conversion-architektierte Seiten, die schnell laden, gut ranken und zu einer messbaren Aktion führen. Nicht hübsch. Funktional.",
+      "bullet1": "Next.js / React Stack",
+      "bullet2": "Core Web Vitals Ziele",
+      "bullet3": "Schema + technische SEO-Baseline",
+      "bullet4": "Mobile-first responsive Engineering"
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "subtitle": "Die Operations-Schicht",
+      "body": "Lead-Capture, CRM-Routing, Follow-up-Sequenzen, operative Workflows. Ihre Website arbeitet, während Sie schlafen.",
+      "bullet1": "Formulare → CRM-Routing",
+      "bullet2": "Benachrichtigungen + SLAs",
+      "bullet3": "Workflow-Hooks (Zapier / Make / custom)",
+      "bullet4": "Operative Dashboards"
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "subtitle": "Die compound-growth Schicht",
+      "body": "Wöchentliche Iteration. A/B-Tests. Core Web Vitals Monitoring. SEO-Compounding. Kein Projekt, sondern ein System in kontinuierlicher Verbesserung.",
+      "bullet1": "Wöchentliche Performance-Reviews",
+      "bullet2": "Experiment-Backlog",
+      "bullet3": "SEO-Compounding-Modell",
+      "bullet4": "Monatlicher Reporting-Loop"
+    }
+  }
+}

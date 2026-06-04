@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ INFRASTRUCTURE, PAS DÉCORATION ]",
+  "heading": "Nous ne construisons pas des sites web. Nous construisons des systèmes de revenus.",
+  "cards": {
+    "webFoundation": {
+      "title": "Fondation Web",
+      "subtitle": "La couche performance",
+      "body": "Pages conçues pour convertir : chargement rapide, visibilité SEO, une action mesurable par parcours. Pas joli. Fonctionnel.",
+      "bullet1": "Stack Next.js / React",
+      "bullet2": "Objectifs Core Web Vitals",
+      "bullet3": "Schema + baseline SEO technique",
+      "bullet4": "Ingénierie responsive mobile-first"
+    },
+    "automation": {
+      "title": "Couche Automatisation",
+      "subtitle": "La couche opérationnelle",
+      "body": "Capture de leads, routage CRM, séquences de relance, workflows opérationnels. Votre site travaille pendant que vous avancez.",
+      "bullet1": "Formulaires → routage CRM",
+      "bullet2": "Notifications + SLA",
+      "bullet3": "Hooks workflow (Zapier / Make / custom)",
+      "bullet4": "Tableaux de bord opérationnels"
+    },
+    "execution": {
+      "title": "Moteur d'Exécution",
+      "subtitle": "La couche croissance composée",
+      "body": "Itération hebdomadaire. Tests A/B. Suivi Core Web Vitals. SEO composé. Pas un projet mais un système en amélioration continue.",
+      "bullet1": "Revues de performance hebdomadaires",
+      "bullet2": "Backlog d'expériences",
+      "bullet3": "Modèle de SEO composé",
+      "bullet4": "Boucle de reporting mensuel"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ 系統 ]",
+    "heading": "端到端驅動增長",
+    "description": "我哋唔交付孤立嘅成果。我哋構建 Web、自動化同執行一體化嘅系統。",
+    "bookCall": "預約戰略通話",
+    "exploreLink": "探索服務詳情 →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "detail": "為長期增長同輕鬆迭代而設計嘅快速、可靠網站同 Web 應用。"
+    },
+    "automation": {
+      "title": "自動化層",
+      "detail": "線索路由、跟進同業務自動化，停止手工瓶頸拖累收入。"
+    },
+    "execution": {
+      "title": "執行引擎",
+      "detail": "喺 UX、SEO、轉化同分析上嘅持續優化，令性能複利增長。"
+    }
+  },
+  "closing": {
+    "text": "由戰略通話開始，梳理而家嘅瓶頸同下一階段嘅系統升級。",
+    "bookCall": "預約戰略通話"
+  }
+}

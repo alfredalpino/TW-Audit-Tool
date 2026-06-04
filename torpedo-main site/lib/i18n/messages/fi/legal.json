@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Tietosuojakäytäntö",
+    "metaDescription": "Torpedo Webin tietosuojakäytäntö: miten keräämme, käytämme ja suojaamme tietojasi.",
+    "lastUpdated": "Päivitetty: 5. maaliskuuta 2026",
+    "intro": "TorpedoWeb LLC kertoo, miten keräämme, käytämme, luovutamme ja suojaamme henkilötietoja, kun vierailet sivustollamme tai käytät digitaalisen insinöörityön palveluitamme.",
+    "authoritativeNotice": "Oikeudellisesti sitova versio on täysi englanninkielinen teksti osoitteessa torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Soveltamisala ja roolimme",
+    "scopeBody": "TorpedoWeb toimii kontekstista riippuen rekisterinpitäjänä vierailijoille ja prospekteille tai käsittelijänä asiakkaiden puolesta DPA-sopimuksen mukaisesti.",
+    "collectHeading": "2. Keräämämme tiedot",
+    "collectBody": "Voimme kerätä tunnisteita, kaupallisia tietoja, verkkotoimintaa ja ammatillisia yhteystietoja lomakkeiden, sopimusten tai automaattisten teknologioiden (evästeet, analytiikka) kautta.",
+    "rightsHeading": "3. Oikeutesi",
+    "rightsBody": "Sovellettavan lain (GDPR, UK GDPR, CCPA/CPRA jne.) mukaan voit pyytää pääsyä, oikaisua, poistoa, siirrettävyyttä tai vastustaa käsittelyä. Vastaamme lain sallimissa määräajoissa.",
+    "contactHeading": "4. Yhteystiedot",
+    "contactBody": "Tietosuojapyynnöt: privacy@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Yhdysvallat."
+  },
+  "terms": {
+    "title": "Käyttöehdot",
+    "metaDescription": "Torpedo Webin käyttöehdot — kasvuinfrastruktuurikumppani.",
+    "lastUpdated": "Päivitetty: 5. maaliskuuta 2026",
+    "intro": "Nämä ehdot koskevat TorpedoWeb.org-sivuston käyttöä sekä digitaalisen insinöörityön, markkinoinnin ja liittyvien palveluiden käyttöä.",
+    "authoritativeNotice": "Oikeudellisesti sitova versio on täysi englanninkielinen teksti osoitteessa torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Sopimus ja palvelut",
+    "scopeBody": "Käyttämällä sivustoa tai tilaamalla TorpedoWebin hyväksyt nämä ehdot ja allekirjoitetut tilaukset. Palvelut määritellään tarjouksissa ja sopimuksissa.",
+    "collectHeading": "2. Asiakkaan velvollisuudet",
+    "collectBody": "Toimitat ajallisen pääsyn, tarkat tiedot ja laillisen käytön toimituksille. Olet vastuussa varmuuskopioista, kolmannen osapuolen tileistä ja liiketoimintasi compliancesta.",
+    "rightsHeading": "3. Palkkiot, IP ja vastuu",
+    "rightsBody": "Palkkiot, maksuaikataulut ja immateriaalioikeudet määritellään sopimuksessa. Vastuu on rajoitettu lain sallimassa laajuudessa.",
+    "contactHeading": "4. Yhteystiedot",
+    "contactBody": "Kysymykset: legal@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Yhdysvallat."
+  },
+  "dmca": {
+    "title": "DMCA-käytäntö",
+    "metaDescription": "Torpedo Webin DMCA-käytäntö — tekijänoikeusilmoitukset ja vastailmoitukset.",
+    "lastUpdated": "Päivitetty: 5. maaliskuuta 2026",
+    "intro": "TorpedoWeb kunnioittaa immateriaalioikeuksia ja käsittelee päteviä ilmoituksia Yhdysvaltain Digital Millennium Copyright Act (DMCA) -lain mukaisesti.",
+    "authoritativeNotice": "Oikeudellisesti sitova versio on täysi englanninkielinen teksti osoitteessa torpedoweb.org/dmca.",
+    "scopeHeading": "1. Nimetty agentti",
+    "scopeBody": "Oikeudenhaltijat voivat lähettää ilmoituksia vaadituilla tiedoilla 17 U.S.C. § 512(c)(3) mukaisesti. Voimme poistaa tai estää pääsyn epäillyn loukkaavaan materiaaliin.",
+    "collectHeading": "2. Vastailmoitus",
+    "collectBody": "Jos uskot poiston olleen virheellinen, voit lähettää vastailmoituksen yhteystietojesi ja valaehtoisen lausunnon kera.",
+    "rightsHeading": "3. Toistuvat loukkaukset",
+    "rightsBody": "Voimme päättää pääsyn toistuvissa loukkauksissa sovellettavan lain mukaisesti.",
+    "contactHeading": "4. Yhteystiedot",
+    "contactBody": "DMCA-ilmoitukset: dmca@torpedoweb.org — TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, Yhdysvallat."
+  }
+}

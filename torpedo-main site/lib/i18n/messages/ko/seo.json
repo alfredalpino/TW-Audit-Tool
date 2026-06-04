@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web 에이전시 | 웹 개발 및 성장 인프라",
+    "description": "Torpedo Web은 측정 가능한 성장이 필요한 창업자를 위해 고성능 웹사이트, 기술 SEO, 전환 인프라를 설계·구축합니다.",
+    "ogTitle": "Torpedo Web 에이전시 | 웹 개발 및 성장 인프라",
+    "ogDescription": "측정 가능한 성장이 필요한 창업자를 위한 고의도 웹 개발, 기술 SEO, 전환 시스템.",
+    "keywords": "웹 개발 에이전시, 기술 SEO, 전환율 최적화, Next.js 개발, 성장 인프라, 창업자 주도 웹 에이전시"
+  },
+  "services": {
+    "title": "웹 개발 및 디지털 서비스 | Torpedo Web",
+    "description": "성능 엔지니어링, 기술 SEO, 자동화, 전환 시스템 — 일회성 프로젝트가 아닌 인프라로 구축.",
+    "ogTitle": "역량 | Torpedo Web 에이전시",
+    "ogDescription": "성과를 측정하는 창업자를 위한 웹 기반, 자동화 레이어, 실행 엔진.",
+    "keywords": "웹 개발 서비스, 기술 SEO 에이전시, 전환율 최적화, Next.js 에이전시"
+  },
+  "process": {
+    "title": "프로세스 | Torpedo Web 에이전시",
+    "description": "구조화된 구축 프로세스: 진단, 아키텍처, 출시, 복리 — 모든 단계에서 창업자급 책임.",
+    "ogTitle": "구축 방식 | Torpedo Web",
+    "ogDescription": "속도, 검색 가시성, 전환을 위한 진단 우선 웹 개발 프로세스.",
+    "keywords": "웹 개발 프로세스, 에이전시 워크플로, 기술 디스커버리, 성능 우선 구축"
+  },
+  "systems": {
+    "title": "시스템 및 포트폴리오 | Torpedo Web",
+    "description": "구축한 수익 시스템 — 프로덕션의 성능, 검색, 전환 인프라.",
+    "ogTitle": "시스템 | Torpedo Web 에이전시",
+    "ogDescription": "측정 가능한 성장을 위해 구축한 사례와 시스템.",
+    "keywords": "웹 에이전시 포트폴리오, 전환 시스템, 성능 사례"
+  },
+  "blog": {
+    "title": "인사이트 및 Dispatch | Torpedo Web 블로그",
+    "description": "웹 성능, 기술 SEO, 전환 인프라에 대한 전략적 인사이트 — 노이즈 제로.",
+    "ogTitle": "Torpedo Web 블로그",
+    "ogDescription": "창업자를 위한 디지털 인프라와 성장 시스템 인사이트.",
+    "keywords": "웹 개발 블로그, 기술 SEO 인사이트, 전환 전략"
+  },
+  "whatWeDo": {
+    "title": "구축 내용 | Torpedo Web",
+    "description": "수익 및 운영 시스템, 웹 개발, 디자인 시스템, 진지한 브랜드를 위한 확장 가능한 인프라.",
+    "ogTitle": "구축 내용 | Torpedo Web",
+    "ogDescription": "성과를 측정하는 운영자를 위한 수익 시스템, 웹 개발, 확장 가능한 인프라.",
+    "keywords": "웹 개발 서비스, 디자인 시스템, 수익 인프라, 성장 시스템"
+  },
+  "privacyPolicy": {
+    "title": "개인정보 처리방침 | Torpedo Web",
+    "description": "Torpedo Web 개인정보 처리방침. 데이터 수집, 이용, 보호 방법.",
+    "ogTitle": "개인정보 처리방침 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web이 개인정보를 수집·이용·보호하는 방법.",
+    "keywords": "개인정보 처리방침, 데이터 보호, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "서비스 약관 | Torpedo Web",
+    "description": "Torpedo Web 서비스 약관. 성장 인프라 파트너.",
+    "ogTitle": "서비스 약관 | TORPEDO WEB",
+    "ogDescription": "Torpedo Web 서비스 및 웹사이트 이용 약관.",
+    "keywords": "서비스 약관, Torpedo Web 약관"
+  },
+  "dmca": {
+    "title": "DMCA 정책 | Torpedo Web",
+    "description": "Torpedo Web DMCA 정책. 저작권 침해 통지 및 반박 통지 처리.",
+    "ogTitle": "DMCA 정책 | TORPEDO WEB",
+    "ogDescription": "저작권 침해 통지 및 반박 통지 절차.",
+    "keywords": "DMCA 정책, 저작권, Torpedo Web"
+  }
+}

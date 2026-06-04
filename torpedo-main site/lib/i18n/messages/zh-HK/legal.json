@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "私隱政策",
+    "metaDescription": "Torpedo Web 私隱政策。我哋點樣收集、使用同保護你嘅數據。",
+    "lastUpdated": "最後更新：2026年3月5日",
+    "intro": "TorpedoWeb LLC 說明喺你訪問我哋網站或使用我哋數碼工程服務時，我哋點樣收集、使用、披露同保護個人信息。",
+    "authoritativeNotice": "具有法律約束力嘅正式版本為 torpedoweb.org/privacy-policy 發布嘅完整英文文本。",
+    "scopeHeading": "1. 適用範圍同我哋嘅角色",
+    "scopeBody": "根據具體情況，TorpedoWeb 作為網站訪客同潛在客戶嘅控制者，或在數據處理附錄下代表客戶處理個人數據時作為處理者。",
+    "collectHeading": "2. 我哋收集嘅信息",
+    "collectBody": "我哋可能透過表單、合同或 Cookie 同分析等自動化技術，收集你提供嘅標識符、商業記錄、互聯網活動同專業聯絡信息。",
+    "rightsHeading": "3. 你嘅權利",
+    "rightsBody": "喺適用法律授予訪問、更正、刪除、可攜帶或反對權利嘅情況下，你可聯絡我哋行使。我哋將喺 GDPR、英國 GDPR、CCPA/CPRA 及其他適用法律要求嘅期限內回覆。",
+    "contactHeading": "4. 聯絡我哋",
+    "contactBody": "私隱相關問題或請求請發送至 privacy@torpedoweb.org，或郵寄至 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  },
+  "terms": {
+    "title": "服務條款",
+    "metaDescription": "Torpedo Web 服務條款。增長基礎設施合作夥伴。",
+    "lastUpdated": "最後更新：2026年3月5日",
+    "intro": "本條款適用於你對 TorpedoWeb.org 嘅使用以及我哋嘅數碼工程、營銷及相關專業服務。",
+    "authoritativeNotice": "具有法律約束力嘅正式版本為 torpedoweb.org/terms-of-service 發布嘅完整英文文本。",
+    "scopeHeading": "1. 協議同服務",
+    "scopeBody": "使用我哋網站或與 TorpedoWeb 合作，即表示你同意本條款及雙方簽署嘅任何工作說明書。服務按提案、合同或訂單中嘅描述提供。",
+    "collectHeading": "2. 客戶責任",
+    "collectBody": "你同意及時提供訪問權限、準確信息，並合法使用交付成果。你負責備份、第三方賬戶，以及適用於你業務同終端用戶嘅法律合規。",
+    "rightsHeading": "3. 費用、知識產權同責任限制",
+    "rightsBody": "費用、付款時間表同知識產權歸屬由你嘅合同定義。責任喺法律允許範圍內受限；間接或後果性損害被排除，除非強制性法律另有規定。",
+    "contactHeading": "4. 聯絡我哋",
+    "contactBody": "有關本條款嘅問題請發送至 legal@torpedoweb.org，或郵寄至 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  },
+  "dmca": {
+    "title": "DMCA 政策",
+    "metaDescription": "Torpedo Web DMCA 政策。版權侵權通知同反通知。",
+    "lastUpdated": "最後更新：2026年3月5日",
+    "intro": "TorpedoWeb 尊重知識產權，並響應美國《數字千年版權法》（DMCA）下嘅有效通知。",
+    "authoritativeNotice": "具有法律約束力嘅正式版本為 torpedoweb.org/dmca 發布嘅完整英文文本。",
+    "scopeHeading": "1. 指定代理人",
+    "scopeBody": "版權所有人可向我哋嘅指定代理人提交侵權通知，並包含 17 U.S.C. § 512(c)(3) 要求嘅信息。我哋可能移除或禁用涉嫌侵權材料。",
+    "collectHeading": "2. 反通知",
+    "collectBody": "若你認為內容被錯誤移除，可提交反通知，包含你嘅聯絡方式、材料標識，以及在偽證處罰下嘅聲明，說明移除有誤。",
+    "rightsHeading": "3. 重複侵權者",
+    "rightsBody": "喺適當情況下，我哋可終止重複侵權者嘅賬戶或訪問，符合適用法律同我哋嘅合同關係。",
+    "contactHeading": "4. 聯絡我哋",
+    "contactBody": "DMCA 通知請發送至 dmca@torpedoweb.org 或 TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States。"
+  }
+}

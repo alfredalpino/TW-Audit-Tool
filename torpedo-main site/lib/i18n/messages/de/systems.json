@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ SYSTEME ]",
+    "heading": "Gebaut, um Wachstum End-to-End zu steuern",
+    "description": "Wir liefern keine isolierten Deliverables. Wir bauen Systeme, in denen Web, Automatisierung und Umsetzung als Einheit funktionieren.",
+    "bookCall": "Strategie-Call buchen",
+    "exploreLink": "Service-Details entdecken →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "detail": "Schnelle, zuverlässige Websites und Web-Apps für langfristiges Wachstum und einfache Iteration."
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "detail": "Lead-Routing, Follow-ups und operative Automatisierungen — damit manuelle Engpässe den Umsatz nicht bremsen."
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "detail": "Laufende Optimierung über UX, SEO, Conversion und Analytics, damit Performance sich verstärkt."
+    }
+  },
+  "closing": {
+    "text": "Starten Sie mit einem Strategie-Call, um aktuelle Engpässe und nächste System-Upgrades zu kartieren.",
+    "bookCall": "Strategie-Call buchen"
+  }
+}

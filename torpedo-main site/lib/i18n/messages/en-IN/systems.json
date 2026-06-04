@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ SYSTEMS ]",
+    "heading": "Built to Run Growth End-to-End",
+    "description": "We do not ship disconnected deliverables. We build systems where web, automation, and execution work as one.",
+    "bookCall": "Book Strategy Call",
+    "exploreLink": "Explore service details →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "detail": "Fast, reliable websites and web apps designed for long-term growth and easy iteration."
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "detail": "Lead routing, follow-ups, and operational automations so manual bottlenecks stop slowing revenue."
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "detail": "Ongoing optimization across UX, SEO, conversion, and analytics to keep performance compounding."
+    }
+  },
+  "closing": {
+    "text": "Start with a strategy call to map your current bottlenecks and next system upgrades.",
+    "bookCall": "Book Strategy Call"
+  }
+}

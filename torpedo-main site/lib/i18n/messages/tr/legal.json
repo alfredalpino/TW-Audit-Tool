@@ -1,0 +1,47 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "metaDescription": "Privacy Policy for Torpedo Web. How we collect, use, and protect your data.",
+    "lastUpdated": "Last updated: March 5, 2026",
+    "intro": "TorpedoWeb LLC explains how we collect, use, disclose, and safeguard personal information when you visit our website or engage our digital engineering services.",
+    "authoritativeNotice": "The legally binding version of this policy is the full English text published at torpedoweb.org/privacy-policy.",
+    "scopeHeading": "1. Scope and our role",
+    "scopeBody": "Depending on context, TorpedoWeb acts as a data controller for website visitors and prospective clients, or as a data processor when handling personal data on behalf of clients under a Data Processing Addendum.",
+    "collectHeading": "2. Information we collect",
+    "collectBody": "We may collect identifiers, commercial records, internet activity, and professional contact details you provide through forms, contracts, or automated technologies such as cookies and analytics.",
+    "rightsHeading": "3. Your rights",
+    "rightsBody": "Where applicable law grants rights of access, correction, deletion, portability, or objection, you may contact us to exercise those rights. We respond within the timelines required by GDPR, UK GDPR, CCPA/CPRA, and other applicable laws.",
+    "contactHeading": "4. Contact",
+    "contactBody": "For privacy questions or requests, email privacy@torpedoweb.org or write to TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "metaDescription": "Terms of Service for Torpedo Web. Growth infrastructure partner.",
+    "lastUpdated": "Last updated: March 5, 2026",
+    "intro": "These Terms govern your use of TorpedoWeb.org and our digital engineering, marketing, and related professional services.",
+    "authoritativeNotice": "The legally binding version of these terms is the full English text published at torpedoweb.org/terms-of-service.",
+    "scopeHeading": "1. Agreement and services",
+    "scopeBody": "By using our website or engaging TorpedoWeb, you agree to these Terms and any executed statement of work. Services are provided as described in proposals, contracts, or order forms signed by both parties.",
+    "collectHeading": "2. Client responsibilities",
+    "collectBody": "You agree to provide timely access, accurate information, and lawful use of deliverables. You are responsible for backups, third-party accounts, and compliance with laws applicable to your business and end users.",
+    "rightsHeading": "3. Fees, IP, and limitation of liability",
+    "rightsBody": "Fees, payment schedules, and intellectual property ownership are defined in your contract. Liability is limited to the extent permitted by law; indirect or consequential damages are excluded unless mandatory law provides otherwise.",
+    "contactHeading": "4. Contact",
+    "contactBody": "For questions about these Terms, email legal@torpedoweb.org or write to TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States."
+  },
+  "dmca": {
+    "title": "DMCA Policy",
+    "metaDescription": "DMCA Policy for Torpedo Web. Copyright infringement notices and counter-notifications.",
+    "lastUpdated": "Last updated: March 5, 2026",
+    "intro": "TorpedoWeb respects intellectual property rights and responds to valid notices under the U.S. Digital Millennium Copyright Act (DMCA).",
+    "authoritativeNotice": "The legally binding version of this policy is the full English text published at torpedoweb.org/dmca.",
+    "scopeHeading": "1. Designated agent",
+    "scopeBody": "Copyright owners may submit infringement notices to our designated agent with the information required by 17 U.S.C. § 512(c)(3). We may remove or disable access to allegedly infringing material.",
+    "collectHeading": "2. Counter-notification",
+    "collectBody": "If you believe content was removed in error, you may submit a counter-notification with your contact details, identification of the material, and a statement under penalty of perjury that removal was mistaken.",
+    "rightsHeading": "3. Repeat infringers",
+    "rightsBody": "We may terminate accounts or access for users who are repeat infringers in appropriate circumstances, consistent with applicable law and our contractual relationships.",
+    "contactHeading": "4. Contact",
+    "contactBody": "Send DMCA notices to dmca@torpedoweb.org or TorpedoWeb LLC, 8 The Green, Suite A, Dover, DE 19901, United States."
+  }
+}

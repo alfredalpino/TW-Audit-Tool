@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ 系统 ]",
+    "heading": "端到端驱动增长",
+    "description": "我们不交付孤立的成果。我们构建 Web、自动化与执行一体化的系统。",
+    "bookCall": "预约战略通话",
+    "exploreLink": "探索服务详情 →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "detail": "为长期增长与轻松迭代而设计的快速、可靠网站与 Web 应用。"
+    },
+    "automation": {
+      "title": "自动化层",
+      "detail": "线索路由、跟进与业务自动化，停止手工瓶颈拖累收入。"
+    },
+    "execution": {
+      "title": "执行引擎",
+      "detail": "在 UX、SEO、转化与分析上的持续优化，让性能复利增长。"
+    }
+  },
+  "closing": {
+    "text": "从战略通话开始，梳理当前瓶颈与下一阶段的系统升级。",
+    "bookCall": "预约战略通话"
+  }
+}

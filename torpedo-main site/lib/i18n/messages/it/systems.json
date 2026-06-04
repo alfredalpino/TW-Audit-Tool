@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ SISTEMI ]",
+    "heading": "Costruito per gestire la crescita end-to-end",
+    "description": "Non consegniamo deliverable scollegati. Costruiamo sistemi dove web, automazione ed esecuzione funzionano come uno solo.",
+    "bookCall": "Prenota strategy call",
+    "exploreLink": "Esplora i dettagli dei servizi →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "detail": "Siti e app veloci e affidabili, progettati per crescita a lungo termine e iterazione facile."
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "detail": "Routing lead, follow-up e automazioni operative così i colli di bottiglia manuali smettono di frenare i ricavi."
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "detail": "Ottimizzazione continua su UX, SEO, conversione e analytics per far comporre la performance."
+    }
+  },
+  "closing": {
+    "text": "Inizia con una strategy call per mappare i colli di bottiglia attuali e i prossimi upgrade di sistema.",
+    "bookCall": "Prenota strategy call"
+  }
+}

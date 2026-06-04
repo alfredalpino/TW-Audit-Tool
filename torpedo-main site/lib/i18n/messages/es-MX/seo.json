@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web | Agencia de Desarrollo Web y Crecimiento Digital",
+    "description": "Diseñamos y construimos sitios de alto rendimiento, SEO técnico e infraestructura de conversión para founders que miden resultados.",
+    "ogTitle": "Torpedo Web | Desarrollo Web e Infraestructura de Crecimiento",
+    "ogDescription": "Desarrollo web de alto rendimiento, SEO técnico y sistemas de conversión para founders en México y LATAM.",
+    "keywords": "agencia desarrollo web México, SEO técnico, desarrollo Next.js, optimización conversión, agencia digital CDMX, diseño web empresas"
+  },
+  "services": {
+    "title": "Servicios de Desarrollo Web | Torpedo Web",
+    "description": "Ingeniería de rendimiento, SEO técnico, automatización y sistemas de conversión — infraestructura, no proyectos sueltos.",
+    "ogTitle": "Capacidades | Torpedo Web",
+    "ogDescription": "Base web, automatización y motor de ejecución para founders que miden ROI.",
+    "keywords": "servicios desarrollo web México, agencia SEO técnico, optimización conversión"
+  },
+  "process": {
+    "title": "Nuestro Proceso | Torpedo Web",
+    "description": "Proceso estructurado: diagnosticar, arquitectar, lanzar y optimizar — con responsabilidad de founder en cada etapa.",
+    "ogTitle": "Cómo Construimos | Torpedo Web",
+    "ogDescription": "Proceso de desarrollo web orientado a velocidad, búsqueda y conversión.",
+    "keywords": "proceso desarrollo web, agencia digital México, discovery técnico"
+  },
+  "systems": {
+    "title": "Sistemas y Portafolio | Torpedo Web",
+    "description": "Sistemas de ingresos que hemos construido — rendimiento, búsqueda y conversión en producción.",
+    "ogTitle": "Sistemas | Torpedo Web",
+    "ogDescription": "Casos y sistemas construidos para crecimiento medible.",
+    "keywords": "portafolio agencia web, sistemas conversión, casos éxito digital"
+  },
+  "blog": {
+    "title": "Insights y Dispatch | Blog Torpedo Web",
+    "description": "Ideas estratégicas sobre rendimiento web, SEO técnico e infraestructura de conversión — sin ruido.",
+    "ogTitle": "Blog Torpedo Web",
+    "ogDescription": "Insights para founders sobre infraestructura digital y crecimiento.",
+    "keywords": "blog desarrollo web, SEO técnico México, estrategia conversión"
+  },
+  "whatWeDo": {
+    "title": "Qué Construimos | Torpedo Web",
+    "description": "Sistemas de ingresos y operaciones, desarrollo web, design systems e infraestructura escalable para marcas serias.",
+    "ogTitle": "Qué Construimos | Torpedo Web",
+    "ogDescription": "Sistemas de revenue, desarrollo web e infraestructura escalable para operadores que miden resultados.",
+    "keywords": "desarrollo web México, design systems, infraestructura de ingresos, sistemas de crecimiento"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad | Torpedo Web",
+    "description": "Política de privacidad de Torpedo Web. Cómo recopilamos, usamos y protegemos tus datos.",
+    "ogTitle": "Política de Privacidad | TORPEDO WEB",
+    "ogDescription": "Cómo Torpedo Web recopila, usa y protege tus datos personales.",
+    "keywords": "política de privacidad, protección de datos, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Términos de Servicio | Torpedo Web",
+    "description": "Términos de servicio de Torpedo Web. Socio de infraestructura de crecimiento.",
+    "ogTitle": "Términos de Servicio | TORPEDO WEB",
+    "ogDescription": "Términos que rigen el uso de los servicios y el sitio web de Torpedo Web.",
+    "keywords": "términos de servicio, condiciones Torpedo Web"
+  },
+  "dmca": {
+    "title": "Política DMCA | Torpedo Web",
+    "description": "Política DMCA de Torpedo Web. Cómo gestionamos avisos de infracción de derechos de autor y contra-notificaciones.",
+    "ogTitle": "Política DMCA | TORPEDO WEB",
+    "ogDescription": "Proceso de aviso de infracción de copyright y contra-notificación.",
+    "keywords": "política DMCA, derechos de autor, Torpedo Web"
+  }
+}

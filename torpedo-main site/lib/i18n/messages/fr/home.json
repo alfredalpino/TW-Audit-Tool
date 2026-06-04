@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ PARTENAIRE INFRASTRUCTURE DIGITALE ]",
+  "heroTitlePrefix": "Votre entreprise est",
+  "heroTitleHighlight": "invisible",
+  "heroTitleMiddle": "sans un site web qui",
+  "heroTitleEnd": "performe.",
+  "heroSubtitle": "La plupart des entreprises perdent 60 à 80 % de leurs leads qualifiés face à des concurrents mieux équipés en infrastructure digitale. Pas un meilleur produit. Un meilleur site.",
+  "scrollHint": "Défiler",
+  "services": {
+    "webFoundation": {
+      "title": "Fondation Web",
+      "subtitle": "Couche performance",
+      "description": "Pages conçues pour convertir : chargement rapide, visibilité SEO, une action mesurable par parcours."
+    },
+    "automation": {
+      "title": "Couche Automatisation",
+      "subtitle": "Couche opérationnelle",
+      "description": "Capture de leads, routage CRM, séquences de relance. Votre site travaille pendant que vous avancez."
+    },
+    "execution": {
+      "title": "Moteur d'Exécution",
+      "subtitle": "Couche croissance composée",
+      "description": "Itération hebdomadaire, tests A/B, SEO composé — un système en amélioration continue."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals optimisés",
+    "seo": "SEO technique intégré dès le départ",
+    "conversion": "Architecture de conversion native",
+    "founderLed": "Livraison de fondateur à fondateur"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ LA TAXE INVISIBLE ]",
+    "heading": "Des entreprises rentables perdent du chiffre d'affaires en ligne, chaque jour.",
+    "scenarioIntro": "Voici un scénario que la plupart des fondateurs reconnaissent sans jamais le quantifier.",
+    "scenarioP1": "Un acheteur sérieux cherche votre service. Il trouve d'abord un concurrent — non pas parce qu'il est meilleur, mais parce que son site charge en 1,2 seconde au lieu de 6,4. Son titre répond à la question. Son CTA est visible au-dessus de la ligne de flottaison. Le vôtre ne l'est pas.",
+    "scenarioP2": "Vous n'avez jamais su que ce prospect existait. Le concurrent a conclu.",
+    "scenarioP3": "Ce n'est pas un problème marketing. C'est un problème d'infrastructure.",
+    "stat1Value": "75 %",
+    "stat1Caption": "des utilisateurs jugent la crédibilité d'une entreprise sur le design de son site.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88 %",
+    "stat2Caption": "des consommateurs en ligne reviennent moins sur un site après une mauvaise expérience.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 seconde",
+    "stat3Caption": "de retard au chargement réduit les conversions d'environ 7 % par seconde.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3,5×",
+    "stat4Caption": "plus de leads qualifiés pour les entreprises avec un site performant et optimisé SEO.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "Ne pas avoir un excellent site n'apparaît pas dans un tableur. C'est le chiffre d'affaires qui n'est jamais arrivé.",
+    "cta": "Construire l'infrastructure qui le capture"
+  },
+  "paradox": {
+    "quoteOpen": "Mon entreprise va très bien",
+    "quoteHighlight": "sans",
+    "quoteClose": "un vrai site web.",
+    "bodyIntro": "Toute entreprise offline prospère a un plafond.",
+    "bodyP1": "Le bouche-à-oreille progresse jusqu'à ce qu'il s'arrête. Les recommandations se tarissent. Un concurrent lance un site à 40 €/mois et capte des recherches que vous ignoriez.",
+    "bodyP2": "Le restaurant étoilé sans page réservations perd des réservations face au bistro correct avec OpenTable. L'artisan invisible localement perd face à une jeune entreprise avec un site à 3 000 € et 12 avis Google.",
+    "bodyP3": "La visibilité se compose. L'invisibilité aussi.",
+    "bodyP4": "La question n'est jamais « Ai-je besoin d'un site ? » mais « Combien ai-je déjà perdu en attendant ? »"
+  },
+  "socialProof": {
+    "eyebrow": "[ RÉSULTATS CLIENTS ]",
+    "heading": "Exécuté pour fondateurs, opérateurs et marques exigeantes.",
+    "carouselLabel": "Témoignages clients",
+    "prevReview": "Avis précédent",
+    "nextReview": "Avis suivant",
+    "chooseReview": "Choisir un avis",
+    "showReview": "Afficher l'avis"
+  },
+  "manifesto": {
+    "headingLine1": "Le web n'est pas cassé.",
+    "headingLine2": "La plupart des entreprises n'ont jamais ingéniérisé le leur.",
+    "ctaSecondary": "Voir la pensée systémique"
+  },
+  "processTeaser": {
+    "srHeading": "Aperçu du processus de construction",
+    "seeFullLink": "Voir le système de build complet",
+    "phase1": {
+      "name": "Audit et déconstruction",
+      "duration": "Semaine 1",
+      "line": "Audit technique, structure SEO, écarts de conversion, matrice concurrentielle. Benchmarks avant les pixels."
+    },
+    "phase2": {
+      "name": "Architecture et stratégie",
+      "duration": "Semaines 1–2",
+      "line": "IA, hiérarchie conversion-first, architecture URL + CMS, topologie mots-clés pour que chaque page mappe à une métrique."
+    },
+    "phase3": {
+      "name": "Design system et UI",
+      "duration": "Semaines 2–3",
+      "line": "Système token-level dans Figma, composants, prototypes avec règles qui scalent au-delà du lancement."
+    },
+    "phase4": {
+      "name": "Build et optimisation",
+      "duration": "Semaines 3–6",
+      "line": "Ingénierie Next.js, CMS, analytics, QA vers des cibles LCP sous 1,5 s."
+    },
+    "phase5": {
+      "name": "Lancement et croissance composée",
+      "duration": "Semaine 6 → continu",
+      "line": "Monitoring, itération hebdomadaire, SEO + CRO composés. Le lancement est la baseline, pas la ligne d'arrivée."
+    }
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Pourquoi Torpedo Web plutôt qu'un freelance ou une agence classique ?",
+        "answer": "La plupart des freelances optimisent les livrables. Les agences traditionnelles optimisent les heures. Torpedo Web optimise l'infrastructure : budgets performance, architecture de conversion, SEO technique par défaut, analyses et rythmes d'itération exploitables comme un système — pas comme un projet ponctuel."
+      },
+      {
+        "question": "Pouvez-vous améliorer un site existant sans tout reconstruire ?",
+        "answer": "Oui. Nous commençons par des audits techniques et de conversion, corrigeons les goulots structurels, resserrons l'architecture de l'information et mettons en place l'analyse de données. Une refonte complète n'est recommandée que si votre infrastructure technique empêche d'atteindre vos objectifs de latence, SEO ou conversion."
+      },
+      {
+        "question": "Que préparer avant un appel découverte ?",
+        "answer": "Votre URL principale, vos canaux d'acquisition, l'objectif de conversion (prospect, réservation, vente), vos outils (CRM, formulaires, publicités) et les métriques que vous suivez — même approximatives. Nous en faisons une cartographie priorisée, pas une présentation générique."
+      },
+      {
+        "question": "Travaillez-vous avec des entreprises en Inde ou uniquement à l'international ?",
+        "answer": "Les deux. Nous opérons aux États-Unis et en Inde avec des lignes locales et des processus de livraison adaptés. Les standards d'ingénierie restent identiques ; les tactiques s'adaptent à votre marché et à l'intention de recherche."
+      },
+      {
+        "question": "Qu'est-ce qui fait réellement performer vos sites en recherche ?",
+        "answer": "Le SEO technique est traité comme une infrastructure : topologie d'URL, données structurées, clarté d'exploration, maillage interne, Core Web Vitals comme levier de référencement, contenu aligné sur l'intention — pas une liste de contrôle en fin de projet."
+      },
+      {
+        "question": "Mon entreprise fonctionne déjà bien. Pourquoi un meilleur site maintenant ?",
+        "answer": "Le bouche-à-oreille progresse jusqu'à s'arrêter. Les concurrents captent une demande que vous ne voyez pas. La question n'est pas d'avoir une vitrine digitale, mais combien de revenus ont déjà basculé vers des opérateurs plus rapides et mieux instrumentés."
+      }
+    ]
+  }
+}

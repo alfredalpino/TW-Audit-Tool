@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "우리가 하는 일",
+    "heading": "웹 개발, 디자인 시스템, 성장 인프라",
+    "description": "진지한 브랜드와 함께 확장하는 맞춤 웹 개발, 디자인 시스템, 인프라를 구축합니다.",
+    "items": {
+      "websites": {
+        "title": "웹사이트 및 웹 앱",
+        "description": "비즈니스와 함께 확장하는 빠르고 신뢰할 수 있는 웹사이트와 웹 앱을 설계·구축합니다.",
+        "highlight1": "맞춤 웹사이트 및 크로스플랫폼 앱",
+        "highlight2": "대시보드 및 내부 도구",
+        "highlight3": "보안 백엔드 및 통합",
+        "highlight4": "속도와 장기 사용을 위해 구축"
+      },
+      "design": {
+        "title": "디자인 및 사용자 경험",
+        "description": "제품을 단순하고 명확하며 사용하기 쉽게 만들어 사용자가 길을 잃지 않게 합니다.",
+        "highlight1": "깔끔한 UI와 매끄러운 사용자 흐름",
+        "highlight2": "모바일 우선 레이아웃",
+        "highlight3": "일관성을 위한 디자인 시스템",
+        "highlight4": "실제 사용자 행동 기반 구축"
+      },
+      "growth": {
+        "title": "성장 및 전환",
+        "description": "트래픽을 유치하고 방문자를 고객으로 전환하는 사이트 구조를 만듭니다.",
+        "highlight1": "첫날부터 SEO 설정",
+        "highlight2": "전환하는 랜딩 페이지",
+        "highlight3": "명확한 메시지와 CTA",
+        "highlight4": "검색과 판매를 위한 콘텐츠"
+      },
+      "brand": {
+        "title": "브랜드 및 비주얼 디자인",
+        "description": "브랜드의 모습과 느낌을 형성해 채널 전반에서 일관되게 유지합니다.",
+        "highlight1": "로고 및 비주얼 아이덴티티",
+        "highlight2": "색상, 폰트, 스타일 시스템",
+        "highlight3": "웹 및 마케팅용 그래픽",
+        "highlight4": "모든 페이지에서 깔끔하고 일관된 디자인"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web 서비스 스택 ]",
+    "title": "디지털 엔지니어링 및 성장 실행",
+    "description": "웹 성능, 검색 가시성, 전환 운영을 결합한 시스템을 구축해 고의도 수요에 대해 예측 가능하고 측정 가능하며 확장 가능한 성장을 만듭니다.",
+    "servicesHeading": "핵심 서비스",
+    "faqHeading": "자주 묻는 질문"
+  }
+}

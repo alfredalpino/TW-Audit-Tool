@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "我们做什么",
+    "heading": "网站开发、设计系统与增长基础设施",
+    "description": "为严肃品牌构建可随业务扩展的定制网站开发、设计系统与基础设施。",
+    "items": {
+      "websites": {
+        "title": "网站与 Web 应用",
+        "description": "我们设计并构建快速、可靠的网站与 Web 应用，随您的业务一同扩展。",
+        "highlight1": "定制网站与跨平台应用",
+        "highlight2": "仪表盘与内部工具",
+        "highlight3": "安全后端与集成",
+        "highlight4": "为速度与长期使用而构建"
+      },
+      "design": {
+        "title": "设计与用户体验",
+        "description": "让产品简洁清晰、易于使用，用户不会迷失方向。",
+        "highlight1": "简洁 UI 与流畅用户流程",
+        "highlight2": "移动优先布局",
+        "highlight3": "保持一致性的设计系统",
+        "highlight4": "基于真实用户行为构建"
+      },
+      "growth": {
+        "title": "增长与转化",
+        "description": "我们构建能吸引流量并将访客转化为客户的网站结构。",
+        "highlight1": "从第一天起的 SEO 配置",
+        "highlight2": "高转化落地页",
+        "highlight3": "清晰的信息与 CTA",
+        "highlight4": "为搜索与销售而写的内容"
+      },
+      "brand": {
+        "title": "品牌与视觉设计",
+        "description": "塑造品牌的视觉与感受，在各渠道保持一致与辨识度。",
+        "highlight1": "标志与视觉识别",
+        "highlight2": "色彩、字体与风格系统",
+        "highlight3": "网站与营销用图形",
+        "highlight4": "全站清晰一致的设计"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web 服务栈 ]",
+    "title": "数字工程与增长执行",
+    "description": "我们构建融合网站性能、搜索可见性与转化运营的系统，使增长对高意图需求可预测、可衡量、可扩展。",
+    "servicesHeading": "核心服务",
+    "faqHeading": "常见问题"
+  }
+}

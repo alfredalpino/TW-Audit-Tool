@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web Agency | Verkkokehitys ja kasvuinfrastruktuuri",
+    "description": "Torpedo Web Agency suunnittelee ja rakentaa suorituskykyisiä verkkosivustoja, teknistä SEO:ta ja konversioinfrastruktuuria perustajille, jotka tarvitsevat mitattavaa kasvua.",
+    "ogTitle": "Torpedo Web Agency | Verkkokehitys ja kasvuinfrastruktuuri",
+    "ogDescription": "Korkean intentin verkkokehitys, tekninen SEO ja konversiojärjestelmät perustajille, jotka tarvitsevat mitattavaa kasvua.",
+    "keywords": "verkkokehitystoimisto, tekninen SEO, konversion optimointi, Next.js kehitys, kasvuinfrastruktuuri, verkkotoimisto Suomi"
+  },
+  "services": {
+    "title": "Verkkokehitys ja digitaaliset palvelut | Torpedo Web",
+    "description": "Suorituskykyinsinöörinti, tekninen SEO, automaatio ja konversiojärjestelmät — rakennettu infrastruktuuriksi, ei kertaluonteisiksi projekteiksi.",
+    "ogTitle": "Osaaminen | Torpedo Web Agency",
+    "ogDescription": "Verkkoperusta, automaatiokerros ja toteutusmoottori perustajille, jotka mittaavat tuloksia.",
+    "keywords": "verkkokehityspalvelut, tekninen SEO toimisto, konversion optimointi, Next.js toimisto"
+  },
+  "process": {
+    "title": "Prosessimme | Torpedo Web Agency",
+    "description": "Strukturoitu rakennusprosessi: diagnosoi, suunnittele, julkaise ja kasvata — perustajatason vastuu jokaisessa vaiheessa.",
+    "ogTitle": "Miten rakennamme | Torpedo Web",
+    "ogDescription": "Diagnostiikkaan perustuva verkkokehitysprosessi nopeuteen, näkyvyyteen ja konversioon.",
+    "keywords": "verkkokehitysprosessi, toimistotyönkulku, tekninen kartoitus, suorituskykyyn keskittyvä toteutus"
+  },
+  "systems": {
+    "title": "Järjestelmät ja portfolio | Torpedo Web",
+    "description": "Tuottoratkaisuja, joita olemme insinöineet — suorituskyky, haku ja konversioinfrastruktuuri tuotannossa.",
+    "ogTitle": "Järjestelmät | Torpedo Web Agency",
+    "ogDescription": "Tapaustutkimuksia ja järjestelmiä mitattavaan kasvuun.",
+    "keywords": "verkkotoimiston portfolio, konversiojärjestelmät, suorituskyvyn tapaustutkimukset"
+  },
+  "blog": {
+    "title": "Näkemyksiä ja Dispatch | Torpedo Web Blogi",
+    "description": "Strategisia näkemyksiä verkkosuorituskyvystä, teknisestä SEO:sta ja konversioinfrastruktuurista — nolla kohinaa.",
+    "ogTitle": "Torpedo Web Blogi",
+    "ogDescription": "Perustajakeskeisiä näkemyksiä digitaalisesta infrastruktuurista ja kasvujärjestelmistä.",
+    "keywords": "verkkokehitysblogi, tekninen SEO, konversiostrategia"
+  },
+  "whatWeDo": {
+    "title": "Mitä Rakennamme | Torpedo Web",
+    "description": "Tuotto- ja operointijärjestelmät, verkkokehitys, design systemit ja skaalautuva infrastruktuuri vakaville brändeille.",
+    "ogTitle": "Mitä Rakennamme | Torpedo Web",
+    "ogDescription": "Tuottojärjestelmät, verkkokehitys ja skaalautuva infrastruktuuri tuloksia mittaaville operaattoreille.",
+    "keywords": "verkkokehitys Suomi, design systemit, tuottoinfrastruktuuri, kasvujärjestelmät"
+  },
+  "privacyPolicy": {
+    "title": "Tietosuojakäytäntö | Torpedo Web",
+    "description": "Torpedo Webin tietosuojakäytäntö. Miten keräämme, käytämme ja suojaamme tietojasi.",
+    "ogTitle": "Tietosuojakäytäntö | TORPEDO WEB",
+    "ogDescription": "Miten Torpedo Web kerää, käyttää ja suojaa henkilötietojasi.",
+    "keywords": "tietosuojakäytäntö, tietosuoja, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Käyttöehdot | Torpedo Web",
+    "description": "Torpedo Webin käyttöehdot. Kasvuinfrastruktuurikumppani.",
+    "ogTitle": "Käyttöehdot | TORPEDO WEB",
+    "ogDescription": "Ehdot Torpedo Webin palveluiden ja verkkosivuston käytölle.",
+    "keywords": "käyttöehdot, Torpedo Web ehdot"
+  },
+  "dmca": {
+    "title": "DMCA-käytäntö | Torpedo Web",
+    "description": "Torpedo Webin DMCA-käytäntö. Miten käsittelemme tekijänoikeusrikkomusilmoituksia ja vastailmoituksia.",
+    "ogTitle": "DMCA-käytäntö | TORPEDO WEB",
+    "ogDescription": "Tekijänoikeusrikkomusilmoitusten ja vastailmoitusten käsittelyprosessi.",
+    "keywords": "DMCA käytäntö, tekijänoikeus, Torpedo Web"
+  }
+}

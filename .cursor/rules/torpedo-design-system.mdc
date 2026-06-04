@@ -1,0 +1,27 @@
+---
+description: Torpedo Web marketing UI — clay skeuomorphism, exact tokens, torpedoweb.org parity
+globs: app/(marketing)/**/*.{tsx,ts},components/**/*.{tsx,ts},app/globals.css
+alwaysApply: false
+---
+
+# Torpedo Web design system
+
+Before writing or editing marketing UI, read and follow **`docs/DESIGN-GUIDE.md`** (v2.1) in full.
+
+## Hard rules
+
+- Colors: only `var(--brand)`, `var(--bg-*)`, `var(--fg-*)`, `var(--border)` — never `bg-white`, `text-gray-*`, `border-gray-*`, flat `bg-orange-*`.
+- Buttons: `@/components/ui/Button` with `tw-clay-btn-*` variants — never raw `<button className="bg-...">`.
+- Cards: `@/components/ui/ClayCard` with `hover` — never flat bordered white cards.
+- Layout: `<main id="main-content">` inside `ClientLayout`; sections use `tw-section` + `border-t border-[var(--border)]` bands.
+- Typography: `font-display` (Syne) headlines, `font-sans` body, `font-mono` labels; eyebrows `[ BRACKETED ]` + `useTextScramble(..., 900, true, 3000)` on homepage-style sections.
+- Motion: `sectionVariants` / `cardVariants` from `@/lib/animations`, `viewport={{ once: true, margin: '-10% 0px' }}`.
+- Skeuomorphism: preserve clay grain, inset shadows, keycap travel — do not flatten to Material/iOS style.
+
+## Canonical references
+
+- Homepage: `components/home/*`, `HomeHero`, `WhatWeBuild`, `FinalHomeCTA`
+- Inner index: `components/services/ServicesIndexView.tsx`
+- Tokens: `app/globals.css`
+
+When unsure, grep existing sections and copy class strings verbatim.

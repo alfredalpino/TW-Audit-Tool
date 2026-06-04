@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ 디지털 인프라 파트너 ]",
+  "heroTitlePrefix": "성과를 내는 웹사이트 없이",
+  "heroTitleHighlight": "보이지",
+  "heroTitleMiddle": "않는 채로",
+  "heroTitleEnd": "경쟁에 묻힙니다.",
+  "heroSubtitle": "많은 기업이 더 나은 디지털 인프라를 가진 경쟁사에게 자격 있는 리드의 60–80%를 잃습니다. 제품이 아니라 웹사이트 차이입니다.",
+  "scrollHint": "스크롤",
+  "services": {
+    "webFoundation": {
+      "title": "웹 기반",
+      "subtitle": "성능 레이어",
+      "description": "빠른 로딩, 상위 노출, 단일 측정 가능한 행동으로 이끄는 전환 설계 페이지."
+    },
+    "automation": {
+      "title": "자동화 레이어",
+      "subtitle": "운영 레이어",
+      "description": "리드 캡처, CRM 라우팅, 후속 시퀀스. 웹사이트가 잠든 사이에도 일합니다."
+    },
+    "execution": {
+      "title": "실행 엔진",
+      "subtitle": "복합 성장 레이어",
+      "description": "주간 반복, A/B 테스트, SEO 복리 — 지속 개선의 시스템."
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals 최적화",
+    "seo": "기술 SEO 기준 포함",
+    "conversion": "기본 전환 아키텍처",
+    "founderLed": "창업자 대 창업자 전달"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ 보이지 않는 세금 ]",
+    "heading": "수익성 있는 비즈니스도 매일 온라인에서 매출을 잃습니다.",
+    "scenarioIntro": "많은 창업자가 알지만 거의 수치화하지 않는 시나리오입니다.",
+    "scenarioP1": "진지한 구매자가 서비스를 검색합니다. 경쟁사를 먼저 찾는 이유는 더 나아서가 아니라, 1.2초 vs 6.4초 로딩, 질문에 답하는 헤드라인, 퍼스트뷰 CTA 때문입니다.",
+    "scenarioP2": "그 리드의 존재조차 몰랐습니다. 경쟁사가 계약했습니다.",
+    "scenarioP3": "마케팅 문제가 아니라 인프라 문제입니다.",
+    "stat1Value": "75%",
+    "stat1Caption": "의 사용자가 웹 디자인으로 기업 신뢰도를 판단합니다.",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88%",
+    "stat2Caption": "의 온라인 소비자가 나쁜 경험 후 재방문을 꺼립니다.",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1초",
+    "stat3Caption": " 페이지 로딩 지연마다 전환이 7% 감소합니다.",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3.5×",
+    "stat4Caption": " SEO 최적화 고성능 웹사이트가 만드는 자격 리드.",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "훌륭한 웹사이트가 없는 것은 표에 보이는 비용이 아니라, 나타나지 않은 매출입니다.",
+    "cta": "그것을 잡는 인프라를 구축하세요"
+  },
+  "paradox": {
+    "quoteOpen": "우리 비즈니스는",
+    "quoteHighlight": "없어도",
+    "quoteClose": "잘 돌아갑니다.",
+    "bodyIntro": "오프라인에서 번창하는 모든 비즈니스에는 한계가 있습니다.",
+    "bodyP1": "입소문은 한계까지 확장됩니다. 추천이 말랍니다. 경쟁사가 월 40달러 웹사이트로 몰랐던 검색 수요를 가져갑니다.",
+    "bodyP2": "예약 페이지 없는 미슐랭 레스토랑은 OpenTable 연동 비스트로에 예약을 잃습니다. 로컬 SEO 없는 시공업체는 3,000달러 사이트와 Google 리뷰 12개의 신생 업체에 밀립니다.",
+    "bodyP3": "가시성은 복리로 자랍니다. 비가시성도 마찬가지입니다.",
+    "bodyP4": "질문은 \"웹사이트가 필요한가?\"가 아니라 \"기다리는 동안 얼마나 잃었는가?\"입니다."
+  },
+  "socialProof": {
+    "eyebrow": "[ 고객 성과 ]",
+    "heading": "창업자, 운영자, 진지한 브랜드를 위해 실행.",
+    "carouselLabel": "고객 성과 스토리",
+    "prevReview": "이전 리뷰",
+    "nextReview": "다음 리뷰",
+    "chooseReview": "리뷰 선택",
+    "showReview": "리뷰 보기"
+  },
+  "manifesto": {
+    "headingLine1": "웹은 망가지지 않았습니다.",
+    "headingLine2": "대부분의 기업이 자신의 것을 설계하지 않았을 뿐입니다.",
+    "ctaSecondary": "시스템 사고 보기"
+  },
+  "processTeaser": {
+    "srHeading": "구축 프로세스 개요",
+    "seeFullLink": "전체 구축 시스템 보기",
+    "phase1": {
+      "name": "감사 및 분해",
+      "duration": "1주차",
+      "line": "기술 감사, SEO 구조, 전환 격차, 경쟁 매트릭스. 픽셀 전에 벤치마크."
+    },
+    "phase2": {
+      "name": "아키텍처 및 전략",
+      "duration": "1–2주",
+      "line": "IA, 전환 우선 계층, URL+CMS, 키워드 토폴로지."
+    },
+    "phase3": {
+      "name": "디자인 시스템 및 UI",
+      "duration": "2–3주",
+      "line": "Figma 토큰, 컴포넌트, 런칭 이후 확장 규칙."
+    },
+    "phase4": {
+      "name": "구축 및 최적화",
+      "duration": "3–6주",
+      "line": "Next.js, CMS, 분석, LCP 1.5초 미만 QA."
+    },
+    "phase5": {
+      "name": "런칭 및 복합 성장",
+      "duration": "6주→지속",
+      "line": "모니터링, 주간 반복, SEO+CRO 복리. 런칭은 시작점."
+    }
+  },
+  "faq": {
+    "heading": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "프리랜서나 다른 에이전시 대신 Torpedo Web을 선택하는 이유는?",
+        "answer": "프리랜서는 산출물, 전통 에이전시는 시간을 최적화합니다. Torpedo Web은 인프라를 최적화합니다: 성능 예산, 전환 아키텍처, 기본 기술 SEO, 분석, 실행 가능한 반복 리듬."
+      },
+      {
+        "question": "리빌드 없이 기존 사이트를 개선할 수 있나요?",
+        "answer": "예. 기술·전환 감사로 시작해 구조 병목을 수정하고 IA를 정리하며 분석을 구축합니다. 스택이나 CMS가 목표를 막을 때만 전면 리빌드를 제안합니다."
+      },
+      {
+        "question": "디스커버리 콜 전에 무엇을 준비해야 하나요?",
+        "answer": "주요 URL, 트래픽 채널, 전환 목표, CRM/폼/광고 도구, 신뢰할 수 있는 수치(대략적이어도 됨)를 준비하세요. 일반 슬라이드가 아닌 우선순위 시스템 맵으로 전환합니다."
+      },
+      {
+        "question": "인도와 해외 모두 지원하나요?",
+        "answer": "둘 다입니다. 미국·인도에서 현지 전화와 워크플로를 운영합니다. 엔지니어링 기준은 동일하고 전술은 지역과 검색 의도에 맞춥니다."
+      },
+      {
+        "question": "검색에서 실제로 성과를 내는 웹사이트의 차이는?",
+        "answer": "기술 SEO를 인프라로 취급합니다: URL, 스키마, 크롤, 내부 링크, Core Web Vitals, 의도에 맞춘 콘텐츠."
+      },
+      {
+        "question": "이미 잘되는데 왜 더 나은 웹사이트가 필요한가요?",
+        "answer": "입소문에는 한계가 있습니다. 경쟁사가 보이지 않는 검색 수요를 가져갑니다. 질문은 디지털 창구 필요 여부가 아니라, 기다리는 동안 얼마나 매출이 더 빠르고 명확한 경쟁사로 흘렀는지입니다."
+      }
+    ]
+  }
+}

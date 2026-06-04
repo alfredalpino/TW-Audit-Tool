@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ 数字基础设施合作伙伴 ]",
+  "heroTitlePrefix": "没有表现优异的官网，",
+  "heroTitleHighlight": "企业就会",
+  "heroTitleMiddle": "在竞争中",
+  "heroTitleEnd": "隐形。",
+  "heroSubtitle": "多数企业把 60–80% 的合格线索输给了数字基础设施更好的竞争对手。不是产品更好，是网站更好。",
+  "scrollHint": "滚动",
+  "services": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "subtitle": "性能层",
+      "description": "快速加载、排名靠前、引导用户完成单一可衡量行动的转化架构页面。"
+    },
+    "automation": {
+      "title": "自动化层",
+      "subtitle": "运营层",
+      "description": "线索捕获、CRM 路由、跟进序列。网站在您休息时仍在工作。"
+    },
+    "execution": {
+      "title": "执行引擎",
+      "subtitle": "复合增长层",
+      "description": "每周迭代、A/B 测试、SEO 复利——持续改进的系统。"
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals 已优化",
+    "seo": "含技术 SEO 基线",
+    "conversion": "默认转化架构",
+    "founderLed": "创始人对创始人交付"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ 隐形税 ]",
+    "heading": "盈利的企业每天都在线上流失收入。",
+    "scenarioIntro": "这是多数创始人认得却很少量化的场景。",
+    "scenarioP1": "认真买家搜索您的服务。他们先找到竞争对手，不是因为对方更好，而是网站 1.2 秒加载而非 6.4 秒，标题回答了问题，CTA 在首屏可见。",
+    "scenarioP2": "您从未知道这条线索存在。对手成交了。",
+    "scenarioP3": "这不是营销问题，是基础设施问题。",
+    "stat1Value": "75%",
+    "stat1Caption": "的用户根据网站设计判断企业可信度。",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88%",
+    "stat2Caption": "的在线消费者在糟糕体验后不愿回访。",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 秒",
+    "stat3Caption": "页面加载延迟每增加 1 秒，转化下降 7%。",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3.5×",
+    "stat4Caption": "拥有 SEO 优化高性能网站的企业产生的合格线索。",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "没有优秀网站，不是表格里看得见的成本，而是从未出现的收入。",
+    "cta": "构建能捕获它的基础设施"
+  },
+  "paradox": {
+    "quoteOpen": "我的生意",
+    "quoteHighlight": "没有",
+    "quoteClose": "像样的网站也过得去。",
+    "bodyIntro": "每个线下兴旺的业务都有天花板。",
+    "bodyP1": "口碑传播会到头。推荐枯竭。竞争对手用每月 40 美元的网站开始捕获您从未意识到的搜索需求。",
+    "bodyP2": "没有预约页的米其林餐厅，输给接了 OpenTable 的普通小馆。不做本地排名的承包商，输给 3000 美元网站加 12 条 Google 评论的新公司。",
+    "bodyP3": "可见性会复利。不可见也会。",
+    "bodyP4": "问题不是「要不要网站？」而是「等待期间已经失去了多少？」"
+  },
+  "socialProof": {
+    "eyebrow": "[ 客户成果 ]",
+    "heading": "为创始人、运营者与严肃品牌而执行。",
+    "carouselLabel": "客户成果故事",
+    "prevReview": "上一条评价",
+    "nextReview": "下一条评价",
+    "chooseReview": "选择评价",
+    "showReview": "显示评价"
+  },
+  "manifesto": {
+    "headingLine1": "Web 没有坏。",
+    "headingLine2": "只是多数企业从未工程化自己的那一套。",
+    "ctaSecondary": "了解系统思维"
+  },
+  "processTeaser": {
+    "srHeading": "构建流程概览",
+    "seeFullLink": "查看完整构建系统",
+    "phase1": {
+      "name": "审计与解构",
+      "duration": "第 1 周",
+      "line": "技术审计、SEO 结构、转化缺口、竞争矩阵。先定基准再画像素。"
+    },
+    "phase2": {
+      "name": "架构与策略",
+      "duration": "第 1–2 周",
+      "line": "IA、转化优先层级、URL+CMS、关键词拓扑，每页对应指标。"
+    },
+    "phase3": {
+      "name": "设计系统与界面",
+      "duration": "第 2–3 周",
+      "line": "Figma 令牌、组件、超越上线的可扩展规则。"
+    },
+    "phase4": {
+      "name": "构建与优化",
+      "duration": "第 3–6 周",
+      "line": "Next.js、CMS、分析，瞄准 LCP 低于 1.5 秒的 QA。"
+    },
+    "phase5": {
+      "name": "上线与复合增长",
+      "duration": "第 6 周→持续",
+      "line": "监控、每周迭代、SEO+CRO 复利。上线是起点。"
+    }
+  },
+  "faq": {
+    "heading": "常见问题",
+    "items": [
+      {
+        "question": "为何选 Torpedo Web 而非自由职业者或其他代理？",
+        "answer": "自由职业者优化交付物，传统代理优化工时。Torpedo Web 优化基础设施：性能预算、转化架构、默认技术 SEO、分析基线与可运行的迭代节奏。"
+      },
+      {
+        "question": "能否在不重建的情况下改进现有网站？",
+        "answer": "可以。从技术与转化审计开始，修复结构瓶颈，收紧信息架构，部署分析。仅当栈或 CMS 阻碍目标时才建议全量重建。"
+      },
+      {
+        "question": "探索通话前应准备什么？",
+        "answer": "主要 URL、流量渠道、转化目标（线索/预约/销售）、工具（CRM、表单、广告）及可信数据（粗略亦可）。我们将其转化为优先级系统图，而非通用幻灯片。"
+      },
+      {
+        "question": "是否同时服务印度与海外客户？",
+        "answer": "是。我们在美国与印度运营，各有本地电话与交付流程。工程标准一致，战术随地域与搜索意图调整。"
+      },
+      {
+        "question": "网站如何在搜索中真正见效？",
+        "answer": "技术 SEO 作为基础设施：URL 拓扑、Schema、爬取清晰度、内链、Core Web Vitals 作为排名杠杆，内容映射意图而非末尾 checklist。"
+      },
+      {
+        "question": "业务已经很好，为何现在还要更好的网站？",
+        "answer": "口碑会到头。竞争对手捕获您看不见的搜索需求。问题不是要不要数字门面，而是等待期间已有多少收入流向更快、更清晰、监测更完善的对手。"
+      }
+    ]
+  }
+}

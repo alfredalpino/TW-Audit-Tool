@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "我哋做乜",
+    "heading": "網站開發、設計系統同增長基礎設施",
+    "description": "為認真品牌構建可隨業務擴展嘅定制網站開發、設計系統同基礎設施。",
+    "items": {
+      "websites": {
+        "title": "網站同 Web 應用",
+        "description": "我哋設計同構建快速、可靠嘅網站同 Web 應用，隨你嘅業務一齊擴展。",
+        "highlight1": "定制網站同跨平台應用",
+        "highlight2": "儀表盤同內部工具",
+        "highlight3": "安全後端同集成",
+        "highlight4": "為速度同長期使用而構建"
+      },
+      "design": {
+        "title": "設計同用戶體驗",
+        "description": "令產品簡潔清晰、易於使用，用戶唔會迷失方向。",
+        "highlight1": "簡潔 UI 同流暢用戶流程",
+        "highlight2": "流動優先布局",
+        "highlight3": "保持一致性嘅設計系統",
+        "highlight4": "基於真實用戶行為構建"
+      },
+      "growth": {
+        "title": "增長同轉化",
+        "description": "我哋構建能吸引流量並將訪客轉化為客戶嘅網站結構。",
+        "highlight1": "由第一日開始嘅 SEO 配置",
+        "highlight2": "高轉化着陸頁",
+        "highlight3": "清晰嘅信息同 CTA",
+        "highlight4": "為搜尋同銷售而寫嘅內容"
+      },
+      "brand": {
+        "title": "品牌同視覺設計",
+        "description": "塑造品牌嘅視覺同感受，喺各渠道保持一致同辨識度。",
+        "highlight1": "標誌同視覺識別",
+        "highlight2": "色彩、字體同風格系統",
+        "highlight3": "網站同營銷用圖形",
+        "highlight4": "全站清晰一致嘅設計"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web 服務棧 ]",
+    "title": "數碼工程同增長執行",
+    "description": "我哋構建融合網站性能、搜尋可見性同轉化運營嘅系統，令增長對高意圖需求可預測、可衡量、可擴展。",
+    "servicesHeading": "核心服務",
+    "faqHeading": "常見問題"
+  }
+}

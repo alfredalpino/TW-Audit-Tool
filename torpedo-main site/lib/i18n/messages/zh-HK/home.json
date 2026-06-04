@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ 數碼基礎設施合作夥伴 ]",
+  "heroTitlePrefix": "冇表現優異嘅官網，",
+  "heroTitleHighlight": "企業就會",
+  "heroTitleMiddle": "喺競爭中",
+  "heroTitleEnd": "隱形。",
+  "heroSubtitle": "多數企業將 60–80% 嘅合格線索輸畀數碼基礎設施更好嘅競爭對手。唔係產品更好，係網站更好。",
+  "scrollHint": "滾動",
+  "services": {
+    "webFoundation": {
+      "title": "Web 基座",
+      "subtitle": "性能層",
+      "description": "快速載入、排名靠前、引導用戶完成單一可衡量行動嘅轉化架構頁面。"
+    },
+    "automation": {
+      "title": "自動化層",
+      "subtitle": "運營層",
+      "description": "線索捕獲、CRM 路由、跟進序列。網站喺你休息時仍然工作。"
+    },
+    "execution": {
+      "title": "執行引擎",
+      "subtitle": "複合增長層",
+      "description": "每週迭代、A/B 測試、SEO 複利——持續改進嘅系統。"
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals 已優化",
+    "seo": "含技術 SEO 基線",
+    "conversion": "默認轉化架構",
+    "founderLed": "創辦人對創辦人交付"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ 隱形稅 ]",
+    "heading": "盈利嘅企業每日都喺線上流失收入。",
+    "scenarioIntro": "呢個係多數創辦人認得但好少量化嘅場景。",
+    "scenarioP1": "認真買家搜尋你嘅服務。佢哋先搵到競爭對手，唔係因為對方更好，而係網站 1.2 秒載入而唔係 6.4 秒，標題答到問題，CTA 喺首屏可見。",
+    "scenarioP2": "你從未知道呢條線索存在。對手成交咗。",
+    "scenarioP3": "呢個唔係營銷問題，係基礎設施問題。",
+    "stat1Value": "75%",
+    "stat1Caption": "嘅用戶根據網站設計判斷企業可信度。",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88%",
+    "stat2Caption": "嘅在線消費者喺糟糕體驗後唔願回訪。",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1 秒",
+    "stat3Caption": "頁面載入延遲每增加 1 秒，轉化下降 7%。",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3.5×",
+    "stat4Caption": "擁有 SEO 優化高性能網站嘅企業產生嘅合格線索。",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "冇優秀網站，唔係表格入面睇得到嘅成本，而係從未出現嘅收入。",
+    "cta": "構建能捕獲佢嘅基礎設施"
+  },
+  "paradox": {
+    "quoteOpen": "我嘅生意",
+    "quoteHighlight": "冇",
+    "quoteClose": "似樣嘅網站都過得去。",
+    "bodyIntro": "每個線下興旺嘅業務都有天花板。",
+    "bodyP1": "口碑傳播會到頭。推薦枯竭。競爭對手用每月 40 美元嘅網站開始捕獲你從未意識到嘅搜尋需求。",
+    "bodyP2": "冇預約頁嘅米其林餐廳，輸畀接咗 OpenTable 嘅普通小館。唔做本地排名嘅承包商，輸畀 3000 美元網站加 12 條 Google 評論嘅新公司。",
+    "bodyP3": "可見性會複利。不可見都會。",
+    "bodyP4": "問題唔係「要唔要網站？」而係「等待期間已經失去咗幾多？」"
+  },
+  "socialProof": {
+    "eyebrow": "[ 客戶成果 ]",
+    "heading": "為創辦人、運營者同認真品牌而執行。",
+    "carouselLabel": "客戶成果故事",
+    "prevReview": "上一條評價",
+    "nextReview": "下一條評價",
+    "chooseReview": "選擇評價",
+    "showReview": "顯示評價"
+  },
+  "manifesto": {
+    "headingLine1": "Web 冇壞。",
+    "headingLine2": "只係多數企業從未工程化自己嗰套。",
+    "ctaSecondary": "了解系統思維"
+  },
+  "processTeaser": {
+    "srHeading": "構建流程概覽",
+    "seeFullLink": "查看完整構建系統",
+    "phase1": {
+      "name": "審計同解構",
+      "duration": "第 1 週",
+      "line": "技術審計、SEO 結構、轉化缺口、競爭矩陣。先定基準再畫像素。"
+    },
+    "phase2": {
+      "name": "架構同策略",
+      "duration": "第 1–2 週",
+      "line": "IA、轉化優先層級、URL+CMS、關鍵詞拓撲，每頁對應指標。"
+    },
+    "phase3": {
+      "name": "設計系統同界面",
+      "duration": "第 2–3 週",
+      "line": "Figma 令牌、組件、超越上線嘅可擴展規則。"
+    },
+    "phase4": {
+      "name": "構建同優化",
+      "duration": "第 3–6 週",
+      "line": "Next.js、CMS、分析，瞄準 LCP 低於 1.5 秒嘅 QA。"
+    },
+    "phase5": {
+      "name": "上線同複合增長",
+      "duration": "第 6 週→持續",
+      "line": "監控、每週迭代、SEO+CRO 複利。上線係起點。"
+    }
+  },
+  "faq": {
+    "heading": "常見問題",
+    "items": [
+      {
+        "question": "點解揀 Torpedo Web 而唔係自由職業或其他代理？",
+        "answer": "自由職業優化交付物，傳統代理優化工時。Torpedo Web 優化基礎設施：性能預算、轉化架構、默認技術 SEO、分析基線同可運行嘅迭代節奏。"
+      },
+      {
+        "question": "可唔可以喺唔重建嘅情況下改進現有網站？",
+        "answer": "可以。由技術同轉化審計開始，修復結構瓶頸，收緊信息架構，部署分析。僅當棧或 CMS 阻礙目標時先建議全量重建。"
+      },
+      {
+        "question": "探索通話前應準備乜？",
+        "answer": "主要 URL、流量渠道、轉化目標（線索/預約/銷售）、工具（CRM、表單、廣告）同可信數據（粗略都得）。我哋將其轉化為優先級系統圖，而唔係通用簡報。"
+      },
+      {
+        "question": "係咪同時服務印度同海外客戶？",
+        "answer": "係。我哋喺美國同印度運營，各有本地電話同交付流程。工程標準一致，戰術隨地域同搜尋意圖調整。"
+      },
+      {
+        "question": "網站點樣喺搜尋中真正見效？",
+        "answer": "技術 SEO 作為基礎設施：URL 拓撲、Schema、爬取清晰度、內鏈、Core Web Vitals 作為排名槓桿，內容映射意圖而唔係末尾 checklist。"
+      },
+      {
+        "question": "業務已經好好，點解而家仲要更好嘅網站？",
+        "answer": "口碑會到頭。競爭對手捕獲你睇唔到嘅搜尋需求。問題唔係要唔要數碼門面，而係等待期間已有幾多收入流向更快、更清晰、監測更完善嘅對手。"
+      }
+    ]
+  }
+}

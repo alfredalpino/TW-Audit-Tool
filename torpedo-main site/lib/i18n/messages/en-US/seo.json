@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web Agency | Web Development & Growth Infrastructure",
+    "description": "Torpedo Web Agency designs and builds high-performance websites, technical SEO systems, and conversion infrastructure for founders who need measurable growth.",
+    "ogTitle": "Torpedo Web Agency | Web Development & Growth Infrastructure",
+    "ogDescription": "High-intent web development, technical SEO, and conversion systems for founders who need measurable growth.",
+    "keywords": "web development agency, technical SEO, conversion optimization, Next.js development, growth infrastructure, founder-led web agency"
+  },
+  "services": {
+    "title": "Web Development & Digital Services | Torpedo Web",
+    "description": "Performance engineering, technical SEO, automation, and conversion systems — built as infrastructure, not one-off projects.",
+    "ogTitle": "Capabilities | Torpedo Web Agency",
+    "ogDescription": "Web foundation, automation layer, and execution engine for founders who measure outcomes.",
+    "keywords": "web development services, technical SEO agency, conversion rate optimization, Next.js agency"
+  },
+  "process": {
+    "title": "Our Process | Torpedo Web Agency",
+    "description": "A structured build process: diagnose, architect, ship, and compound — with founder-level accountability at every stage.",
+    "ogTitle": "How We Build | Torpedo Web",
+    "ogDescription": "Diagnostic-first web development process built for speed, search visibility, and conversion.",
+    "keywords": "web development process, agency workflow, technical discovery, performance-first build"
+  },
+  "systems": {
+    "title": "Systems & Portfolio | Torpedo Web",
+    "description": "Revenue systems we've engineered — performance, search, and conversion infrastructure in production.",
+    "ogTitle": "Systems | Torpedo Web Agency",
+    "ogDescription": "Case studies and systems built for measurable growth.",
+    "keywords": "web agency portfolio, conversion systems, performance case studies"
+  },
+  "blog": {
+    "title": "Insights & Dispatch | Torpedo Web Blog",
+    "description": "Strategic insights on web performance, technical SEO, and conversion infrastructure — zero noise.",
+    "ogTitle": "Torpedo Web Blog",
+    "ogDescription": "Founder-focused insights on digital infrastructure and growth systems.",
+    "keywords": "web development blog, technical SEO insights, conversion strategy"
+  },
+  "whatWeDo": {
+    "title": "What We Build | Torpedo Web",
+    "description": "Revenue and operations systems, web development, design systems, and scalable infrastructure for serious brands.",
+    "ogTitle": "What We Build | Torpedo Web",
+    "ogDescription": "Revenue systems, web development, and scalable infrastructure for operators who measure outcomes.",
+    "keywords": "web development services, design systems, revenue infrastructure, growth systems"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy | Torpedo Web",
+    "description": "Privacy Policy for Torpedo Web. How we collect, use, and protect your data.",
+    "ogTitle": "Privacy Policy | TORPEDO WEB",
+    "ogDescription": "How Torpedo Web collects, uses, and protects your personal data.",
+    "keywords": "privacy policy, data protection, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Terms of Service | Torpedo Web",
+    "description": "Terms of Service for Torpedo Web. Growth infrastructure partner.",
+    "ogTitle": "Terms of Service | TORPEDO WEB",
+    "ogDescription": "Terms governing use of Torpedo Web services and website.",
+    "keywords": "terms of service, Torpedo Web terms"
+  },
+  "dmca": {
+    "title": "DMCA Policy | Torpedo Web",
+    "description": "DMCA Policy for Torpedo Web. How we handle copyright infringement notices and counter-notifications.",
+    "ogTitle": "DMCA Policy | TORPEDO WEB",
+    "ogDescription": "Copyright infringement notice and counter-notification process.",
+    "keywords": "DMCA policy, copyright, Torpedo Web"
+  }
+}

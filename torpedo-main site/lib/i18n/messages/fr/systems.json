@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "eyebrow": "[ SYSTÈMES ]",
+    "heading": "Conçu pour piloter la croissance de bout en bout",
+    "description": "Nous ne livrons pas des livrables isolés. Nous construisons des systèmes où web, automatisation et exécution fonctionnent comme un seul ensemble.",
+    "bookCall": "Réserver un appel stratégie",
+    "exploreLink": "Explorer les services →"
+  },
+  "pillars": {
+    "webFoundation": {
+      "title": "Fondation Web",
+      "detail": "Sites et apps rapides et fiables, conçus pour une croissance durable et des itérations faciles."
+    },
+    "automation": {
+      "title": "Couche Automatisation",
+      "detail": "Routage de leads, relances et automatisations opérationnelles pour éliminer les goulots manuels."
+    },
+    "execution": {
+      "title": "Moteur d'Exécution",
+      "detail": "Optimisation continue UX, SEO, conversion et analytics pour faire composer la performance."
+    }
+  },
+  "closing": {
+    "text": "Commencez par un appel stratégie pour cartographier vos goulots actuels et les prochaines évolutions système.",
+    "bookCall": "Réserver un appel stratégie"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "Cosa facciamo",
+    "heading": "Sviluppo web, design system e infrastruttura di crescita",
+    "description": "Sviluppo web su misura, design system e infrastruttura costruiti per scalare con brand seri.",
+    "items": {
+      "websites": {
+        "title": "Siti web e applicazioni",
+        "description": "Progettiamo e costruiamo siti e app veloci e affidabili che crescono con il tuo business.",
+        "highlight1": "Siti custom e applicazioni cross-platform",
+        "highlight2": "Dashboard e tool interni",
+        "highlight3": "Backend sicuro e integrazioni",
+        "highlight4": "Costruito per velocità e uso a lungo termine"
+      },
+      "design": {
+        "title": "Design e user experience",
+        "description": "Rendiamo il tuo prodotto semplice, chiaro e facile da usare così gli utenti non si perdono.",
+        "highlight1": "UI pulita e flussi fluidi",
+        "highlight2": "Layout mobile-first",
+        "highlight3": "Design system per coerenza",
+        "highlight4": "Costruito per il comportamento reale degli utenti"
+      },
+      "growth": {
+        "title": "Crescita e conversione",
+        "description": "Strutturiamo il tuo sito per attirare traffico e trasformare visitatori in clienti.",
+        "highlight1": "SEO fin dal giorno uno",
+        "highlight2": "Landing page che convertono",
+        "highlight3": "Messaggi chiari e CTA",
+        "highlight4": "Contenuti per ricerca e vendite"
+      },
+      "brand": {
+        "title": "Brand e design visivo",
+        "description": "Diamo forma a look & feel del tuo brand per distinguersi e restare coerente su tutti i canali.",
+        "highlight1": "Logo e identità visiva",
+        "highlight2": "Colori, font e sistemi di stile",
+        "highlight3": "Grafiche per web e marketing",
+        "highlight4": "Design pulito e coerente su tutte le pagine"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Stack servizi Torpedo Web ]",
+    "title": "Ingegneria digitale ed esecuzione della crescita",
+    "description": "Costruiamo sistemi che combinano performance web, visibilità search e operazioni di conversione per una crescita prevedibile, misurabile e scalabile.",
+    "servicesHeading": "Servizi core",
+    "faqHeading": "Domande frequenti"
+  }
+}

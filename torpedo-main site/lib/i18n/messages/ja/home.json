@@ -1,0 +1,136 @@
+{
+  "heroEyebrow": "[ デジタルインフラパートナー ]",
+  "heroTitlePrefix": "パフォーマンスのあるWebサイトがなければ、",
+  "heroTitleHighlight": "見えない",
+  "heroTitleMiddle": "存在のまま、",
+  "heroTitleEnd": "ビジネスは埋もれます。",
+  "heroSubtitle": "多くの企業は、より優れたデジタル基盤を持つ競合に、見込み客の60〜80%を失っています。製品の差ではなく、Webサイトの差です。",
+  "scrollHint": "スクロール",
+  "services": {
+    "webFoundation": {
+      "title": "Web基盤",
+      "subtitle": "パフォーマンスレイヤー",
+      "description": "高速読み込み、高ランキング、単一の測定可能なアクションへ導くコンバージョン設計ページ。"
+    },
+    "automation": {
+      "title": "自動化レイヤー",
+      "subtitle": "オペレーションレイヤー",
+      "description": "リードキャプチャ、CRMルーティング、フォローアップ。Webサイトが眠っている間も働きます。"
+    },
+    "execution": {
+      "title": "実行エンジン",
+      "subtitle": "複合成長レイヤー",
+      "description": "週次イテレーション、A/Bテスト、SEO複利——継続改善のシステム。"
+    }
+  },
+  "trust": {
+    "performance": "Core Web Vitals 最適化",
+    "seo": "テクニカルSEO基盤込み",
+    "conversion": "コンバージョン設計が標準",
+    "founderLed": "創業者同士のデリバリー"
+  },
+  "invisibilityTax": {
+    "eyebrow": "[ 見えないコスト ]",
+    "heading": "利益の出ているビジネスも、毎日オンラインで売上を失っています。",
+    "scenarioIntro": "多くの創業者が認識するが数値化しないシナリオがあります。",
+    "scenarioP1": "真剣な購買者がサービスを検索します。競合が先に見つかるのは、相手が優れているからではなく、読み込みが1.2秒対6.4秒、見出しが質問に答え、CTAがファーストビューにあるからです。",
+    "scenarioP2": "そのリードの存在すら知りません。競合が成約しました。",
+    "scenarioP3": "これはマーケティングの問題ではなく、インフラの問題です。",
+    "stat1Value": "75%",
+    "stat1Caption": "のユーザーがWebデザインで企業の信頼性を判断する。",
+    "stat1Source": "Stanford Web Credibility Research",
+    "stat2Value": "88%",
+    "stat2Caption": "のオンライン消費者が悪い体験後に再訪しにくくなる。",
+    "stat2Source": "Adobe UX Survey",
+    "stat3Value": "1秒",
+    "stat3Caption": "の読み込み遅延ごとにコンバージョンが7%低下。",
+    "stat3Source": "Akamai / Google",
+    "stat4Value": "3.5×",
+    "stat4Caption": "SEO最適化・高性能Webサイトを持つ企業が生む見込み客。",
+    "stat4Source": "HubSpot State of Marketing",
+    "closingQuote": "優れたWebサイトがないことは、表に見えないコストではなく、現れなかった売上です。",
+    "cta": "それを捉えるインフラを構築する"
+  },
+  "paradox": {
+    "quoteOpen": "うちのビジネスは",
+    "quoteHighlight": "なくても",
+    "quoteClose": "問題なく回っている。",
+    "bodyIntro": "オフラインで好調なビジネスにも上限があります。",
+    "bodyP1": "口コミは限界まで伸び、その先は止まります。競合が月40ドルのWebサイトで、知らなかった検索需要を取り始めます。",
+    "bodyP2": "予約ページのないミシュラン店は、OpenTable連携のビストロに予約を奪われます。ローカルSEOのない工務店は、3,000ドルサイトと12件のGoogleレビューを持つ新参に負けます。",
+    "bodyP3": "可視性は複利で伸びます。不可視性も同様です。",
+    "bodyP4": "問いは「Webサイトは必要か？」ではなく「待った間にいくら失ったか？」です。"
+  },
+  "socialProof": {
+    "eyebrow": "[ クライアント成果 ]",
+    "heading": "創業者、オペレーター、本格ブランド向けに実行。",
+    "carouselLabel": "クライアント成果ストーリー",
+    "prevReview": "前のレビュー",
+    "nextReview": "次のレビュー",
+    "chooseReview": "レビューを選択",
+    "showReview": "レビューを表示"
+  },
+  "manifesto": {
+    "headingLine1": "Webは壊れていません。",
+    "headingLine2": "多くの企業が、自分のものを設計したことがないだけです。",
+    "ctaSecondary": "システム思考を見る"
+  },
+  "processTeaser": {
+    "srHeading": "構築プロセス概要",
+    "seeFullLink": "フル構築システムを見る",
+    "phase1": {
+      "name": "監査と分解",
+      "duration": "第1週",
+      "line": "技術監査、SEO構造、コンバージョンギャップ、競合マトリクス。ピクセルより先にベンチマーク。"
+    },
+    "phase2": {
+      "name": "アーキテクチャと戦略",
+      "duration": "第1–2週",
+      "line": "IA、コンバージョン優先階層、URL+CMS、キーワードトポロジー。"
+    },
+    "phase3": {
+      "name": "デザインシステムとUI",
+      "duration": "第2–3週",
+      "line": "Figmaトークン、コンポーネント、ローンチ後もスケールするルール。"
+    },
+    "phase4": {
+      "name": "構築と最適化",
+      "duration": "第3–6週",
+      "line": "Next.js、CMS、分析、LCP 1.5秒未満を目指すQA。"
+    },
+    "phase5": {
+      "name": "ローンチと複合成長",
+      "duration": "第6週→継続",
+      "line": "監視、週次イテレーション、SEO+CRO複利。ローンチは起点。"
+    }
+  },
+  "faq": {
+    "heading": "よくある質問",
+    "items": [
+      {
+        "question": "フリーランスや他エージェンシーではなくTorpedo Webを選ぶ理由は？",
+        "answer": "フリーランスは成果物、従来型エージェンシーは時間を最適化します。Torpedo Webはインフラを最適化します：パフォーマンス予算、コンバージョン設計、テクニカルSEO、分析、反復リズムをシステムとして。"
+      },
+      {
+        "question": "リビルドなしで既存サイトを改善できますか？",
+        "answer": "はい。技術・コンバージョン監査から始め、構造ボトルネックを修正し、IAを整理し、分析を実装します。スタックやCMSが目標を阻む場合のみフルリビルドを提案します。"
+      },
+      {
+        "question": "ディスカバリーコール前に何を準備すべきですか？",
+        "answer": "主要URL、トラフィックチャネル、コンバージョン目標、CRM/フォーム/広告ツール、信頼できる数値（概算可）をお持ちください。汎用スライドではなく優先システムマップに落とし込みます。"
+      },
+      {
+        "question": "インド企業と海外、どちらも対応していますか？",
+        "answer": "両方です。米国・インドで現地電話とワークフローを運用。エンジニアリング基準は同一、戦術は地域と検索意図に合わせます。"
+      },
+      {
+        "question": "検索で成果を出すWebサイトの違いは？",
+        "answer": "テクニカルSEOをインフラとして扱います：URL、スキーマ、クロール、内部リンク、Core Web Vitals、意図に沿ったコンテンツ。"
+      },
+      {
+        "question": "既に好調なのに、なぜ今より良いWebサイトが必要？",
+        "answer": "口コミには限界があります。競合が見えない検索需要を取ります。問いはデジタル窓口の要否ではなく、待っている間にどれだけ売上が流れたかです。"
+      }
+    ]
+  }
+}

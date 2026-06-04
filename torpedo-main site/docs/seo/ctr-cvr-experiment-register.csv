@@ -1,0 +1,2 @@
+experiment_id,date,page_url,experiment_type,hypothesis,change_made,window_days,before_metric,after_metric,result,decision
+EXP-001,2026-05-08,/en-in/local/best-web-agency-in-lucknow-uttar-pradesh,ctr,City-intent title improves CTR,Updated title and meta to align exact query intent,14,ctr=1.8%,ctr=2.4%,improved,keep

@@ -1,0 +1,95 @@
+{
+  "howWeWork": {
+    "eyebrow": "[ 多階段路線圖 ]",
+    "heading": "由想法到執行，為成果而設計",
+    "intro": "結構化階段，用嚟設計、構建同擴展真正有效嘅數碼系統。",
+    "closingP": "每個階段都指向可衡量嘅成果，而唔只係交個網站。",
+    "startProject": "啟動項目",
+    "bookIntroCall": "預約介紹通話"
+  },
+  "phases": {
+    "phase1": {
+      "label": "階段 1",
+      "title": "審計同解構",
+      "description": "資產技術審計、競爭環境分析，同性能、體驗同轉化目標嘅全局差距梳理。"
+    },
+    "phase2": {
+      "label": "階段 2",
+      "title": "架構同策略",
+      "description": "信息架構、轉化優先線框、SEO層級同可擴展系統決策，而唔係逐頁估。"
+    },
+    "phase3": {
+      "label": "階段 3",
+      "title": "設計系統同界面",
+      "description": "高保真界面、真正嘅設計系統（字體、間距、組件），同流程需要嘅原型。"
+    },
+    "phase4": {
+      "label": "階段 4",
+      "title": "構建同優化",
+      "description": "現代技術棧構建、Core Web Vitals、CMS同集成，同響應式同跨瀏覽器QA。"
+    },
+    "phase5": {
+      "label": "階段 5",
+      "title": "上線同擴展",
+      "description": "伴隨QA、分析、CRO同迭代路線圖發布。上線係改進嘅起點，而唔係終點。"
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ 定位 ]",
+    "heading": "唔同嘅代理機構",
+    "intro": "多數代理機構聚焦設計同交付。我哋聚焦系統、性能同成果。",
+    "contextP": "揀合作夥伴，唔係自由職業定代理嘅問題，而係你需要嘅思維深度、執行力度同長期影響。",
+    "tableCaption": "能力對比：Torpedo Web vs 典型自由職業 vs 傳統代理機構",
+    "columnCapability": "能力",
+    "columnTorpedo": "Torpedo Web",
+    "columnFreelancers": "典型自由職業",
+    "columnAgencies": "傳統代理機構",
+    "rows": {
+      "approach": {
+        "capability": "方法",
+        "torpedo": "系統優先、工程驅動",
+        "freelancers": "任務式執行",
+        "agencies": "設計驅動、流程導向"
+      },
+      "projectThinking": {
+        "capability": "項目思維",
+        "torpedo": "業務同性能並重",
+        "freelancers": "範圍有限嘅交付",
+        "agencies": "品牌同視覺導向"
+      },
+      "executionDepth": {
+        "capability": "執行深度",
+        "torpedo": "全棧、可擴展系統",
+        "freelancers": "狹窄專精",
+        "agencies": "團隊化但碎片化"
+      },
+      "performanceOptimization": {
+        "capability": "性能優化",
+        "torpedo": "由第一日內置",
+        "freelancers": "好少優先",
+        "agencies": "常為上線後附加項"
+      },
+      "speedAgility": {
+        "capability": "速度同敏捷",
+        "torpedo": "快速、創辦人級執行",
+        "freelancers": "快但不穩定",
+        "agencies": "層級多、較慢"
+      },
+      "longTermScalability": {
+        "capability": "長期可擴展性",
+        "torpedo": "為增長同迭代而設計",
+        "freelancers": "擴展有限",
+        "agencies": "可擴展但僵化"
+      },
+      "clientExperience": {
+        "capability": "客戶體驗",
+        "torpedo": "直接、戰略性協作",
+        "freelancers": "非正式溝通",
+        "agencies": "客戶經理制、間接"
+      }
+    },
+    "closingP": "我哋以專注嘅工程合作夥伴身份運作：自由職業嘅敏捷，加上代理機構嘅結構同可靠性，又冇常見嘅取捨。",
+    "startProject": "啟動項目",
+    "bookIntroCall": "預約介紹通話"
+  }
+}

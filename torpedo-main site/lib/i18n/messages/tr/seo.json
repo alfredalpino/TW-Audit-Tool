@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Torpedo Web | Web Geliştirme ve Büyüme Altyapısı Ajansı",
+    "description": "Yüksek performanslı web siteleri, teknik SEO ve dönüşüm altyapısı inşa ediyoruz — ölçülebilir büyüme isteyen kurucular için.",
+    "ogTitle": "Torpedo Web | Web Geliştirme ve Büyüme Altyapısı",
+    "ogDescription": "Performans odaklı web geliştirme, teknik SEO ve dönüşüm sistemleri — Türkiye'deki kurucular için.",
+    "keywords": "web geliştirme ajansı İstanbul, teknik SEO ajansı, Next.js geliştirme, dönüşüm optimizasyonu, dijital altyapı KOBİ"
+  },
+  "services": {
+    "title": "Web Geliştirme Hizmetleri | Torpedo Web",
+    "description": "Performans mühendisliği, teknik SEO, otomasyon ve dönüşüm sistemleri — altyapı, tek seferlik proje değil.",
+    "ogTitle": "Yetkinlikler | Torpedo Web",
+    "ogDescription": "Web temeli, otomasyon katmanı ve yürütme motoru — ölçülebilir büyüme için.",
+    "keywords": "web geliştirme hizmetleri, teknik SEO Türkiye, dönüşüm oranı optimizasyonu"
+  },
+  "process": {
+    "title": "Sürecimiz | Torpedo Web",
+    "description": "Yapılandırılmış süreç: teşhis, mimari, teslimat, optimizasyon — her aşamada kurucu sorumluluğu.",
+    "ogTitle": "Nasıl İnşa Ediyoruz | Torpedo Web",
+    "ogDescription": "Hız, arama görünürlüğü ve dönüşüm için teşhis odaklı web geliştirme süreci.",
+    "keywords": "web geliştirme süreci, ajans iş akışı, teknik keşif"
+  },
+  "systems": {
+    "title": "Sistemler ve Portföy | Torpedo Web",
+    "description": "İnşa ettiğimiz gelir sistemleri — performans, arama ve dönüşüm altyapısı.",
+    "ogTitle": "Sistemler | Torpedo Web",
+    "ogDescription": "Ölçülebilir büyüme için inşa edilmiş sistemler ve vaka çalışmaları.",
+    "keywords": "web ajansı portföy, dönüşüm sistemleri, performans vaka çalışmaları"
+  },
+  "blog": {
+    "title": "İçgörüler ve Dispatch | Torpedo Web Blog",
+    "description": "Web performansı, teknik SEO ve dönüşüm altyapısı üzerine stratejik içgörüler — gürültü yok.",
+    "ogTitle": "Torpedo Web Blog",
+    "ogDescription": "Dijital altyapı ve büyüme sistemleri hakkında kurucu odaklı içgörüler.",
+    "keywords": "web geliştirme blog, teknik SEO Türkiye, dönüşüm stratejisi"
+  },
+  "whatWeDo": {
+    "title": "Ne İnşa Ediyoruz | Torpedo Web",
+    "description": "Gelir ve operasyon sistemleri, web geliştirme, tasarım sistemleri ve ciddi markalar için ölçeklenebilir altyapı.",
+    "ogTitle": "Ne İnşa Ediyoruz | Torpedo Web",
+    "ogDescription": "Gelir sistemleri, web geliştirme ve sonuçları ölçen operatörler için ölçeklenebilir altyapı.",
+    "keywords": "web geliştirme Türkiye, tasarım sistemleri, gelir altyapısı, büyüme sistemleri"
+  },
+  "privacyPolicy": {
+    "title": "Gizlilik Politikası | Torpedo Web",
+    "description": "Torpedo Web gizlilik politikası. Verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz.",
+    "ogTitle": "Gizlilik Politikası | TORPEDO WEB",
+    "ogDescription": "Torpedo Web kişisel verilerinizi nasıl toplar, kullanır ve korur.",
+    "keywords": "gizlilik politikası, veri koruma, Torpedo Web"
+  },
+  "termsOfService": {
+    "title": "Hizmet Şartları | Torpedo Web",
+    "description": "Torpedo Web hizmet şartları. Büyüme altyapısı ortağı.",
+    "ogTitle": "Hizmet Şartları | TORPEDO WEB",
+    "ogDescription": "Torpedo Web hizmetlerinin ve web sitesinin kullanımını düzenleyen şartlar.",
+    "keywords": "hizmet şartları, Torpedo Web koşulları"
+  },
+  "dmca": {
+    "title": "DMCA Politikası | Torpedo Web",
+    "description": "Torpedo Web DMCA politikası. Telif hakkı ihlali bildirimlerini ve karşı bildirimleri nasıl ele aldığımız.",
+    "ogTitle": "DMCA Politikası | TORPEDO WEB",
+    "ogDescription": "Telif hakkı ihlali bildirimi ve karşı bildirim süreci.",
+    "keywords": "DMCA politikası, telif hakkı, Torpedo Web"
+  }
+}

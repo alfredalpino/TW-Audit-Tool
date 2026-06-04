@@ -1,0 +1,33 @@
+{
+  "eyebrow": "[ INFRAESTRUCTURA, NO DECORACIÓN ]",
+  "heading": "No construimos sitios web. Construimos sistemas de ingresos.",
+  "cards": {
+    "webFoundation": {
+      "title": "Web Foundation",
+      "subtitle": "La capa de performance",
+      "body": "Páginas diseñadas para convertir: cargan rápido, rankean alto y guían a una acción medible. No bonitas. Funcionales.",
+      "bullet1": "Stack Next.js / React",
+      "bullet2": "Objetivos Core Web Vitals",
+      "bullet3": "Schema + baseline SEO técnico",
+      "bullet4": "Ingeniería responsive mobile-first"
+    },
+    "automation": {
+      "title": "Automation Layer",
+      "subtitle": "La capa operativa",
+      "body": "Captura de leads, ruteo CRM, secuencias de follow-up, workflows operativos. Tu sitio trabaja mientras duermes.",
+      "bullet1": "Formularios → ruteo CRM",
+      "bullet2": "Notificaciones + SLAs",
+      "bullet3": "Hooks de workflow (Zapier / Make / custom)",
+      "bullet4": "Dashboards operativos"
+    },
+    "execution": {
+      "title": "Execution Engine",
+      "subtitle": "La capa de crecimiento compuesto",
+      "body": "Iteración semanal. A/B testing. Monitoreo Core Web Vitals. SEO compuesto. No un proyecto sino un sistema en mejora continua.",
+      "bullet1": "Revisiones de performance semanales",
+      "bullet2": "Backlog de experimentos",
+      "bullet3": "Modelo de SEO compuesto",
+      "bullet4": "Loop de reportes mensual"
+    }
+  }
+}

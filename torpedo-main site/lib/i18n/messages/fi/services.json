@@ -1,0 +1,48 @@
+{
+  "carousel": {
+    "eyebrow": "Mitä teemme",
+    "heading": "Web-kehitys, design systemit ja kasvuinfrastruktuuri",
+    "description": "Räätälöity web-kehitys, design systemit ja infrastruktuuri, jotka skaalautuvat vakavien brändien mukana.",
+    "items": {
+      "websites": {
+        "title": "Verkkosivut ja web-sovellukset",
+        "description": "Suunnittelemme ja rakennamme nopeita, luotettavia sivustoja ja sovelluksia, jotka skaalautuvat liiketoimintasi mukana.",
+        "highlight1": "Räätälöidyt sivustot ja monialustaiset sovellukset",
+        "highlight2": "Dashboardit ja sisäiset työkalut",
+        "highlight3": "Turvallinen backend ja integraatiot",
+        "highlight4": "Rakennettu nopeuteen ja pitkäaikaiseen käyttöön"
+      },
+      "design": {
+        "title": "Design ja käyttökokemus",
+        "description": "Teemme tuotteestasi yksinkertaisen, selkeän ja helppokäyttöisen, jotta käyttäjät eivät eksy.",
+        "highlight1": "Siisti UI ja sujuvat käyttöpolut",
+        "highlight2": "Mobile-first -asettelut",
+        "highlight3": "Design systemit johdonmukaisuuteen",
+        "highlight4": "Rakennettu oikeaan käyttäytymiseen"
+      },
+      "growth": {
+        "title": "Kasvu ja konversio",
+        "description": "Rakennamme sivustosi houkuttelemaan liikennettä ja muuttamaan kävijät asiakkaiksi.",
+        "highlight1": "SEO alusta alkaen",
+        "highlight2": "Konvertoivat laskeutumissivut",
+        "highlight3": "Selkeä viestintä ja CTA:t",
+        "highlight4": "Hakua ja myyntiä varten rakennettu sisältö"
+      },
+      "brand": {
+        "title": "Brändi ja visuaalinen design",
+        "description": "Muovaamme brändisi ulkoasun ja tuntuman erottuvaksi ja johdonmukaiseksi kaikilla kanavilla.",
+        "highlight1": "Logo ja visuaalinen identiteetti",
+        "highlight2": "Värit, fontit ja tyylisysteemit",
+        "highlight3": "Grafiikat webiin ja markkinointiin",
+        "highlight4": "Siisti, johdonmukainen design kaikilla sivuilla"
+      }
+    }
+  },
+  "index": {
+    "eyebrow": "[ Torpedo Web -palvelupino ]",
+    "title": "Digitaalinen insinöörityö ja kasvun toteutus",
+    "description": "Rakennamme järjestelmiä, jotka yhdistävät web-suorituskyvyn, hakunäkyvyyden ja konversio-operaatiot ennustettavaan, mitattavaan ja skaalautuvaan kasvuun.",
+    "servicesHeading": "Keskeiset palvelut",
+    "faqHeading": "Usein kysytyt kysymykset"
+  }
+}
