@@ -1,20 +1,21 @@
 /**
- * BullMQ audit worker — Playwright, Lighthouse, axe-core.
- * Run: npm run worker (requires REDIS_URL + DATABASE_URL)
+ * PostgreSQL-backed audit worker — polls audit_runs WHERE status='queued'.
+ * Run: npm run worker (requires DATABASE_URL)
+ *
+ * Deploy on Railway (or similar) alongside Vercel API — API enqueues rows;
+ * this process claims and runs Playwright + Lighthouse + axe-core.
  */
-import { Worker } from "bullmq";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
+import { processAuditRun } from "../src/audit/processor";
 import * as schema from "../src/lib/db/schema";
-import { requireDatabaseUrl, requireRedisUrl } from "../src/lib/env";
-import { QUEUE_NAMES, type AuditRunJobPayload } from "../src/lib/queue/queues";
-import { handleAuditRunJob } from "../src/workers/audit-run-processor";
+import { requireDatabaseUrl } from "../src/lib/env";
+import { claimNextQueuedRun } from "../src/lib/queue/claim-queued-run";
+import { createLogger } from "../src/lib/logger";
 
-let redisUrl: string;
 let databaseUrl: string;
 
 try {
-  redisUrl = requireRedisUrl();
   databaseUrl = requireDatabaseUrl();
 } catch (err) {
   console.error("[worker]", err instanceof Error ? err.message : err);
@@ -25,33 +26,54 @@ const sql = postgres(databaseUrl, { max: 5 });
 const db = drizzle(sql, { schema });
 
 const concurrency = parseInt(process.env.WORKER_CONCURRENCY ?? "2", 10);
+const pollIntervalMs = parseInt(process.env.WORKER_POLL_INTERVAL_MS ?? "2000", 10);
+const workerCount = Number.isFinite(concurrency) && concurrency > 0 ? concurrency : 2;
 
-const worker = new Worker<AuditRunJobPayload>(
-  QUEUE_NAMES.AUDIT_RUN,
-  async (job) => {
-    console.info(`[audit:run] start ${job.data.runId}`);
-    await handleAuditRunJob(db, job);
-  },
-  {
-    connection: { url: redisUrl, maxRetriesPerRequest: null },
-    concurrency: Number.isFinite(concurrency) ? concurrency : 2,
+let running = true;
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function processOne(workerId: number): Promise<boolean> {
+  const runId = await claimNextQueuedRun(db);
+  if (!runId) return false;
+
+  const log = createLogger({ runId, component: "worker", workerId });
+  log.info("audit run claimed");
+  try {
+    await processAuditRun(db, runId);
+    log.info("audit run finished");
+  } catch (err) {
+    log.error("audit run processing failed", {
+      error: err instanceof Error ? err.message : String(err),
+    });
   }
-);
+  return true;
+}
 
-worker.on("completed", (job) => {
-  console.info(`[audit:run] done ${job.id}`);
-});
-
-worker.on("failed", (job, err) => {
-  console.error(`[audit:run] failed ${job?.id}`, err);
-});
+async function workerLoop(workerId: number): Promise<void> {
+  while (running) {
+    const hadWork = await processOne(workerId);
+    if (!hadWork) {
+      await sleep(pollIntervalMs);
+    }
+  }
+}
 
 console.info(
-  `[worker] listening on ${QUEUE_NAMES.AUDIT_RUN} (concurrency=${concurrency})`
+  `[worker] polling audit_runs (status=queued, concurrency=${workerCount}, poll=${pollIntervalMs}ms)`
 );
 
-process.on("SIGINT", async () => {
-  await worker.close();
+void Promise.all(
+  Array.from({ length: workerCount }, (_, i) => workerLoop(i + 1))
+);
+
+async function shutdown(): Promise<void> {
+  running = false;
   await sql.end();
   process.exit(0);
-});
+}
+
+process.on("SIGINT", () => void shutdown());
+process.on("SIGTERM", () => void shutdown());

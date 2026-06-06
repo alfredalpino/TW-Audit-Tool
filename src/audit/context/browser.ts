@@ -35,6 +35,7 @@ export async function createBrowserSession(
     runId,
     page,
     config,
+    runtime: "browser",
   };
 
   return { browser, page, ctx };

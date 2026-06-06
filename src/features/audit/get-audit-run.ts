@@ -40,7 +40,9 @@ export async function getAuditRun(
   const run = await db.query.auditRuns.findFirst({
     where: eq(auditRuns.id, runId),
     with: {
-      audit: true,
+      audit: {
+        with: { organization: true },
+      },
       scores: true,
       findings: true,
     },
@@ -69,6 +71,8 @@ export async function getAuditRun(
     status: run.status,
     stage: summary?.stage,
     url: run.audit.url,
+    organizationId: run.audit.organizationId,
+    organizationName: run.audit.organization?.name ?? null,
     overallScore: run.overallScore,
     executiveSummary: summary?.executiveSummary ?? null,
     unlocked,

@@ -35,6 +35,8 @@ export const createAuditSchema = z.object({
       desktop: z.boolean().optional(),
     })
     .optional(),
+  organizationId: z.string().uuid().optional(),
+  organizationSlug: z.string().min(1).max(100).optional(),
 });
 
 export type CreateAuditInput = z.infer<typeof createAuditSchema>;

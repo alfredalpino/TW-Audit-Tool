@@ -7,6 +7,10 @@ import { securityEngine } from "./security";
 import { croEngine } from "./cro";
 import { uxEngine } from "./ux";
 import { aiReadinessEngine } from "./ai-readiness";
+import { complianceEngine } from "./compliance";
+import { mobileEngine } from "./mobile";
+import { contentEngine } from "./content";
+import { screenshotIntelligenceEngine } from "./screenshot-intelligence";
 
 export const AUDIT_ENGINES: AuditEngine[] = [
   seoEngine,
@@ -14,8 +18,12 @@ export const AUDIT_ENGINES: AuditEngine[] = [
   uxEngine,
   croEngine,
   securityEngine,
+  complianceEngine,
   aiReadinessEngine,
+  contentEngine,
+  mobileEngine,
   accessibilityEngine,
+  screenshotIntelligenceEngine,
   speedEngine,
 ];
 

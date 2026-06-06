@@ -8,6 +8,10 @@ import { uxEngine } from "@/audit/engines/ux";
 import { croEngine } from "@/audit/engines/cro";
 import { securityEngine } from "@/audit/engines/security";
 import { aiReadinessEngine } from "@/audit/engines/ai-readiness";
+import { complianceEngine } from "@/audit/engines/compliance";
+import { mobileEngine } from "@/audit/engines/mobile";
+import { contentEngine } from "@/audit/engines/content";
+import { screenshotIntelligenceEngine } from "@/audit/engines/screenshot-intelligence";
 import type { FindingCategory } from "@/types/audit";
 
 const ALL_ENGINES: AuditEngine[] = [
@@ -16,8 +20,12 @@ const ALL_ENGINES: AuditEngine[] = [
   uxEngine,
   croEngine,
   securityEngine,
+  complianceEngine,
   aiReadinessEngine,
+  contentEngine,
+  mobileEngine,
   accessibilityEngine,
+  screenshotIntelligenceEngine,
   speedEngine,
 ];
 
@@ -50,8 +58,12 @@ const DOM_FIRST = new Set([
   "ux",
   "cro",
   "security",
+  "compliance",
   "ai_readiness",
+  "content",
+  "mobile",
   "accessibility",
+  "screenshot",
 ]);
 
 export async function runAuditEngines(

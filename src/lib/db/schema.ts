@@ -349,4 +349,5 @@ export type AuditRunSummary = {
   };
   enginesCompleted?: string[];
   mock?: boolean;
+  runtime?: "browser" | "fetch";
 };

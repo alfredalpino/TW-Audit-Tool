@@ -61,6 +61,8 @@ export interface AuditRunResponse {
   status: AuditRunStatus;
   stage?: AuditStage;
   url: string;
+  organizationId?: string | null;
+  organizationName?: string | null;
   overallScore: number | null;
   executiveSummary?: string | null;
   unlocked: boolean;

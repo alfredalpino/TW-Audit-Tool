@@ -30,12 +30,15 @@ export interface EngineResult {
   breakdown?: Record<string, unknown>;
 }
 
+export type AuditRuntime = "browser" | "fetch";
+
 export interface AuditContext {
   url: string;
   normalizedUrl: string;
   runId: string;
   page: Page;
   config: AuditRunConfig;
+  runtime?: AuditRuntime;
 }
 
 export interface AuditEngine {

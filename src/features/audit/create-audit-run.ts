@@ -1,9 +1,13 @@
 import { eq } from "drizzle-orm";
 import { getDb } from "@/lib/db";
 import { audits, auditRuns } from "@/lib/db/schema";
-import { enqueueAuditRun } from "@/lib/queue/client";
 import { normalizeAuditUrl, assertPublicUrl } from "@/lib/url";
 import { seedMockRun } from "@/lib/audit/mock-store";
+import {
+  buildAuditRunConfig,
+  findCachedAuditRun,
+} from "@/lib/audit/cache";
+import { createLogger } from "@/lib/logger";
 import type { CreateAuditInput } from "@/lib/validations/audit";
 
 export type CreateAuditResult =
@@ -13,12 +17,22 @@ export type CreateAuditResult =
       runId: string;
       status: "queued" | "completed";
       pollUrl: string;
+      cached?: boolean;
     }
   | { ok: false; error: string };
 
+export type CreateAuditOptions = {
+  trigger?: "public" | "api";
+  skipCache?: boolean;
+};
+
 export async function createAuditRun(
-  input: CreateAuditInput
+  input: CreateAuditInput,
+  options: CreateAuditOptions = {}
 ): Promise<CreateAuditResult> {
+  const trigger = options.trigger ?? "public";
+  const config = buildAuditRunConfig(input);
+
   try {
     assertPublicUrl(input.url);
   } catch (e) {
@@ -34,6 +48,8 @@ export async function createAuditRun(
   if (!db) {
     const runId = crypto.randomUUID();
     const auditId = crypto.randomUUID();
+    const log = createLogger({ runId, component: "audit.create", trigger });
+    log.info("audit run created (no database)", { url: input.url, normalized });
     seedMockRun(runId, input.url, auditId);
     return {
       ok: true,
@@ -42,6 +58,29 @@ export async function createAuditRun(
       status: "queued",
       pollUrl: `/api/audits/${runId}`,
     };
+  }
+
+  if (!options.skipCache) {
+    const cached = await findCachedAuditRun(db, normalized, config);
+    if (cached) {
+      const log = createLogger({
+        runId: cached.runId,
+        component: "audit.create",
+        trigger,
+      });
+      log.info("audit cache hit", {
+        auditId: cached.auditId,
+        normalized,
+      });
+      return {
+        ok: true,
+        auditId: cached.auditId,
+        runId: cached.runId,
+        status: "completed",
+        pollUrl: `/api/audits/${cached.runId}`,
+        cached: true,
+      };
+    }
   }
 
   let audit = await db.query.audits.findFirst({
@@ -65,25 +104,18 @@ export async function createAuditRun(
     .values({
       auditId: audit.id,
       status: "queued",
-      trigger: "public",
-      config: {
-        categories: input.categories,
-        mobile: input.options?.mobile ?? true,
-        desktop: input.options?.desktop ?? true,
-      },
+      trigger,
+      config,
     })
     .returning();
 
-  const enqueued = await enqueueAuditRun(run.id);
-
-  if (!enqueued) {
-    // Dev fallback: run real engines inline when Redis is unavailable
-    void import("@/audit/processor")
-      .then(({ processAuditRun }) => processAuditRun(db, run.id))
-      .catch((err) => {
-        console.error("[audit] inline processing failed", err);
-      });
-  }
+  const log = createLogger({
+    runId: run.id,
+    auditId: audit.id,
+    component: "audit.create",
+    trigger,
+  });
+  log.info("audit run queued for worker", { url: input.url, normalized });
 
   return {
     ok: true,

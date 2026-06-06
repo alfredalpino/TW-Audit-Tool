@@ -19,6 +19,8 @@ export type AuditReportFinding = {
 export type AuditReportData = {
   runId: string;
   url: string;
+  organizationId: string | null;
+  organizationName: string | null;
   overallScore: number | null;
   executiveSummary: string | null;
   completedAt: string | null;
@@ -67,7 +69,9 @@ export async function loadAuditReportData(
   const run = await db.query.auditRuns.findFirst({
     where: eq(auditRuns.id, runId),
     with: {
-      audit: true,
+      audit: {
+        with: { organization: true },
+      },
       scores: true,
       findings: true,
     },
@@ -93,6 +97,8 @@ export async function loadAuditReportData(
   return {
     runId: run.id,
     url: run.audit.url,
+    organizationId: run.audit.organizationId,
+    organizationName: run.audit.organization?.name ?? null,
     overallScore: run.overallScore,
     executiveSummary: summary.executiveSummary ?? null,
     completedAt: run.completedAt?.toISOString() ?? null,

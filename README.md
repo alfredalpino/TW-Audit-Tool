@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000), enter a URL, and view the a
 
 Development uses **plain PostgreSQL** — no Supabase or other BaaS. Drizzle ORM talks to Postgres via the `postgres` driver and `DATABASE_URL`.
 
-**Canonical dev setup** (`docker-compose.yml` provides Postgres 16 + Redis 7):
+**Canonical dev setup** (`docker-compose.yml` provides Postgres 16):
 
 ```bash
 cp .env.example .env.local   # DATABASE_URL matches compose defaults
@@ -34,7 +34,16 @@ Or point `DATABASE_URL` at your own local Postgres (same URL shape: `postgresql:
 
 Optional: `npm run db:studio` opens Drizzle Studio; `npm run db:down` stops containers.
 
-Without `DATABASE_URL`, audits use in-memory mock data. Without `REDIS_URL`, the API completes audits synchronously via the mock processor (set `AUDIT_USE_MOCK=true` on the worker to force mocks when Redis is available).
+Without `DATABASE_URL`, audits use in-memory mock data. With Postgres, the API inserts `audit_runs` with `status=queued` and returns a poll URL — the worker processes the queue.
+
+## Deployment (Vercel + Railway)
+
+| Service | Role |
+|---------|------|
+| **Vercel** | Next.js API — creates queued `audit_runs`, serves polling + UI |
+| **Railway** | Long-running worker — `npm run worker`, same `DATABASE_URL` (direct Postgres, port 5432) |
+
+The API never runs Playwright/Lighthouse on Vercel. Clients poll `GET /api/audits/[runId]` until the Railway worker marks the run complete.
 
 ## Phase 2 capabilities
 
@@ -43,11 +52,11 @@ Without `DATABASE_URL`, audits use in-memory mock data. Without `REDIS_URL`, the
 | SEO / technical / UX / CRO / security / AI readiness heuristics | Playwright DOM |
 | Speed | Lighthouse (mobile/desktop from audit config) |
 | Accessibility | axe-core via Playwright |
-| BullMQ worker | `npm run worker` |
+| DB-backed worker | `npm run worker` (polls `audit_runs`) |
 | Dashboard polling + stage progress | `GET /api/audits/[runId]` |
 | Executive summary + priority matrix | Audit results page |
 | Lead capture + gated findings | `POST /api/leads` |
-| Rate limiting | IP + per-domain (Redis or in-memory) |
+| Rate limiting | IP + per-domain (in-memory) |
 | Screenshots | Desktop capture to `SCREENSHOT_STORAGE_PATH` |
 
 ## Scripts
@@ -58,16 +67,16 @@ Without `DATABASE_URL`, audits use in-memory mock data. Without `REDIS_URL`, the
 | `npm run build` | Production build |
 | `npm run typecheck` | TypeScript |
 | `npm run lint` | ESLint |
-| `npm run db:up` | Start Postgres + Redis (`docker compose up -d`) |
+| `npm run db:up` | Start Postgres (`docker compose up -d`) |
 | `npm run db:down` | Stop Docker services |
 | `npm run db:push` | Push Drizzle schema to local Postgres |
 | `npm run db:studio` | Drizzle Studio (inspect tables) |
-| `npm run worker` | BullMQ audit worker (real engines) |
+| `npm run worker` | Audit worker (real engines, DB queue) |
 | `npm run worker:stub` | Same worker entry (alias) |
 
 ## Stack
 
-Next.js 16 · React 19 · TypeScript · Tailwind 4 · PostgreSQL · Drizzle ORM · BullMQ · Playwright · Lighthouse · axe-core
+Next.js 16 · React 19 · TypeScript · Tailwind 4 · PostgreSQL · Drizzle ORM · Playwright · Lighthouse · axe-core
 
 ## Phase 3 capabilities
 

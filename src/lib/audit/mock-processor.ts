@@ -7,6 +7,7 @@ import {
   reports,
 } from "@/lib/db/schema";
 import { computeOverallScore } from "@/lib/scoring/weights";
+import { SCORE_CATEGORIES } from "@/audit/constants";
 import type { FindingCategory } from "@/types/audit";
 
 const MOCK_CATEGORY_SCORES: Record<FindingCategory, number> = {
@@ -83,28 +84,11 @@ export async function processMockAuditRun(db: Db, runId: string): Promise<void> 
     .set({ status: "running", startedAt: now })
     .where(eq(auditRuns.id, runId));
 
-  const scoreRows = Object.entries(MOCK_CATEGORY_SCORES)
-    .filter(([cat]) =>
-      [
-        "seo",
-        "speed",
-        "ux",
-        "cro",
-        "technical",
-        "accessibility",
-        "security",
-        "compliance",
-        "ai_readiness",
-        "mobile",
-        "content",
-        "screenshot",
-      ].includes(cat)
-    )
-    .map(([category, score]) => ({
-      auditRunId: runId,
-      category: category as FindingCategory,
-      score,
-    }));
+  const scoreRows = SCORE_CATEGORIES.map((category) => ({
+    auditRunId: runId,
+    category,
+    score: MOCK_CATEGORY_SCORES[category],
+  }));
 
   await db.insert(auditScores).values(scoreRows);
 
@@ -125,7 +109,7 @@ export async function processMockAuditRun(db: Db, runId: string): Promise<void> 
     mock: true,
     stage: "complete" as const,
     enginesCompleted: scoreRows.map((r) => r.category),
-    executiveSummary: `Torpedo Intelligence scored ${overall}/100 on this URL (mock data — start Redis + worker for live Lighthouse and axe analysis). Priority issues include meta description, mobile CTA placement, and accessibility contrast.`,
+    executiveSummary: `Torpedo Intelligence scored ${overall}/100 on this URL (mock data — set AUDIT_USE_MOCK=false for live analysis). Priority issues include meta description, mobile CTA placement, and accessibility contrast.`,
     impact: {
       trafficLoss: {
         label: "Moderate",
