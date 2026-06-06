@@ -11,6 +11,7 @@ export const CATEGORY_WEIGHTS: Record<FindingCategory, number> = {
   compliance: 0,
   ai_readiness: 0.05,
   mobile: 0,
+  content: 0,
   screenshot: 0,
 };
 

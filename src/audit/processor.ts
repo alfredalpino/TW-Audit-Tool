@@ -35,7 +35,11 @@ const SCORE_CATEGORIES: FindingCategory[] = [
   "technical",
   "accessibility",
   "security",
+  "compliance",
   "ai_readiness",
+  "mobile",
+  "content",
+  "screenshot",
 ];
 
 function useMockEngines(): boolean {

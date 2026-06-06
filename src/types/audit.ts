@@ -9,6 +9,7 @@ export type FindingCategory =
   | "compliance"
   | "ai_readiness"
   | "mobile"
+  | "content"
   | "screenshot";
 
 export type FindingSeverity =

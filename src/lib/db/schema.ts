@@ -35,6 +35,7 @@ export const findingCategoryEnum = pgEnum("finding_category", [
   "compliance",
   "ai_readiness",
   "mobile",
+  "content",
   "screenshot",
 ]);
 export const findingSeverityEnum = pgEnum("finding_severity", [

@@ -11,6 +11,8 @@ const auditCategorySchema = z.enum([
   "compliance",
   "ai_readiness",
   "mobile",
+  "content",
+  "screenshot",
 ]);
 
 export const createAuditSchema = z.object({

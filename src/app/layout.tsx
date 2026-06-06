@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
   ),
+  icons: {
+    icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // suppressHydrationWarning: theme-init may set data-theme before React hydrates.
+    // Cursor's embedded browser also injects data-cursor-ref on nodes pre-hydration (IDE-only warning).
     <html lang="en" data-theme="light" suppressHydrationWarning className={appFontClassName}>
       <head>
-        <meta name="theme-color" content="#faf7f0" />
+        <meta name="theme-color" content="#ff4f00" />
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>

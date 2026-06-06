@@ -11,6 +11,8 @@ const categories = [
   "Compliance",
   "AI Readiness",
   "Mobile",
+  "Content",
+  "Screenshots",
 ];
 
 export default function HomePage() {
@@ -29,7 +31,7 @@ export default function HomePage() {
           <h2 className="tw-heading-section mt-4 font-display font-bold tracking-tight">
             Every finding maps to business impact
           </h2>
-          <p className="mt-3 max-w-2xl text-[var(--fg-secondary)]">
+          <p className="tw-contain-text mt-3 max-w-2xl text-[var(--fg-secondary)]">
             Traffic loss, lead leakage, conversion friction, or revenue opportunity — built for
             operators who need decisions, not dashboards full of noise.
           </p>
@@ -39,11 +41,11 @@ export default function HomePage() {
       <section id="categories" className="border-b border-[var(--border)] bg-[var(--bg-void)] py-16 md:py-20">
         <div className="tw-section">
           <h2 className="font-display text-2xl font-bold tracking-tight">Audit categories</h2>
-          <ul className="mt-8 grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
             {categories.map((cat) => (
               <li
                 key={cat}
-                className="tw-panel px-4 py-3 font-mono text-xs uppercase tracking-wider text-[var(--fg-secondary)]"
+                className="tw-panel tw-contain-text px-3 py-3 text-center font-mono text-[10px] uppercase leading-snug tracking-wider text-[var(--fg-secondary)] sm:px-4 sm:text-xs"
               >
                 {cat}
               </li>
@@ -57,7 +59,7 @@ export default function HomePage() {
         className="border-b border-[var(--border)] bg-[var(--bg-base)] py-16 md:py-20"
       >
         <div className="tw-section">
-          <ol className="grid gap-6 md:grid-cols-3">
+          <ol className="grid min-w-0 gap-6 md:grid-cols-3">
             {[
               {
                 step: "01",
@@ -75,10 +77,10 @@ export default function HomePage() {
                 body: "Scores, impact ranges, and a priority matrix drive what to fix first.",
               },
             ].map((item) => (
-              <li key={item.step} className="tw-panel p-6">
+              <li key={item.step} className="tw-panel min-w-0 p-5 sm:p-6">
                 <span className="tw-metric text-[var(--brand)]">{item.step}</span>
-                <h3 className="mt-3 font-display text-lg font-bold">{item.title}</h3>
-                <p className="mt-2 text-sm text-[var(--fg-secondary)]">{item.body}</p>
+                <h3 className="tw-contain-text mt-3 font-display text-lg font-bold">{item.title}</h3>
+                <p className="tw-contain-text mt-2 text-sm text-[var(--fg-secondary)]">{item.body}</p>
               </li>
             ))}
           </ol>
@@ -88,7 +90,7 @@ export default function HomePage() {
       <section id="pricing" className="border-b border-[var(--border)] bg-[var(--bg-void)] py-16 md:py-20">
         <div className="tw-section text-center">
           <h2 className="font-display text-2xl font-bold">Free audits during launch</h2>
-          <p className="mt-3 text-[var(--fg-secondary)]">
+          <p className="tw-contain-text mx-auto mt-3 max-w-2xl text-[var(--fg-secondary)]">
             Live audits powered by Lighthouse, Playwright, and axe-core — with executive summaries
             and lead-gated full reports.
           </p>
@@ -98,7 +100,7 @@ export default function HomePage() {
       <section id="faq" className="bg-[var(--bg-base)] py-16">
         <div className="tw-section">
           <h2 className="font-display text-xl font-bold">FAQ</h2>
-          <p className="mt-4 text-sm text-[var(--fg-secondary)]">
+          <p className="tw-contain-text mt-4 text-sm text-[var(--fg-secondary)]">
             Business impact figures are expressed as ranges, never fake precision. Unlock your
             report to download a branded PDF and receive it by email.
           </p>

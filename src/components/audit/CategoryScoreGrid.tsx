@@ -9,8 +9,11 @@ const LABELS: Record<string, string> = {
   technical: "Technical",
   accessibility: "A11y",
   security: "Security",
+  compliance: "Compliance",
   ai_readiness: "AI Ready",
   mobile: "Mobile",
+  content: "Content",
+  screenshot: "Screenshots",
 };
 
 export function CategoryScoreGrid({ scores }: { scores: CategoryScoreDto[] }) {
@@ -21,13 +24,13 @@ export function CategoryScoreGrid({ scores }: { scores: CategoryScoreDto[] }) {
   }
 
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
       {scores.map((s) => (
         <div
           key={s.category}
-          className="tw-panel flex flex-col gap-1 p-3"
+          className="tw-panel flex min-w-0 flex-col gap-1 p-3"
         >
-          <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--fg-tertiary)]">
+          <span className="tw-contain-text font-mono text-[10px] uppercase leading-snug tracking-wider text-[var(--fg-tertiary)]">
             {LABELS[s.category] ?? s.category}
           </span>
           <span

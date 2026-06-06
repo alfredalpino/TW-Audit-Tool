@@ -20,20 +20,20 @@ export default async function AuditRunPage({ params }: PageProps) {
   const inProgress = run.status !== "completed" && run.status !== "failed";
 
   return (
-    <div className="space-y-8">
+    <div className="min-w-0 space-y-8">
       <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-        <div>
+        <div className="min-w-0 flex-1">
           <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--fg-tertiary)]">
             Audit run · {run.status}
           </p>
-          <h1 className="mt-2 font-display text-2xl font-bold tracking-tight break-all">
+          <h1 className="tw-contain-text mt-2 font-display text-xl font-bold tracking-tight sm:text-2xl">
             {run.url}
           </h1>
-          <p className="mt-2 font-mono text-xs text-[var(--fg-tertiary)]">
+          <p className="tw-mono-block mt-2 font-mono text-xs text-[var(--fg-tertiary)]">
             Run ID {run.id}
           </p>
         </div>
-        <ScoreRing score={run.overallScore} />
+        <ScoreRing score={run.overallScore} className="shrink-0 self-center md:self-start" />
       </div>
 
       {inProgress && (
@@ -46,9 +46,9 @@ export default async function AuditRunPage({ params }: PageProps) {
             summary={run.executiveSummary}
             overallScore={run.overallScore}
           />
-          <section className="tw-panel p-5 md:p-6">
+          <section className="tw-panel min-w-0 p-5 md:p-6">
             <h2 className="font-display text-lg font-bold">Export & delivery</h2>
-            <p className="mt-1 text-sm text-[var(--fg-secondary)]">
+            <p className="tw-contain-text mt-1 text-sm text-[var(--fg-secondary)]">
               Business impact in exports uses ranges only — never fake precision.
             </p>
             <div className="mt-4">
@@ -63,11 +63,11 @@ export default async function AuditRunPage({ params }: PageProps) {
       )}
 
       {!run.unlocked && run.status === "completed" && (
-        <section className="tw-panel p-5 md:p-6">
+        <section className="tw-panel min-w-0 p-5 md:p-6">
           <h2 className="font-display text-lg font-bold">
             Unlock full recommendations
           </h2>
-          <p className="mt-1 text-sm text-[var(--fg-secondary)]">
+          <p className="tw-contain-text mt-1 text-sm text-[var(--fg-secondary)]">
             Top-priority issues are visible above. Enter your email for detailed
             fix steps and business impact on all findings.
           </p>

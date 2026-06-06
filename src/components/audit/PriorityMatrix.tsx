@@ -64,14 +64,14 @@ export function PriorityMatrix({ findings }: { findings: FindingDto[] }) {
       <p className="mb-4 text-sm text-[var(--fg-tertiary)]">
         Impact vs effort grouping from severity and category signals.
       </p>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid min-w-0 gap-3 sm:grid-cols-2">
         {(Object.keys(buckets) as Quadrant[]).map((key) => {
           const meta = QUADRANT_META[key];
           const items = buckets[key].slice(0, 4);
           return (
             <div
               key={key}
-              className={`rounded-[var(--radius-lg)] border p-4 ${meta.className}`}
+              className={`min-w-0 rounded-[var(--radius-lg)] border p-4 ${meta.className}`}
             >
               <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--fg-tertiary)]">
                 {meta.title}
@@ -84,7 +84,7 @@ export function PriorityMatrix({ findings }: { findings: FindingDto[] }) {
                   items.map((f) => (
                     <li
                       key={f.id}
-                      className="text-sm text-[var(--fg-primary)] line-clamp-2"
+                      className="tw-contain-text text-sm text-[var(--fg-primary)] line-clamp-2"
                     >
                       {f.title}
                     </li>

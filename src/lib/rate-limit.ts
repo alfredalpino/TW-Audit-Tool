@@ -1,4 +1,5 @@
 import Redis from "ioredis";
+import { getRedisUrl } from "@/lib/env";
 
 const memoryBuckets = new Map<string, { count: number; resetAt: number }>();
 
@@ -15,7 +16,7 @@ function getWindowMs(): number {
 let redisClient: Redis | null = null;
 
 function getRedis(): Redis | null {
-  const url = process.env.REDIS_URL;
+  const url = getRedisUrl();
   if (!url) return null;
   if (!redisClient) {
     redisClient = new Redis(url, { maxRetriesPerRequest: 1, lazyConnect: true });

@@ -65,7 +65,7 @@ export function AuditProgress({
   if (status === "completed") return null;
 
   return (
-    <div className="tw-panel p-6">
+    <div className="tw-panel min-w-0 p-5 sm:p-6">
       <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--brand)]">
         Audit in progress
       </p>

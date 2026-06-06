@@ -22,11 +22,11 @@ export function ReportActions({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-3">
-      <Button href={`/api/audits/${runId}/report`} variant="brand">
+    <div className="flex min-w-0 flex-wrap items-center gap-3">
+      <Button href={`/api/audits/${runId}/report`} variant="brand" className="shrink-0">
         Download PDF report
       </Button>
-      <p className="text-xs text-[var(--fg-tertiary)]">
+      <p className="tw-contain-text min-w-0 flex-1 text-xs text-[var(--fg-tertiary)]">
         A copy is emailed when Resend is configured.{" "}
         <Link
           href={BOOKING_URL}

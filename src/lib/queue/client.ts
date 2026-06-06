@@ -1,11 +1,12 @@
 import { Queue } from "bullmq";
+import { getRedisUrl } from "@/lib/env";
 import {
   QUEUE_NAMES,
   type AuditRunJobPayload,
 } from "./queues";
 
 function getConnectionOptions() {
-  const url = process.env.REDIS_URL;
+  const url = getRedisUrl();
   if (!url) return null;
   return {
     url,

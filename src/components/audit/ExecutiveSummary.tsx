@@ -8,12 +8,12 @@ export function ExecutiveSummary({
   if (!summary && overallScore === null) return null;
 
   return (
-    <section className="tw-panel border-l-4 border-l-[var(--brand)] p-5 md:p-6">
+    <section className="tw-panel min-w-0 border-l-4 border-l-[var(--brand)] p-5 md:p-6">
       <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--brand)]">
         Executive summary
       </p>
       {summary ? (
-        <p className="mt-3 text-sm leading-relaxed text-[var(--fg-primary)] md:text-base">
+        <p className="tw-contain-text mt-3 text-sm leading-relaxed text-[var(--fg-primary)] md:text-base">
           {summary}
         </p>
       ) : (

@@ -1343,6 +1343,49 @@ body.lead-popup-open {
     backdrop-filter: blur(20px) saturate(180%);
     box-shadow: var(--nav-glass-inset), var(--nav-glass-shadow);
   }
+
+  /* Ambient texture utilities — warm linen + grain on void/surface areas */
+  .tw-texture-void,
+  .tw-texture-surface {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .tw-texture-void::before,
+  .tw-texture-surface::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: var(--texture-linen), var(--surface-noise);
+    background-size: auto, 128px 128px;
+    mix-blend-mode: overlay;
+  }
+
+  .tw-texture-void::before {
+    opacity: var(--texture-void-opacity);
+  }
+
+  .tw-texture-surface::before {
+    opacity: var(--texture-surface-opacity);
+  }
+
+  .tw-texture-void::after,
+  .tw-texture-surface::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: var(--texture-warm-vignette);
+  }
+
+  .tw-texture-void > *,
+  .tw-texture-surface > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* Dot grid (hero) */
@@ -1716,6 +1759,7 @@ body.lead-popup-open {
 }
 
 .tw-panel {
+  min-width: 0;
   background: var(--clay-surface-grad);
   border: 1px solid var(--border);
   border-radius: var(--clay-radius-md);
@@ -1724,6 +1768,12 @@ body.lead-popup-open {
     transform 0.25s var(--ease-out-expo),
     box-shadow 0.25s var(--ease-out-expo),
     border-color 0.2s ease;
+}
+
+.tw-contain-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .tw-panel:hover {

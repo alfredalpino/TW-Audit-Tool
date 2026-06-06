@@ -20,7 +20,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider border",
+        "inline-flex max-w-full items-center overflow-hidden rounded px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider border",
         severity ? severityStyles[severity] : "border-[var(--border)] text-[var(--fg-secondary)]",
         className
       )}

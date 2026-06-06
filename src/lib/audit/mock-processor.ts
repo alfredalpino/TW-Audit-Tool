@@ -20,6 +20,7 @@ const MOCK_CATEGORY_SCORES: Record<FindingCategory, number> = {
   compliance: 70,
   ai_readiness: 48,
   mobile: 66,
+  content: 64,
   screenshot: 100,
 };
 
@@ -84,9 +85,20 @@ export async function processMockAuditRun(db: Db, runId: string): Promise<void> 
 
   const scoreRows = Object.entries(MOCK_CATEGORY_SCORES)
     .filter(([cat]) =>
-      ["seo", "speed", "ux", "cro", "technical", "accessibility", "security", "ai_readiness"].includes(
-        cat
-      )
+      [
+        "seo",
+        "speed",
+        "ux",
+        "cro",
+        "technical",
+        "accessibility",
+        "security",
+        "compliance",
+        "ai_readiness",
+        "mobile",
+        "content",
+        "screenshot",
+      ].includes(cat)
     )
     .map(([category, score]) => ({
       auditRunId: runId,

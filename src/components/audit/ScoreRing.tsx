@@ -1,4 +1,12 @@
-export function ScoreRing({ score }: { score: number | null }) {
+import { cn } from "@/lib/utils";
+
+export function ScoreRing({
+  score,
+  className,
+}: {
+  score: number | null;
+  className?: string;
+}) {
   const value = score ?? 0;
   const circumference = 2 * Math.PI * 54;
   const offset = circumference - (value / 100) * circumference;
@@ -10,7 +18,7 @@ export function ScoreRing({ score }: { score: number | null }) {
         : "#ef4444";
 
   return (
-    <div className="relative flex h-36 w-36 items-center justify-center">
+    <div className={cn("relative flex h-36 w-36 shrink-0 items-center justify-center", className)}>
       <svg className="-rotate-90" width="144" height="144" aria-hidden>
         <circle
           cx="72"

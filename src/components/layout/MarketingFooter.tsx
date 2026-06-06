@@ -29,7 +29,7 @@ function ContactRegionBlock({
   address: string;
 }) {
   return (
-    <div className="tw-footer-region">
+    <div className="tw-footer-region min-w-0">
       <p className="tw-footer-heading mb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
         {region}
       </p>
@@ -118,8 +118,8 @@ export function MarketingFooter() {
             aria-hidden
           />
 
-          <div className="grid grid-cols-1 gap-10 pt-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
-            <div>
+          <div className="grid min-w-0 grid-cols-1 gap-10 pt-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+            <div className="min-w-0">
               <h2 className="tw-footer-heading mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--brand)]">
                 Contact
               </h2>
@@ -203,7 +203,7 @@ export function MarketingFooter() {
               </div>
             </div>
 
-            <div>
+            <div className="min-w-0">
               <h2 className="tw-footer-heading mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--brand)]">
                 Services
               </h2>
@@ -241,7 +241,7 @@ export function MarketingFooter() {
               </ul>
             </div>
 
-            <div>
+            <div className="min-w-0">
               <h2 className="tw-footer-heading mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--brand)]">
                 Company
               </h2>
@@ -289,7 +289,7 @@ export function MarketingFooter() {
               </ul>
             </div>
 
-            <div>
+            <div className="min-w-0">
               <MonoBracketEyebrowScramble text="[DISPATCH]" className="mb-2" />
               <p className="mb-4 text-sm text-[var(--fg-secondary)]">
                 Strategic insights, zero noise.

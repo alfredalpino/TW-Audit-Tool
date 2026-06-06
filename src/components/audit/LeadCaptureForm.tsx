@@ -48,8 +48,8 @@ export function LeadCaptureForm({
   }
 
   return (
-    <form onSubmit={submit} className="space-y-3">
-      <div className="grid gap-3 sm:grid-cols-2">
+    <form onSubmit={submit} className="min-w-0 space-y-3">
+      <div className="grid min-w-0 gap-3 sm:grid-cols-2">
         <Input
           placeholder="Your name"
           value={name}

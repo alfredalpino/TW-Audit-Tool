@@ -39,10 +39,10 @@ export function MarketingHeader() {
     <header
       className={`fixed left-0 right-0 top-0 z-50 h-[var(--nav-h)] transition-[background,box-shadow,border-color,backdrop-filter] duration-300 ${scrolledClass}`}
     >
-      <div className="tw-section flex h-full items-center justify-between gap-4">
+      <div className="tw-section flex h-full min-w-0 items-center justify-between gap-3 sm:gap-4">
         <Link
           href="/"
-          className="relative z-[60] flex shrink-0 items-center gap-2"
+          className="relative z-[60] flex min-w-0 shrink items-center gap-2"
           onMouseEnter={pulseLogo}
           aria-label="Torpedo Website Intelligence Auditor home"
         >
@@ -56,8 +56,9 @@ export function MarketingHeader() {
               priority
             />
           </span>
-          <span className="font-display text-sm font-bold tracking-tight text-[var(--fg-primary)] min-[380px]:text-base">
-            TORPEDO WEB{" "}
+          <span className="tw-contain-text min-w-0 font-display text-xs font-bold leading-tight tracking-tight text-[var(--fg-primary)] min-[380px]:text-sm sm:text-base">
+            <span className="hidden min-[360px]:inline">TORPEDO WEB </span>
+            <span className="min-[360px]:hidden">TW </span>
             <span className="text-[var(--fg-tertiary)]">AUDITOR</span>
           </span>
         </Link>

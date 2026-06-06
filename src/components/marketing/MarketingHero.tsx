@@ -27,7 +27,7 @@ export function MarketingHero() {
           className="tw-animate-in-hero tw-hero-h1 max-w-4xl font-display font-extrabold tracking-[-0.02em] text-[var(--fg-primary)]"
         >
           Find What Is Costing Your Website{" "}
-          <span className="whitespace-nowrap text-[var(--brand)]">Traffic, Leads,</span>
+          <span className="text-[var(--brand)] sm:whitespace-nowrap">Traffic, Leads,</span>
           <br />
           and Revenue.
         </h1>
@@ -37,24 +37,26 @@ export function MarketingHero() {
           opportunities in under 60 seconds — built for operators who need decisions, not noise.
         </p>
 
-        <div className="tw-animate-in-cta mt-10 flex w-full max-w-2xl flex-col items-stretch gap-4 sm:max-w-none sm:flex-row sm:items-center sm:justify-center">
-          <div className="w-full sm:max-w-xl">
+        <div className="tw-animate-in-cta mt-10 flex w-full min-w-0 max-w-2xl flex-col items-stretch gap-4 sm:max-w-none sm:flex-row sm:items-center sm:justify-center">
+          <div className="w-full min-w-0 sm:max-w-xl">
             <AuditUrlForm />
           </div>
         </div>
 
-        <dl className="tw-animate-in-cta mt-14 grid w-full max-w-3xl grid-cols-2 gap-4 border-t border-[var(--border)] pt-10 sm:grid-cols-4">
+        <dl className="tw-animate-in-cta mt-14 grid w-full min-w-0 max-w-3xl grid-cols-2 gap-4 border-t border-[var(--border)] pt-10 sm:grid-cols-4">
           {[
             { label: "Audit engines", value: "12+" },
             { label: "Business impact", value: "Every issue" },
             { label: "Target time", value: "<60s" },
             { label: "Report depth", value: "Executive" },
           ].map((stat) => (
-            <div key={stat.label}>
-              <dt className="font-mono text-[10px] uppercase tracking-wider text-[var(--fg-tertiary)]">
+            <div key={stat.label} className="min-w-0">
+              <dt className="tw-contain-text font-mono text-[10px] uppercase tracking-wider text-[var(--fg-tertiary)]">
                 {stat.label}
               </dt>
-              <dd className="tw-metric mt-1 text-xl text-[var(--fg-primary)]">{stat.value}</dd>
+              <dd className="tw-metric tw-contain-text mt-1 text-lg text-[var(--fg-primary)] sm:text-xl">
+                {stat.value}
+              </dd>
             </div>
           ))}
         </dl>

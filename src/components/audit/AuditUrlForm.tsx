@@ -38,8 +38,9 @@ export function AuditUrlForm() {
     <form
       id="audit"
       onSubmit={handleSubmit}
-      className="flex w-full max-w-2xl flex-col gap-3 sm:flex-row"
+      className="flex w-full min-w-0 max-w-2xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch"
     >
+      <div className="min-w-0 flex-1 sm:min-w-[12rem]">
       <Input
         type="text"
         name="url"
@@ -49,8 +50,10 @@ export function AuditUrlForm() {
         required
         aria-label="Website URL"
         autoComplete="url"
+        className="min-w-0"
       />
-      <Button type="submit" variant="brand" size="lg" withArrow disabled={loading} className="shrink-0">
+      </div>
+      <Button type="submit" variant="brand" size="lg" withArrow disabled={loading} className="w-full shrink-0 sm:w-auto">
         {loading ? "Starting…" : "Run Free Audit"}
       </Button>
       {error && (

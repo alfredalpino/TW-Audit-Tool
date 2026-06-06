@@ -6,14 +6,18 @@ import { Worker } from "bullmq";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import * as schema from "../src/lib/db/schema";
+import { requireDatabaseUrl, requireRedisUrl } from "../src/lib/env";
 import { QUEUE_NAMES, type AuditRunJobPayload } from "../src/lib/queue/queues";
 import { handleAuditRunJob } from "../src/workers/audit-run-processor";
 
-const redisUrl = process.env.REDIS_URL;
-const databaseUrl = process.env.DATABASE_URL;
+let redisUrl: string;
+let databaseUrl: string;
 
-if (!redisUrl || !databaseUrl) {
-  console.error("[worker] REDIS_URL and DATABASE_URL are required.");
+try {
+  redisUrl = requireRedisUrl();
+  databaseUrl = requireDatabaseUrl();
+} catch (err) {
+  console.error("[worker]", err instanceof Error ? err.message : err);
   process.exit(1);
 }
 
