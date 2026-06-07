@@ -53,6 +53,8 @@ export async function getAuditRun(
 
     if (!run?.audit) return null;
 
+    const screenshotRows = run.screenshots ?? [];
+
     const summary = run.summary as AuditRunSummary | null;
     const impact = summary?.impact ?? {};
     const unlocked = await isRunUnlocked(runId);
@@ -93,7 +95,7 @@ export async function getAuditRun(
       })),
       impact,
       findings: gateFindings(findingsDto, unlocked),
-      screenshots: (run.screenshots ?? []).map((shot) => {
+      screenshots: screenshotRows.map((shot) => {
         const meta = (shot.annotations ?? {}) as Record<string, unknown>;
         return {
           viewport: shot.viewport,

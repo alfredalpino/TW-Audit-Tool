@@ -332,6 +332,13 @@ export const reportsRelations = relations(reports, ({ one }) => ({
   }),
 }));
 
+export const screenshotsRelations = relations(screenshots, ({ one }) => ({
+  auditRun: one(auditRuns, {
+    fields: [screenshots.auditRunId],
+    references: [auditRuns.id],
+  }),
+}));
+
 export type AuditRunConfig = {
   categories?: string[];
   mobile?: boolean;
