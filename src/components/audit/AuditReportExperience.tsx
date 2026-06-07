@@ -78,15 +78,22 @@ export function AuditReportExperience({
             </div>
           </section>
           {!run.unlocked && (
-            <section className="tw-panel min-w-0 p-5 md:p-6">
-              <h2 className="font-display text-lg font-bold">
+            <section className="tw-panel relative min-w-0 overflow-hidden border border-[var(--brand)]/40 bg-[var(--brand)]/10 p-5 shadow-[inset_0_1px_0_rgba(255,78,0,0.12),0_10px_28px_rgba(255,78,0,0.1)] md:p-6">
+              <div
+                className="pointer-events-none absolute inset-y-0 left-0 w-1 bg-[var(--brand)]"
+                aria-hidden
+              />
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--brand)]">
+                [ Unlock full report ]
+              </p>
+              <h2 className="mt-2 font-display text-xl font-bold tracking-tight text-[var(--fg-primary)]">
                 Unlock full recommendations
               </h2>
-              <p className="tw-contain-text mt-1 text-sm text-[var(--fg-secondary)]">
+              <p className="tw-contain-text mt-2 max-w-2xl text-sm leading-relaxed text-[var(--fg-secondary)]">
                 Top-priority issues are visible in Findings. Enter your email for
                 detailed fix steps and business impact on all findings.
               </p>
-              <div className="mt-4 max-w-md">
+              <div className="mt-5 max-w-md rounded-[var(--radius-md)] border border-[var(--brand)]/25 bg-[var(--bg-surface)]/80 p-4">
                 <LeadCaptureForm runId={runId} />
               </div>
             </section>
