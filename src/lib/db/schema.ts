@@ -195,8 +195,8 @@ export const findings = pgTable(
   ]
 );
 
-export const leads = pgTable(
-  "leads",
+export const auditLeads = pgTable(
+  "audit_leads",
   {
     id: uuid("id").defaultRandom().primaryKey(),
     auditRunId: uuid("audit_run_id").references(() => auditRuns.id, {
@@ -211,7 +211,7 @@ export const leads = pgTable(
       .defaultNow()
       .notNull(),
   },
-  (t) => [index("leads_email_created_idx").on(t.email, t.createdAt)]
+  (t) => [index("audit_leads_email_created_idx").on(t.email, t.createdAt)]
 );
 
 export const reports = pgTable(
@@ -238,7 +238,7 @@ export const emailLogs = pgTable(
     auditRunId: uuid("audit_run_id")
       .references(() => auditRuns.id, { onDelete: "cascade" })
       .notNull(),
-    leadId: uuid("lead_id").references(() => leads.id, {
+    leadId: uuid("lead_id").references(() => auditLeads.id, {
       onDelete: "set null",
     }),
     toEmail: varchar("to_email", { length: 255 }).notNull(),
@@ -299,7 +299,7 @@ export const auditRunsRelations = relations(auditRuns, ({ one, many }) => ({
     fields: [auditRuns.id],
     references: [reports.auditRunId],
   }),
-  leads: many(leads),
+  auditLeads: many(auditLeads),
   screenshots: many(screenshots),
   emailLogs: many(emailLogs),
 }));
@@ -314,6 +314,13 @@ export const findingsRelations = relations(findings, ({ one }) => ({
 export const auditScoresRelations = relations(auditScores, ({ one }) => ({
   auditRun: one(auditRuns, {
     fields: [auditScores.auditRunId],
+    references: [auditRuns.id],
+  }),
+}));
+
+export const auditLeadsRelations = relations(auditLeads, ({ one }) => ({
+  auditRun: one(auditRuns, {
+    fields: [auditLeads.auditRunId],
     references: [auditRuns.id],
   }),
 }));

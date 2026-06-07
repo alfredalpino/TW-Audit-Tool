@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { getDb } from "@/lib/db";
-import { leads } from "@/lib/db/schema";
+import { auditLeads } from "@/lib/db/schema";
 import type { CreateLeadInput } from "@/lib/validations/lead";
 
 export type CreateLeadResult =
@@ -15,15 +15,15 @@ export async function createLead(
     return { ok: false, error: "Database not configured" };
   }
 
-  const existing = await db.query.leads.findFirst({
-    where: eq(leads.auditRunId, input.runId),
+  const existing = await db.query.auditLeads.findFirst({
+    where: eq(auditLeads.auditRunId, input.runId),
   });
   if (existing) {
     return { ok: true, leadId: existing.id };
   }
 
   const [row] = await db
-    .insert(leads)
+    .insert(auditLeads)
     .values({
       auditRunId: input.runId,
       email: input.email,
@@ -40,8 +40,8 @@ export async function createLead(
 export async function isRunUnlocked(runId: string): Promise<boolean> {
   const db = getDb();
   if (!db) return false;
-  const row = await db.query.leads.findFirst({
-    where: eq(leads.auditRunId, runId),
+  const row = await db.query.auditLeads.findFirst({
+    where: eq(auditLeads.auditRunId, runId),
   });
   return !!row;
 }

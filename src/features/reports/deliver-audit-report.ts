@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import type { Db } from "@/lib/db";
-import { auditRuns, leads } from "@/lib/db/schema";
+import { auditRuns, auditLeads } from "@/lib/db/schema";
 import { generateAuditReportPdf } from "@/lib/reports/generate-pdf";
 import { sendAuditReportEmail } from "@/lib/email/send-audit-report";
 
@@ -15,8 +15,8 @@ export async function deliverAuditReport(
   runId: string,
   leadId: string
 ): Promise<DeliverReportResult> {
-  const lead = await db.query.leads.findFirst({
-    where: eq(leads.id, leadId),
+  const lead = await db.query.auditLeads.findFirst({
+    where: eq(auditLeads.id, leadId),
   });
   if (!lead) {
     return {

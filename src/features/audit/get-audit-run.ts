@@ -37,53 +37,58 @@ export async function getAuditRun(
     return getMockAuditRun(runId);
   }
 
-  const run = await db.query.auditRuns.findFirst({
-    where: eq(auditRuns.id, runId),
-    with: {
-      audit: {
-        with: { organization: true },
+  try {
+    const run = await db.query.auditRuns.findFirst({
+      where: eq(auditRuns.id, runId),
+      with: {
+        audit: {
+          with: { organization: true },
+        },
+        scores: true,
+        findings: true,
       },
-      scores: true,
-      findings: true,
-    },
-  });
+    });
 
-  if (!run) return null;
+    if (!run?.audit) return null;
 
-  const summary = run.summary as AuditRunSummary | null;
-  const impact = summary?.impact ?? {};
-  const unlocked = await isRunUnlocked(runId);
+    const summary = run.summary as AuditRunSummary | null;
+    const impact = summary?.impact ?? {};
+    const unlocked = await isRunUnlocked(runId);
 
-  const findingsDto: FindingDto[] = run.findings.map((f) => ({
-    id: f.id,
-    category: f.category,
-    severity: f.severity,
-    title: f.title,
-    description: f.description,
-    recommendation: f.recommendation,
-    businessImpact: normalizeFindingBusinessImpact(f.businessImpact),
-    priorityScore: f.priorityScore,
-  }));
+    const findingsDto: FindingDto[] = (run.findings ?? []).map((f) => ({
+      id: f.id,
+      category: f.category,
+      severity: f.severity,
+      title: f.title,
+      description: f.description,
+      recommendation: f.recommendation,
+      businessImpact: normalizeFindingBusinessImpact(f.businessImpact ?? ""),
+      priorityScore: f.priorityScore,
+    }));
 
-  return {
-    id: run.id,
-    auditId: run.auditId,
-    status: run.status,
-    stage: summary?.stage,
-    url: run.audit.url,
-    organizationId: run.audit.organizationId,
-    organizationName: run.audit.organization?.name ?? null,
-    overallScore: run.overallScore,
-    executiveSummary: summary?.executiveSummary ?? null,
-    unlocked,
-    scores: run.scores.map((s) => ({
-      category: s.category,
-      score: s.score,
-    })),
-    impact,
-    findings: gateFindings(findingsDto, unlocked),
-    enginesCompleted: summary?.enginesCompleted,
-    createdAt: run.createdAt.toISOString(),
-    completedAt: run.completedAt?.toISOString() ?? null,
-  };
+    return {
+      id: run.id,
+      auditId: run.auditId,
+      status: run.status,
+      stage: summary?.stage ?? (run.status === "queued" ? "queued" : undefined),
+      url: run.audit.url,
+      organizationId: run.audit.organizationId,
+      organizationName: run.audit.organization?.name ?? null,
+      overallScore: run.overallScore,
+      executiveSummary: summary?.executiveSummary ?? null,
+      unlocked,
+      scores: (run.scores ?? []).map((s) => ({
+        category: s.category,
+        score: s.score,
+      })),
+      impact,
+      findings: gateFindings(findingsDto, unlocked),
+      enginesCompleted: summary?.enginesCompleted,
+      createdAt: run.createdAt.toISOString(),
+      completedAt: run.completedAt?.toISOString() ?? null,
+    };
+  } catch (error) {
+    console.error("[getAuditRun] failed", { runId, error });
+    throw error;
+  }
 }
