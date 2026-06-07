@@ -3,10 +3,9 @@ import postgres from "postgres";
 import { getDatabaseUrl } from "@/lib/env";
 import * as schema from "./schema";
 
-const connectionString = getDatabaseUrl();
-
 const globalForDb = globalThis as unknown as {
   client: ReturnType<typeof postgres> | undefined;
+  connectionString: string | undefined;
 };
 
 function postgresOptions(connectionString: string) {
@@ -28,11 +27,26 @@ function postgresOptions(connectionString: string) {
 }
 
 function createClient() {
+  const connectionString = getDatabaseUrl();
   if (!connectionString) {
     return null;
   }
+
+  if (
+    globalForDb.client &&
+    globalForDb.connectionString &&
+    globalForDb.connectionString !== connectionString
+  ) {
+    void globalForDb.client.end({ timeout: 1 }).catch(() => undefined);
+    globalForDb.client = undefined;
+  }
+
   if (!globalForDb.client) {
-    globalForDb.client = postgres(connectionString, postgresOptions(connectionString));
+    globalForDb.connectionString = connectionString;
+    globalForDb.client = postgres(
+      connectionString,
+      postgresOptions(connectionString)
+    );
   }
   return globalForDb.client;
 }
