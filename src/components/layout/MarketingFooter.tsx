@@ -6,6 +6,7 @@ import { ArrowRight, ArrowUpRight, Globe } from "lucide-react";
 import { ClayCard } from "@/components/ui/ClayCard";
 import { Button } from "@/components/ui/button";
 import { MonoBracketEyebrowScramble } from "@/components/ui/MonoBracketEyebrowScramble";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import {
   CONTACT_ADDRESS,
   CONTACT_EMAIL,
@@ -347,6 +348,7 @@ export function MarketingFooter() {
             © {new Date().getFullYear()} Torpedo Web LLC. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-[var(--fg-tertiary)]">
+            <ThemeToggle className="shrink-0" />
             <a
               href={torpedoSitePath("/")}
               className="group inline-flex items-center gap-1.5 transition-colors hover:text-[var(--fg-secondary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-void)]"
