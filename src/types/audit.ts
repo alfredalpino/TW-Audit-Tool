@@ -56,6 +56,19 @@ export interface ScreenshotDto {
   height?: number;
 }
 
+export interface MethodologyToolDto {
+  name: string;
+  role: string;
+}
+
+export interface AuditMethodologyDto {
+  runtime: "browser" | "fetch";
+  label: string;
+  summary: string;
+  tools: MethodologyToolDto[];
+  limitations: string[];
+}
+
 export type AuditStage =
   | "queued"
   | "crawling"
@@ -87,6 +100,7 @@ export interface AuditRunResponse {
   screenshots?: ScreenshotDto[];
   enginesCompleted?: string[];
   runtime?: "browser" | "fetch";
+  methodology?: AuditMethodologyDto;
   createdAt: string;
   completedAt?: string | null;
 }

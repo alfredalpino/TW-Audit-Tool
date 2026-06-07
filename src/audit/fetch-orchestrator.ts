@@ -15,6 +15,9 @@ export type FetchAuditContext = {
   headers: Record<string, string>;
   responseTimeMs: number;
   htmlBytes: number;
+  robotsTxt: string | null;
+  hasLlmsTxt: boolean;
+  hasSitemap: boolean;
 };
 
 export type FetchSession = {
@@ -56,9 +59,49 @@ export async function createFetchSession(
     headers,
     responseTimeMs: Date.now() - start,
     htmlBytes: Buffer.byteLength(html, "utf8"),
+    robotsTxt: null,
+    hasLlmsTxt: false,
+    hasSitemap: false,
   };
 
+  const origin = new URL(url).origin;
+  const [robotsTxt, hasLlmsTxt, hasSitemap] = await Promise.all([
+    fetchText(`${origin}/robots.txt`, 5_000),
+    probeUrl(`${origin}/llms.txt`, 5_000),
+    probeUrl(`${origin}/sitemap.xml`, 5_000),
+  ]);
+
+  ctx.robotsTxt = robotsTxt;
+  ctx.hasLlmsTxt = hasLlmsTxt;
+  ctx.hasSitemap = hasSitemap;
+
   return { ctx, $: cheerio.load(html) };
+}
+
+async function fetchText(url: string, timeoutMs: number): Promise<string | null> {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(timeoutMs),
+      headers: { "User-Agent": "TorpedoAuditBot/1.0" },
+    });
+    if (!res.ok) return null;
+    return await res.text();
+  } catch {
+    return null;
+  }
+}
+
+async function probeUrl(url: string, timeoutMs: number): Promise<boolean> {
+  try {
+    const res = await fetch(url, {
+      method: "HEAD",
+      signal: AbortSignal.timeout(timeoutMs),
+      headers: { "User-Agent": "TorpedoAuditBot/1.0" },
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
 }
 
 type FetchEngine = {
@@ -74,6 +117,10 @@ function seoFetchEngine(session: FetchSession): EngineResult {
   const metaDesc = $('meta[name="description"]').attr("content")?.trim() ?? "";
   const h1Count = $("h1").length;
   const canonical = $('link[rel="canonical"]').attr("href") ?? null;
+  const ogTitle = $('meta[property="og:title"]').attr("content")?.trim() ?? "";
+  const ogDesc = $('meta[property="og:description"]').attr("content")?.trim() ?? "";
+  const ogImage = $('meta[property="og:image"]').attr("content")?.trim() ?? "";
+  const robotsMeta = $('meta[name="robots"]').attr("content") ?? "";
 
   if (!title || title.length < 10) {
     findings.push({
@@ -84,6 +131,15 @@ function seoFetchEngine(session: FetchSession): EngineResult {
       recommendation: "Add a unique 50–60 character title with primary keyword and brand.",
       businessImpact:
         "Weak titles reduce organic CTR — often costing 5–12% of potential search traffic.",
+    });
+  } else if (title.length > 65) {
+    findings.push({
+      category: "seo",
+      severity: "medium",
+      title: "Page title may truncate in search results",
+      description: `Title is ${title.length} characters; SERPs typically show ~50–60.`,
+      recommendation: "Shorten the title while keeping the primary keyword upfront.",
+      businessImpact: "Truncated titles dilute messaging in organic search snippets.",
     });
   }
   if (!metaDesc) {
@@ -96,6 +152,15 @@ function seoFetchEngine(session: FetchSession): EngineResult {
       businessImpact:
         "Missing descriptions often reduce CTR by 8–15% from organic search.",
     });
+  } else if (metaDesc.length < 70 || metaDesc.length > 165) {
+    findings.push({
+      category: "seo",
+      severity: "medium",
+      title: "Meta description length is suboptimal",
+      description: `Meta description is ${metaDesc.length} characters (target 150–160).`,
+      recommendation: "Rewrite to 150–160 characters with a clear value proposition.",
+      businessImpact: "Suboptimal snippets reduce click-through from search results.",
+    });
   }
   if (h1Count === 0) {
     findings.push({
@@ -105,6 +170,15 @@ function seoFetchEngine(session: FetchSession): EngineResult {
       description: "The HTML lacks a primary H1 element.",
       recommendation: "Add one descriptive H1 aligned with page intent.",
       businessImpact: "Missing H1 weakens topical clarity for crawlers and visitors.",
+    });
+  } else if (h1Count > 1) {
+    findings.push({
+      category: "seo",
+      severity: "medium",
+      title: "Multiple H1 headings detected",
+      description: `${h1Count} H1 elements found — crawlers expect one primary topic per page.`,
+      recommendation: "Keep a single H1; demote extras to H2.",
+      businessImpact: "Multiple H1s dilute topical focus and can confuse search engines.",
     });
   }
   if (!canonical) {
@@ -117,12 +191,60 @@ function seoFetchEngine(session: FetchSession): EngineResult {
       businessImpact: "Duplicate URLs can split ranking equity.",
     });
   }
+  if (!ogTitle || !ogDesc) {
+    findings.push({
+      category: "seo",
+      severity: "medium",
+      title: "Open Graph tags incomplete",
+      description: `Missing ${!ogTitle ? "og:title " : ""}${!ogDesc ? "og:description" : ""}`.trim(),
+      recommendation: "Add og:title and og:description for social and AI link previews.",
+      businessImpact: "Weak social previews reduce shares and referral traffic.",
+    });
+  }
+  if (!ogImage) {
+    findings.push({
+      category: "seo",
+      severity: "low",
+      title: "No Open Graph image",
+      description: "og:image is missing from the HTML head.",
+      recommendation: "Add a 1200×630 og:image for rich link previews.",
+      businessImpact: "Links shared without images get lower engagement.",
+    });
+  }
+  if (robotsMeta.includes("noindex")) {
+    findings.push({
+      category: "seo",
+      severity: "critical",
+      title: "Page blocked from indexing",
+      description: "robots meta tag includes noindex.",
+      recommendation: "Remove noindex on public marketing pages.",
+      businessImpact: "Noindexed pages cannot rank or drive organic traffic.",
+    });
+  }
+  if (!ctx.hasSitemap && !ctx.robotsTxt?.toLowerCase().includes("sitemap")) {
+    findings.push({
+      category: "seo",
+      severity: "low",
+      title: "Sitemap not detected",
+      description: "No /sitemap.xml or sitemap reference in robots.txt.",
+      recommendation: "Publish sitemap.xml and reference it in robots.txt.",
+      businessImpact: "Sitemaps help crawlers discover deep pages faster.",
+    });
+  }
 
   return {
     category: "seo",
     score: scoreFromFindings(findings),
     findings,
-    breakdown: { title, metaDescLength: metaDesc.length, h1Count, canonical, mode: "fetch" },
+    breakdown: {
+      title,
+      metaDescLength: metaDesc.length,
+      h1Count,
+      canonical,
+      ogTitle: Boolean(ogTitle),
+      ogImage: Boolean(ogImage),
+      mode: "fetch",
+    },
   };
 }
 
@@ -166,15 +288,26 @@ function speedFetchEngine(session: FetchSession): EngineResult {
     });
   }
 
-  if (findings.length === 0 && ttfbMs > 400) {
+  const styleBlocks = (ctx.html.match(/<style\b/gi) ?? []).length;
+  const blockingScripts = (ctx.html.match(/<script\b[^>]*(?!async|defer)[^>]*>/gi) ?? []).length;
+  if (blockingScripts > 8) {
+    findings.push({
+      category: "speed",
+      severity: "medium",
+      title: "Many render-blocking script tags",
+      description: `${blockingScripts} synchronous script tags may block first paint.`,
+      recommendation: "Add async/defer to non-critical scripts; bundle where possible.",
+      businessImpact: "Render-blocking JS delays LCP and increases bounce on mobile.",
+    });
+  }
+  if (styleBlocks > 5) {
     findings.push({
       category: "speed",
       severity: "low",
-      title: "Speed audit limited in fetch mode",
-      description:
-        "Core Web Vitals (LCP, CLS, INP) require Lighthouse on the worker tier.",
-      recommendation: "Run a full audit via worker for Lighthouse performance scoring.",
-      businessImpact: "Fetch mode provides TTFB/size heuristics only — not full CWV data.",
+      title: "Multiple inline style blocks",
+      description: `${styleBlocks} <style> blocks increase HTML parse cost.`,
+      recommendation: "Move critical CSS external and minify stylesheets.",
+      businessImpact: "Inline CSS bloat slows initial render on slower devices.",
     });
   }
 
@@ -221,6 +354,16 @@ function securityFetchEngine(session: FetchSession): EngineResult {
       businessImpact: "XSS incidents can steal sessions and trigger compliance issues.",
     });
   }
+  if (!headers["x-content-type-options"]) {
+    findings.push({
+      category: "security",
+      severity: "low",
+      title: "X-Content-Type-Options header missing",
+      description: "nosniff helps prevent MIME-type sniffing attacks.",
+      recommendation: 'Set X-Content-Type-Options: nosniff on HTML responses.',
+      businessImpact: "MIME sniffing can enable drive-by download attacks.",
+    });
+  }
 
   const mixedContent = (ctx.html.match(/(?:src|href)=["']http:\/\//gi) ?? []).length;
   if (mixedContent > 0 && ctx.url.startsWith("https://")) {
@@ -245,6 +388,26 @@ function securityFetchEngine(session: FetchSession): EngineResult {
 function technicalFetchEngine(session: FetchSession): EngineResult {
   const { $, ctx } = session;
   const findings: AuditFindingInput[] = [];
+
+  if (!ctx.robotsTxt) {
+    findings.push({
+      category: "technical",
+      severity: "low",
+      title: "robots.txt not found",
+      description: "No robots.txt returned from the site origin.",
+      recommendation: "Publish robots.txt with crawl rules and sitemap reference.",
+      businessImpact: "Crawlers lack explicit guidance for indexing your site.",
+    });
+  } else if (ctx.robotsTxt.toLowerCase().includes("disallow: /")) {
+    findings.push({
+      category: "technical",
+      severity: "medium",
+      title: "robots.txt blocks root path",
+      description: "robots.txt contains a Disallow: / rule.",
+      recommendation: "Verify disallow rules are intentional for production.",
+      businessImpact: "Over-broad disallow rules can block search engine crawling.",
+    });
+  }
 
   if ($('meta[name="viewport"]').length === 0) {
     findings.push({
@@ -331,20 +494,48 @@ function accessibilityFetchEngine(session: FetchSession): EngineResult {
     });
   }
 
-  findings.push({
-    category: "accessibility",
-    severity: "info",
-    title: "Full WCAG audit requires worker tier",
-    description:
-      "axe-core + Playwright runs on the worker for complete accessibility violations.",
-    recommendation: "Deploy worker for axe WCAG 2.1 AA analysis.",
-    businessImpact: "Fetch mode catches common HTML issues only.",
-  });
+  const unnamedButtons = $("button").filter((_, el) => {
+    const text = $(el).text().trim();
+    const aria = $(el).attr("aria-label") ?? $(el).attr("title");
+    return !text && !aria;
+  }).length;
+  if (unnamedButtons > 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "high",
+      title: "Buttons without accessible names",
+      description: `${unnamedButtons} <button> element(s) lack visible text or aria-label.`,
+      recommendation: "Add text content or aria-label to every button.",
+      businessImpact: "Unnamed controls are unusable for screen reader visitors.",
+    });
+  }
 
-  const scored = findings.filter((f) => f.severity !== "info");
+  if ($('a[href^="#main"], a[href="#content"], .skip-link, [class*="skip"]').length === 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "low",
+      title: "No skip navigation link detected",
+      description: "No skip-to-content link found in HTML.",
+      recommendation: 'Add a visible-on-focus skip link to #main-content.',
+      businessImpact: "Keyboard users must tab through chrome before main content.",
+    });
+  }
+
+  const duplicateIds = findDuplicateIds($);
+  if (duplicateIds.length > 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "medium",
+      title: "Duplicate element IDs in HTML",
+      description: `Duplicate id values: ${duplicateIds.slice(0, 5).join(", ")}`,
+      recommendation: "Ensure every id attribute is unique on the page.",
+      businessImpact: "Duplicate IDs break labels, anchors, and assistive tech references.",
+    });
+  }
+
   return {
     category: "accessibility",
-    score: scoreFromFindings(scored),
+    score: scoreFromFindings(findings),
     findings,
     breakdown: { missingAlt, unlabeled, mode: "fetch" },
   };
@@ -398,13 +589,17 @@ function uxFetchEngine(session: FetchSession): EngineResult {
   };
 }
 
+const CTA_TEXT = /book|contact|get started|sign up|try|demo|buy|shop|subscribe|schedule|call|quote|audit|learn more/i;
+
 function croFetchEngine(session: FetchSession): EngineResult {
   const { $ } = session;
   const findings: AuditFindingInput[] = [];
   const forms = $("form").length;
-  const ctas = $(
-    'a[class*="btn"], button[class*="btn"], a[class*="cta"], button[class*="cta"], input[type="submit"]'
-  ).length;
+  const ctas = $("a, button, input[type='submit']").filter((_, el) => {
+    const text = $(el).text().trim() || $(el).attr("value") || $(el).attr("aria-label") || "";
+    const cls = $(el).attr("class") ?? "";
+    return CTA_TEXT.test(text) || /btn|cta|button/i.test(cls);
+  }).length;
   const bodyText = $("body").text().toLowerCase();
   const trustKeywords = ["testimonial", "review", "trusted", "certified", "guarantee"];
   const trustSignals = trustKeywords.filter((kw) => bodyText.includes(kw)).length;
@@ -486,6 +681,16 @@ function complianceFetchEngine(session: FetchSession): EngineResult {
       businessImpact: "Privacy gaps block enterprise procurement.",
     });
   }
+  if (!matchLink([/terms/, /terms-of-service/, /terms-of-use/])) {
+    findings.push({
+      category: "compliance",
+      severity: "medium",
+      title: "Terms of service link not found",
+      description: "No terms-of-service link detected in page HTML.",
+      recommendation: "Publish and link terms from the footer.",
+      businessImpact: "Missing terms weaken legal clarity for B2B buyers.",
+    });
+  }
   if (
     !matchLink([/do-not-sell/, /donotsell/]) &&
     (bodyText.includes("gdpr") || bodyText.includes("california"))
@@ -509,7 +714,7 @@ function complianceFetchEngine(session: FetchSession): EngineResult {
 }
 
 function aiReadinessFetchEngine(session: FetchSession): EngineResult {
-  const { $ } = session;
+  const { $, ctx } = session;
   const findings: AuditFindingInput[] = [];
   const jsonLd = $('script[type="application/ld+json"]').length;
   const semanticMain = $("main, article").length;
@@ -545,12 +750,22 @@ function aiReadinessFetchEngine(session: FetchSession): EngineResult {
       businessImpact: "Noindex pages cannot drive organic or AI traffic.",
     });
   }
+  if (!ctx.hasLlmsTxt) {
+    findings.push({
+      category: "ai_readiness",
+      severity: "low",
+      title: "No llms.txt file detected",
+      description: "/llms.txt was not found at the site origin.",
+      recommendation: "Publish llms.txt to guide AI crawlers to key pages and policies.",
+      businessImpact: "Emerging AI search surfaces favor sites with explicit LLM policies.",
+    });
+  }
 
   return {
     category: "ai_readiness",
     score: scoreFromFindings(findings),
     findings,
-    breakdown: { jsonLd, semanticMain, mode: "fetch" },
+    breakdown: { jsonLd, semanticMain, hasLlmsTxt: ctx.hasLlmsTxt, mode: "fetch" },
   };
 }
 
@@ -579,20 +794,49 @@ function mobileFetchEngine(session: FetchSession): EngineResult {
     });
   }
 
-  findings.push({
-    category: "mobile",
-    severity: "info",
-    title: "Mobile layout audit limited in fetch mode",
-    description:
-      "Overflow and tap-target checks require Playwright on the worker tier.",
-    recommendation: "Run worker audit for mobile viewport rendering tests.",
-    businessImpact: "Fetch mode validates viewport meta only.",
-  });
+  if (viewport.includes("user-scalable=no") || viewport.includes("maximum-scale=1")) {
+    findings.push({
+      category: "mobile",
+      severity: "medium",
+      title: "Viewport disables pinch-zoom",
+      description: "Viewport meta restricts user scaling.",
+      recommendation: "Allow zoom unless a documented accessibility exception applies.",
+      businessImpact: "Zoom restrictions fail WCAG reflow guidelines for low-vision users.",
+    });
+  }
 
-  const scored = findings.filter((f) => f.severity !== "info");
+  const imagesWithoutDimensions = $("img").filter((_, el) => {
+    const w = $(el).attr("width");
+    const h = $(el).attr("height");
+    const style = $(el).attr("style") ?? "";
+    return !w && !h && !style.includes("width") && !$(el).attr("loading");
+  }).length;
+  if (imagesWithoutDimensions > 3) {
+    findings.push({
+      category: "mobile",
+      severity: "medium",
+      title: "Images lack explicit dimensions",
+      description: `${imagesWithoutDimensions} images have no width/height — may cause layout shift on mobile.`,
+      recommendation: "Set width/height attributes or aspect-ratio CSS on images.",
+      businessImpact: "Layout shift hurts mobile CLS and perceived performance.",
+    });
+  }
+
+  const tableLayouts = $("table").length;
+  if (tableLayouts > 0) {
+    findings.push({
+      category: "mobile",
+      severity: "low",
+      title: "Table elements used in layout",
+      description: `${tableLayouts} <table> element(s) detected — may not reflow on small screens.`,
+      recommendation: "Use responsive CSS grid/flex instead of tables for layout.",
+      businessImpact: "Table layouts often break on narrow viewports.",
+    });
+  }
+
   return {
     category: "mobile",
-    score: scoreFromFindings(scored),
+    score: scoreFromFindings(findings),
     findings,
     breakdown: { viewport, mode: "fetch" },
   };
@@ -645,13 +889,71 @@ function contentFetchEngine(session: FetchSession): EngineResult {
   };
 }
 
-function screenshotFetchEngine(_session: FetchSession): EngineResult {
+function screenshotFetchEngine(session: FetchSession): EngineResult {
+  const { $ } = session;
+  const findings: AuditFindingInput[] = [];
+  const images = $("img");
+  const missingDimensions = images.filter((_, el) => {
+    return !$(el).attr("width") && !$(el).attr("height");
+  }).length;
+  const fixedElements = (session.ctx.html.match(/position\s*:\s*fixed/gi) ?? []).length;
+  const hugeImages = images.filter((_, el) => {
+    const src = $(el).attr("src") ?? "";
+    return /\.(png|jpe?g|webp)(\?|$)/i.test(src) && !$(el).attr("loading");
+  }).length;
+
+  if (missingDimensions > 2) {
+    findings.push({
+      category: "screenshot",
+      severity: "medium",
+      title: "Layout shift risk from unsized images",
+      description: `${missingDimensions} images lack width/height in HTML.`,
+      recommendation: "Reserve space for images to prevent visual jump on load.",
+      businessImpact: "Visual instability reduces trust during first impression.",
+    });
+  }
+  if (fixedElements > 4) {
+    findings.push({
+      category: "screenshot",
+      severity: "low",
+      title: "Many fixed-position elements",
+      description: `${fixedElements} inline fixed-position styles may obscure content on smaller viewports.`,
+      recommendation: "Audit sticky bars, chat widgets, and overlays for mobile overlap.",
+      businessImpact: "Overlapping chrome hides CTAs and hurts conversion on mobile.",
+    });
+  }
+  if (hugeImages > 8) {
+    findings.push({
+      category: "screenshot",
+      severity: "medium",
+      title: "Heavy image load without lazy loading",
+      description: `${hugeImages} raster images lack loading="lazy".`,
+      recommendation: "Lazy-load below-fold images and serve responsive srcset.",
+      businessImpact: "Slow visual completeness increases bounce before users see value.",
+    });
+  }
+
   return {
     category: "screenshot",
-    score: 100,
-    findings: [],
-    breakdown: { mode: "fetch", captured: true, viewports: ["desktop", "mobile"] },
+    score: scoreFromFindings(findings),
+    findings,
+    breakdown: {
+      mode: "fetch",
+      missingDimensions,
+      fixedElements,
+      viewports: ["desktop", "mobile"],
+    },
   };
+}
+
+function findDuplicateIds($: cheerio.CheerioAPI): string[] {
+  const seen = new Map<string, number>();
+  $("[id]").each((_, el) => {
+    const id = $(el).attr("id");
+    if (!id) return;
+    seen.set(id, (seen.get(id) ?? 0) + 1);
+  });
+  return [...seen.entries()].filter(([, count]) => count > 1).map(([id]) => id);
 }
 
 const FETCH_ENGINES: FetchEngine[] = [

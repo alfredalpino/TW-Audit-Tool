@@ -11,6 +11,7 @@ import { ScreenshotGallery } from "@/components/audit/ScreenshotGallery";
 import { AuditMetaStrip } from "@/components/audit/AuditMetaStrip";
 import { CategoryBreakdown } from "@/components/audit/CategoryBreakdown";
 import { InteractiveFindings } from "@/components/audit/InteractiveFindings";
+import { AuditMethodologyPanel } from "@/components/audit/AuditMethodology";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -58,6 +59,7 @@ export function AuditReportExperience({
 
       {tab === "overview" && (
         <div className="space-y-8">
+          {run.methodology && <AuditMethodologyPanel methodology={run.methodology} />}
           <ExecutiveSummary
             summary={run.executiveSummary}
             overallScore={run.overallScore}

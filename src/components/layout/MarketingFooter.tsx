@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Globe } from "lucide-react";
 import { ClayCard } from "@/components/ui/ClayCard";
@@ -62,57 +61,6 @@ export function MarketingFooter() {
   return (
     <footer className="tw-footer relative w-full max-w-[100vw] overflow-hidden text-[var(--fg-primary)]">
       <div className="tw-section relative z-10 w-full min-w-0 max-w-full pb-6 pt-10 md:pb-8 md:pt-12 lg:pt-14">
-        <div className="relative mb-8 w-full min-w-0 max-w-full overflow-x-clip md:mb-10">
-          <div className="mb-6 flex flex-wrap items-center gap-4 md:mb-8">
-            <Link
-              href="/"
-              aria-label="Torpedo Web Website Auditor home"
-              className="tw-footer-logo-well shrink-0"
-            >
-              <Image
-                src="/logo.svg"
-                alt=""
-                width={32}
-                height={32}
-                className="h-8 w-8 md:h-9 md:w-9"
-                aria-hidden
-              />
-            </Link>
-            <span
-              className="tw-footer-tagline-rule hidden w-12 sm:block"
-              aria-hidden
-            />
-            <p className="max-w-md font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--fg-tertiary)]">
-              Digital engineering · North India &amp; US
-            </p>
-          </div>
-
-          <p className="tw-prose-flow max-w-2xl text-base leading-relaxed text-[var(--fg-secondary)] md:text-lg">
-            Engineering digital systems since 2026: performance, search, and
-            conversion infrastructure built to move like a torpedo. Fast,
-            directed, impossible to ignore.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center md:mt-10">
-            <Button
-              href={GOOGLE_CALENDAR_APPOINTMENT_URL}
-              variant="brand"
-              className="font-display tracking-wide"
-            >
-              Book a discovery call
-              <ArrowUpRight className="h-4 w-4 shrink-0 opacity-90" aria-hidden />
-            </Button>
-            <Button
-              href={torpedoSitePath("/services")}
-              variant="secondary"
-              className="font-mono text-xs uppercase tracking-[0.14em] text-[var(--fg-secondary)] hover:text-[var(--fg-primary)]"
-            >
-              View capabilities
-              <ArrowRight className="h-4 w-4" aria-hidden />
-            </Button>
-          </div>
-        </div>
-
         <ClayCard className="tw-footer-panel relative isolate p-6 md:p-10 lg:p-12">
           <div
             className="tw-footer-panel-rim absolute left-6 right-6 top-0 z-10 md:left-10 md:right-10 lg:left-12 lg:right-12"

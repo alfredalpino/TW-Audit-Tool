@@ -1,6 +1,6 @@
 import { and, desc, eq, gt } from "drizzle-orm";
 import type { Db } from "@/lib/db";
-import { auditRuns, audits, type AuditRunConfig } from "@/lib/db/schema";
+import { auditRuns, audits, type AuditRunConfig, type AuditRunSummary } from "@/lib/db/schema";
 import type { CreateAuditInput } from "@/lib/validations/audit";
 
 export const AUDIT_CACHE_TTL_MS = 24 * 60 * 60 * 1000;
@@ -45,6 +45,7 @@ export async function findCachedAuditRun(
       runId: auditRuns.id,
       auditId: auditRuns.auditId,
       config: auditRuns.config,
+      summary: auditRuns.summary,
     })
     .from(auditRuns)
     .innerJoin(audits, eq(auditRuns.auditId, audits.id))
@@ -59,6 +60,8 @@ export async function findCachedAuditRun(
     .limit(10);
 
   for (const row of rows) {
+    const summary = row.summary as AuditRunSummary | null;
+    if (summary?.mock) continue;
     if (auditConfigMatches(row.config, config)) {
       return { runId: row.runId, auditId: row.auditId };
     }

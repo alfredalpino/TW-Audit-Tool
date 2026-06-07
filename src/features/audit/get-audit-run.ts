@@ -7,6 +7,7 @@ import { isRunUnlocked } from "@/features/leads/create-lead";
 import type { AuditRunSummary } from "@/lib/db/schema";
 import type { FindingDto } from "@/types/audit";
 import { normalizeFindingBusinessImpact } from "@/lib/scoring/impact-summary";
+import { getAuditMethodology } from "@/lib/audit/methodology";
 
 const GATE_PRIORITY_THRESHOLD = 75;
 
@@ -106,6 +107,7 @@ export async function getAuditRun(
       }),
       enginesCompleted: summary?.enginesCompleted,
       runtime: summary?.runtime,
+      methodology: getAuditMethodology(summary?.runtime ?? "fetch"),
       createdAt: run.createdAt.toISOString(),
       completedAt: run.completedAt?.toISOString() ?? null,
     };
