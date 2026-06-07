@@ -19,12 +19,36 @@ export type CreateAuditResult =
       pollUrl: string;
       cached?: boolean;
     }
-  | { ok: false; error: string };
+  | { ok: false; error: string; code?: "database" | "validation" };
 
 export type CreateAuditOptions = {
   trigger?: "public" | "api";
   skipCache?: boolean;
 };
+
+function dbErrorMessage(error: unknown): { error: string; code: "database" } {
+  const message = error instanceof Error ? error.message : String(error);
+  if (
+    /ECONNREFUSED|ENOTFOUND|ETIMEDOUT|connect|Failed query|password authentication|timeout/i.test(
+      message
+    )
+  ) {
+    return {
+      error: "Database is temporarily unavailable. Please try again.",
+      code: "database",
+    };
+  }
+  if (/relation .* does not exist|undefined_table/i.test(message)) {
+    return {
+      error: "Audit database is not initialized. Contact support.",
+      code: "database",
+    };
+  }
+  return {
+    error: "Could not start audit. Please try again.",
+    code: "database",
+  };
+}
 
 export async function createAuditRun(
   input: CreateAuditInput,
@@ -60,68 +84,78 @@ export async function createAuditRun(
     };
   }
 
-  if (!options.skipCache) {
-    const cached = await findCachedAuditRun(db, normalized, config);
-    if (cached) {
-      const log = createLogger({
-        runId: cached.runId,
-        component: "audit.create",
-        trigger,
-      });
-      log.info("audit cache hit", {
-        auditId: cached.auditId,
-        normalized,
-      });
-      return {
-        ok: true,
-        auditId: cached.auditId,
-        runId: cached.runId,
-        status: "completed",
-        pollUrl: `/api/audits/${cached.runId}`,
-        cached: true,
-      };
+  const log = createLogger({ component: "audit.create", trigger });
+
+  try {
+    if (!options.skipCache) {
+      try {
+        const cached = await findCachedAuditRun(db, normalized, config);
+        if (cached) {
+          const cacheLog = log.child({ runId: cached.runId });
+          cacheLog.info("audit cache hit", {
+            auditId: cached.auditId,
+            normalized,
+          });
+          return {
+            ok: true,
+            auditId: cached.auditId,
+            runId: cached.runId,
+            status: "completed",
+            pollUrl: `/api/audits/${cached.runId}`,
+            cached: true,
+          };
+        }
+      } catch (cacheError) {
+        log.warn("audit cache lookup failed", {
+          normalized,
+          error:
+            cacheError instanceof Error ? cacheError.message : String(cacheError),
+        });
+      }
     }
-  }
 
-  let audit = await db.query.audits.findFirst({
-    where: eq(audits.normalizedUrl, normalized),
-  });
+    let audit = await db.query.audits.findFirst({
+      where: eq(audits.normalizedUrl, normalized),
+    });
 
-  if (!audit) {
-    const [inserted] = await db
-      .insert(audits)
+    if (!audit) {
+      const [inserted] = await db
+        .insert(audits)
+        .values({
+          url: input.url,
+          normalizedUrl: normalized,
+          metadata: {},
+        })
+        .returning();
+      audit = inserted;
+    }
+
+    const [run] = await db
+      .insert(auditRuns)
       .values({
-        url: input.url,
-        normalizedUrl: normalized,
-        metadata: {},
+        auditId: audit.id,
+        status: "queued",
+        trigger,
+        config,
       })
       .returning();
-    audit = inserted;
-  }
 
-  const [run] = await db
-    .insert(auditRuns)
-    .values({
+    const runLog = log.child({ runId: run.id, auditId: audit.id });
+    runLog.info("audit run queued for worker", { url: input.url, normalized });
+
+    return {
+      ok: true,
       auditId: audit.id,
+      runId: run.id,
       status: "queued",
-      trigger,
-      config,
-    })
-    .returning();
-
-  const log = createLogger({
-    runId: run.id,
-    auditId: audit.id,
-    component: "audit.create",
-    trigger,
-  });
-  log.info("audit run queued for worker", { url: input.url, normalized });
-
-  return {
-    ok: true,
-    auditId: audit.id,
-    runId: run.id,
-    status: "queued",
-    pollUrl: `/api/audits/${run.id}`,
-  };
+      pollUrl: `/api/audits/${run.id}`,
+    };
+  } catch (error) {
+    log.error("audit run database error", {
+      url: input.url,
+      normalized,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return { ok: false, ...dbErrorMessage(error) };
+  }
 }

@@ -21,9 +21,26 @@ export function AuditUrlForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
       });
-      const data = await res.json();
+      const text = await res.text();
+      let data: { error?: string; runId?: string } = {};
+      if (text) {
+        try {
+          data = JSON.parse(text) as { error?: string; runId?: string };
+        } catch {
+          setError(
+            res.ok
+              ? "Unexpected response from server"
+              : `Request failed (${res.status})`
+          );
+          return;
+        }
+      }
       if (!res.ok) {
-        setError(data.error ?? "Failed to start audit");
+        setError(data.error ?? `Request failed (${res.status})`);
+        return;
+      }
+      if (!data.runId) {
+        setError("Unexpected response from server");
         return;
       }
       router.push(`/audit/${data.runId}`);

@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
 import { createAuditSchema } from "@/lib/validations/audit";
 import { createAuditRun } from "@/features/audit/create-audit-run";
+import { getDb } from "@/lib/db";
 import {
   checkApiKeyAuditRateLimit,
   checkDomainAuditRateLimit,
@@ -76,13 +77,26 @@ export async function POST(request: Request) {
     }
   }
 
-  const result = await createAuditRun(parsed.data, {
-    trigger: apiKeyAuth.valid ? "api" : "public",
-  });
+  let result;
+  try {
+    result = await createAuditRun(parsed.data, {
+      trigger: apiKeyAuth.valid ? "api" : "public",
+    });
+  } catch (error) {
+    log.error("audit creation threw", {
+      ip,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return NextResponse.json(
+      { error: "Could not start audit. Please try again." },
+      { status: 503 }
+    );
+  }
 
   if (!result.ok) {
     log.warn("audit creation failed", { error: result.error, ip });
-    return NextResponse.json({ error: result.error }, { status: 400 });
+    const status = result.code === "database" ? 503 : 400;
+    return NextResponse.json({ error: result.error }, { status });
   }
 
   const runLog = log.child({ runId: result.runId });
@@ -92,6 +106,26 @@ export async function POST(request: Request) {
     cached: result.cached ?? false,
     auth: apiKeyAuth.valid ? "api_key" : "public",
   });
+
+  if (
+    process.env.VERCEL === "1" &&
+    result.status === "queued" &&
+    !result.cached
+  ) {
+    const db = getDb();
+    if (db) {
+      after(async () => {
+        try {
+          const { processAuditRun } = await import("@/audit/processor");
+          await processAuditRun(db, result.runId);
+        } catch (error) {
+          runLog.error("inline audit processing failed", {
+            error: error instanceof Error ? error.message : String(error),
+          });
+        }
+      });
+    }
+  }
 
   return NextResponse.json(
     {
