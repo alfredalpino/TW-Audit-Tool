@@ -2,7 +2,7 @@
 
 import { AuditUrlForm } from "@/components/audit/AuditUrlForm";
 
-const HERO_EYEBROW = "[ WEBSITE INTELLIGENCE PLATFORM ]";
+const HERO_EYEBROW = "[ Improve Your Website ]";
 
 export function MarketingHero() {
   return (

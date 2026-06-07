@@ -71,7 +71,7 @@ export function AuditUrlForm() {
       />
       </div>
       <Button type="submit" variant="brand" size="lg" withArrow disabled={loading} className="w-full shrink-0 sm:w-auto">
-        {loading ? "Starting…" : "Run Free Audit"}
+        {loading ? "Starting…" : "Analyze My Website"}
       </Button>
       {error && (
         <p className="w-full text-sm text-red-400 sm:col-span-2" role="alert">
