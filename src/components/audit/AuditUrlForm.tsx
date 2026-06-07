@@ -58,17 +58,22 @@ export function AuditUrlForm() {
       className="flex w-full min-w-0 max-w-2xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch"
     >
       <div className="min-w-0 flex-1 sm:min-w-[12rem]">
-      <Input
-        type="text"
-        name="url"
-        placeholder="Enter website URL — e.g. example.com"
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
-        required
-        aria-label="Website URL"
-        autoComplete="url"
-        className="min-w-0"
-      />
+        <Input
+          type="url"
+          name="url"
+          placeholder="https://www.yoursite.com"
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+          required
+          aria-label="Website URL"
+          autoComplete="url"
+          inputMode="url"
+          className="min-w-0"
+        />
+        <p className="mt-1.5 font-mono text-[10px] text-[var(--fg-tertiary)]">
+          Use your full URL with https:// — e.g. https://www.yoursite.com or
+          yoursite.com
+        </p>
       </div>
       <Button type="submit" variant="brand" size="lg" withArrow disabled={loading} className="w-full shrink-0 sm:w-auto">
         {loading ? "Starting…" : "Analyze My Website"}

@@ -34,6 +34,7 @@ export interface ImpactRange {
 export interface CategoryScoreDto {
   category: FindingCategory;
   score: number;
+  breakdown?: Record<string, unknown>;
 }
 
 export interface FindingDto {
@@ -45,6 +46,14 @@ export interface FindingDto {
   recommendation?: string | null;
   businessImpact: string;
   priorityScore: number;
+  evidence?: Record<string, unknown>;
+}
+
+export interface ScreenshotDto {
+  viewport: "desktop" | "mobile" | "tablet";
+  url: string;
+  width?: number;
+  height?: number;
 }
 
 export type AuditStage =
@@ -75,7 +84,9 @@ export interface AuditRunResponse {
     growthOpportunity?: ImpactRange;
   };
   findings: FindingDto[];
+  screenshots?: ScreenshotDto[];
   enginesCompleted?: string[];
+  runtime?: "browser" | "fetch";
   createdAt: string;
   completedAt?: string | null;
 }

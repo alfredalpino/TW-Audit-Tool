@@ -17,9 +17,9 @@ import {
   runFetchAuditEngines,
 } from "@/audit/fetch-orchestrator";
 import {
-  captureDesktopScreenshot,
-  persistScreenshotRecord,
-} from "@/audit/screenshot";
+  capturePlaywrightScreenshots,
+  captureRemoteScreenshots,
+} from "@/lib/screenshots/capture";
 import type { AuditStage } from "@/audit/types";
 import { SCORE_CATEGORIES } from "@/audit/constants";
 import { computeFindingPriority } from "@/audit/scoring";
@@ -180,6 +180,12 @@ async function processFetchAuditRun(db: Db, runId: string): Promise<void> {
       run.config ?? {}
     );
 
+    try {
+      await captureRemoteScreenshots(db, runId, url);
+    } catch (e) {
+      console.warn("[audit] remote screenshot capture failed", e);
+    }
+
     await updateRunProgress(db, runId, "analyzing", []);
 
     const { results, allFindings } = await runFetchAuditEngines(
@@ -251,8 +257,7 @@ async function processBrowserAuditRun(db: Db, runId: string): Promise<void> {
     );
 
     try {
-      const storageKey = await captureDesktopScreenshot(runId, session.page);
-      await persistScreenshotRecord(db, runId, storageKey);
+      await capturePlaywrightScreenshots(db, runId, session.page);
     } catch (e) {
       console.warn("[audit] screenshot capture failed", e);
     }

@@ -24,6 +24,7 @@ function gateFindings(
       recommendation: null,
       businessImpact:
         "Submit your email below to view business impact and fix steps for lower-priority findings.",
+      evidence: undefined,
     };
   });
 }
@@ -46,6 +47,7 @@ export async function getAuditRun(
         },
         scores: true,
         findings: true,
+        screenshots: true,
       },
     });
 
@@ -64,6 +66,10 @@ export async function getAuditRun(
       recommendation: f.recommendation,
       businessImpact: normalizeFindingBusinessImpact(f.businessImpact ?? ""),
       priorityScore: f.priorityScore,
+      evidence:
+        Object.keys((f.evidence as Record<string, unknown>) ?? {}).length > 0
+          ? (f.evidence as Record<string, unknown>)
+          : undefined,
     }));
 
     return {
@@ -80,10 +86,24 @@ export async function getAuditRun(
       scores: (run.scores ?? []).map((s) => ({
         category: s.category,
         score: s.score,
+        breakdown:
+          Object.keys((s.breakdown as Record<string, unknown>) ?? {}).length > 0
+            ? (s.breakdown as Record<string, unknown>)
+            : undefined,
       })),
       impact,
       findings: gateFindings(findingsDto, unlocked),
+      screenshots: (run.screenshots ?? []).map((shot) => {
+        const meta = (shot.annotations ?? {}) as Record<string, unknown>;
+        return {
+          viewport: shot.viewport,
+          url: `/api/audits/${runId}/screenshots/${shot.viewport}`,
+          width: typeof meta.width === "number" ? meta.width : undefined,
+          height: typeof meta.height === "number" ? meta.height : undefined,
+        };
+      }),
       enginesCompleted: summary?.enginesCompleted,
+      runtime: summary?.runtime,
       createdAt: run.createdAt.toISOString(),
       completedAt: run.completedAt?.toISOString() ?? null,
     };

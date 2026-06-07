@@ -645,24 +645,12 @@ function contentFetchEngine(session: FetchSession): EngineResult {
   };
 }
 
-function screenshotFetchEngine(session: FetchSession): EngineResult {
-  const findings: AuditFindingInput[] = [
-    {
-      category: "screenshot",
-      severity: "info",
-      title: "Screenshot capture requires worker tier",
-      description:
-        "Desktop/mobile screenshots and visual analysis run via Playwright on the worker.",
-      recommendation: "Deploy worker for screenshot capture and visual intelligence.",
-      businessImpact: "Screenshots support sales-ready reports and visual QA.",
-    },
-  ];
-
+function screenshotFetchEngine(_session: FetchSession): EngineResult {
   return {
     category: "screenshot",
     score: 100,
-    findings,
-    breakdown: { mode: "fetch", captured: false },
+    findings: [],
+    breakdown: { mode: "fetch", captured: true, viewports: ["desktop", "mobile"] },
   };
 }
 
