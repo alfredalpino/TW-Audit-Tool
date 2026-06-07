@@ -26,8 +26,19 @@ export type CreateAuditOptions = {
   skipCache?: boolean;
 };
 
+function formatDbError(error: unknown): string {
+  if (error instanceof Error) {
+    const parts = [error.message];
+    if (error.cause instanceof Error) {
+      parts.push(error.cause.message);
+    }
+    return parts.join(" | ");
+  }
+  return String(error);
+}
+
 function dbErrorMessage(error: unknown): { error: string; code: "database" } {
-  const message = error instanceof Error ? error.message : String(error);
+  const message = formatDbError(error);
   if (
     /ECONNREFUSED|ENOTFOUND|ETIMEDOUT|connect|Failed query|password authentication|timeout/i.test(
       message
@@ -154,7 +165,7 @@ export async function createAuditRun(
     log.error("audit run database error", {
       url: input.url,
       normalized,
-      error: error instanceof Error ? error.message : String(error),
+      error: formatDbError(error),
     });
     return { ok: false, ...dbErrorMessage(error) };
   }
