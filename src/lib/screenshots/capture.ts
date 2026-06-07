@@ -32,7 +32,7 @@ async function fetchRemoteScreenshot(
     if (spec.mobile) params.set("viewport.isMobile", "true");
 
     const res = await fetch(`https://api.microlink.io/?${params}`, {
-      signal: AbortSignal.timeout(45_000),
+      signal: AbortSignal.timeout(18_000),
       headers: { Accept: "application/json" },
     });
     if (!res.ok) throw new Error(`microlink ${res.status}`);
@@ -43,7 +43,7 @@ async function fetchRemoteScreenshot(
     if (!imageUrl) throw new Error("microlink missing screenshot url");
 
     const imgRes = await fetch(imageUrl, {
-      signal: AbortSignal.timeout(30_000),
+      signal: AbortSignal.timeout(12_000),
     });
     if (!imgRes.ok) throw new Error(`screenshot download ${imgRes.status}`);
     return Buffer.from(await imgRes.arrayBuffer());
@@ -55,7 +55,7 @@ async function fetchRemoteScreenshot(
       const thumUrl = `https://image.thum.io/get/${thumPath}/${encodeURIComponent(url)}`;
       const res = await fetch(thumUrl, {
         redirect: "follow",
-        signal: AbortSignal.timeout(45_000),
+        signal: AbortSignal.timeout(18_000),
       });
       if (!res.ok) return null;
       return Buffer.from(await res.arrayBuffer());

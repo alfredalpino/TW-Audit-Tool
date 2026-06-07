@@ -12,11 +12,6 @@ import {
 import { validateAuditApiKey } from "@/lib/auth/api-key";
 import { normalizeAuditUrl } from "@/lib/url";
 import { createLogger } from "@/lib/logger";
-import {
-  runVercelAuditProcessing,
-  shouldProcessOnVercel,
-} from "@/lib/audit/run-vercel-processing";
-
 export const maxDuration = 60;
 
 export async function POST(request: Request) {
@@ -87,6 +82,7 @@ export async function POST(request: Request) {
   try {
     result = await createAuditRun(parsed.data, {
       trigger: apiKeyAuth.valid ? "api" : "public",
+      skipCache: true,
     });
   } catch (error) {
     log.error("audit creation threw", {
@@ -113,23 +109,11 @@ export async function POST(request: Request) {
     auth: apiKeyAuth.valid ? "api_key" : "public",
   });
 
-  let responseStatus = result.status;
-
-  if (shouldProcessOnVercel() && result.status === "queued" && !result.cached) {
-    const db = getDb();
-    if (db) {
-      const outcome = await runVercelAuditProcessing(db, result.runId);
-      if (outcome === "completed" || outcome === "failed") {
-        responseStatus = outcome;
-      }
-    }
-  }
-
   return NextResponse.json(
     {
       auditId: result.auditId,
       runId: result.runId,
-      status: responseStatus,
+      status: result.status,
       pollUrl: result.pollUrl,
       ...(result.cached ? { cached: true } : {}),
     },

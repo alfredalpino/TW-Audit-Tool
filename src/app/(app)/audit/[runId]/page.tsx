@@ -31,8 +31,12 @@ export default async function AuditRunPage({ params }: PageProps) {
         <ScoreRing score={run.overallScore} className="shrink-0 self-center md:self-start" />
       </div>
 
-      {inProgress && (
-        <AuditProgress runId={runId} initialStatus={run.status} />
+      {(inProgress || run.status === "failed") && (
+        <AuditProgress
+          runId={runId}
+          initialStatus={run.status}
+          initialErrorMessage={run.errorMessage}
+        />
       )}
 
       {run.status === "completed" ? (

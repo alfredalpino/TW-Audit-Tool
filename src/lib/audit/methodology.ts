@@ -20,6 +20,8 @@ const FETCH_TOOLS: MethodologyTool[] = [
   { name: "robots.txt / llms.txt", role: "Fetches crawl and AI-discovery policy files when available" },
   { name: "Microlink / thum.io", role: "Captures desktop and mobile visual previews" },
   { name: "Torpedo heuristics", role: "12 category engines scoring SEO, speed, security, CRO, compliance, and more" },
+  { name: "Legal page analysis", role: "Fetches and reviews privacy, terms, DMCA, and cookie policy pages when linked" },
+  { name: "ADA / WCAG HTML checks", role: "Alt text, labels, captions, tabindex, iframe titles, and contrast signals" },
 ];
 
 const BROWSER_TOOLS: MethodologyTool[] = [

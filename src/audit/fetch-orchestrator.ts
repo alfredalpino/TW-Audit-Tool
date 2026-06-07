@@ -4,6 +4,7 @@ import { assertPublicUrl } from "@/lib/url";
 import type { AuditFindingInput, EngineResult } from "@/audit/types";
 import { scoreFromFindings } from "@/audit/scoring";
 import type { FindingCategory } from "@/types/audit";
+import { analyzeLegalPages } from "@/audit/legal-analysis";
 
 export type FetchAuditContext = {
   url: string;
@@ -385,9 +386,42 @@ function securityFetchEngine(session: FetchSession): EngineResult {
   };
 }
 
-function technicalFetchEngine(session: FetchSession): EngineResult {
+async function probeBrokenInternalLinks(
+  origin: string,
+  $: cheerio.CheerioAPI
+): Promise<number> {
+  const urls = new Set<string>();
+  $("a[href]").each((_, el) => {
+    const href = $(el).attr("href")?.trim();
+    if (!href || href.startsWith("#") || href.startsWith("mailto:")) return;
+    try {
+      const absolute = new URL(href, origin);
+      if (absolute.origin === origin) urls.add(absolute.href);
+    } catch {
+      /* ignore */
+    }
+  });
+
+  let broken = 0;
+  for (const url of [...urls].slice(0, 6)) {
+    try {
+      const res = await fetch(url, {
+        method: "HEAD",
+        signal: AbortSignal.timeout(4_000),
+        headers: { "User-Agent": "TorpedoAuditBot/1.0" },
+      });
+      if (!res.ok) broken += 1;
+    } catch {
+      broken += 1;
+    }
+  }
+  return broken;
+}
+
+async function technicalFetchEngine(session: FetchSession): Promise<EngineResult> {
   const { $, ctx } = session;
   const findings: AuditFindingInput[] = [];
+  const origin = new URL(ctx.url).origin;
 
   if (!ctx.robotsTxt) {
     findings.push({
@@ -442,11 +476,35 @@ function technicalFetchEngine(session: FetchSession): EngineResult {
     });
   }
 
+  if ($('link[rel="icon"]').length === 0 && $('link[rel="shortcut icon"]').length === 0) {
+    findings.push({
+      category: "technical",
+      severity: "low",
+      title: "Favicon not declared",
+      description: "No favicon link found in HTML head.",
+      recommendation: "Add link rel=icon for browser tabs and bookmarks.",
+      businessImpact: "Missing favicons reduce brand recognition in tabs.",
+    });
+  }
+
+  const brokenLinks = await probeBrokenInternalLinks(origin, $);
+  if (brokenLinks > 0) {
+    findings.push({
+      category: "technical",
+      severity: brokenLinks > 2 ? "high" : "medium",
+      title: "Broken internal links detected",
+      description: `${brokenLinks} internal URL(s) returned errors during HEAD checks.`,
+      recommendation: "Fix or remove broken internal links.",
+      businessImpact: "Broken links hurt crawlability and user trust.",
+      evidence: { brokenLinks, sampled: Math.min(6, brokenLinks) },
+    });
+  }
+
   return {
     category: "technical",
     score: scoreFromFindings(findings),
     findings,
-    breakdown: { mode: "fetch" },
+    breakdown: { brokenLinks, mode: "fetch" },
   };
 }
 
@@ -533,11 +591,68 @@ function accessibilityFetchEngine(session: FetchSession): EngineResult {
     });
   }
 
+  const iframesWithoutTitle = $("iframe").filter((_, el) => !$(el).attr("title")?.trim()).length;
+  if (iframesWithoutTitle > 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "medium",
+      title: "iframes missing title (ADA / WCAG 2.4.1)",
+      description: `${iframesWithoutTitle} iframe(s) lack a title attribute.`,
+      recommendation: "Add descriptive title attributes to embedded frames.",
+      businessImpact: "Untitled frames confuse screen reader users (Section 508).",
+    });
+  }
+
+  const positiveTabindex = $("[tabindex]").filter((_, el) => {
+    const v = parseInt($(el).attr("tabindex") ?? "0", 10);
+    return v > 0;
+  }).length;
+  if (positiveTabindex > 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "medium",
+      title: "Positive tabindex disrupts keyboard order (ADA)",
+      description: `${positiveTabindex} element(s) use tabindex > 0.`,
+      recommendation: "Remove positive tabindex; use logical DOM order instead.",
+      businessImpact: "Keyboard traps violate ADA Title III digital access expectations.",
+    });
+  }
+
+  const videosWithoutCaptions = $("video").filter((_, el) => {
+    const track = $(el).find('track[kind="captions"], track[kind="subtitles"]');
+    return track.length === 0;
+  }).length;
+  if (videosWithoutCaptions > 0) {
+    findings.push({
+      category: "accessibility",
+      severity: "high",
+      title: "Video without captions (ADA / WCAG 1.2.2)",
+      description: `${videosWithoutCaptions} <video> element(s) lack caption tracks.`,
+      recommendation: "Provide captions or subtitles for all video content.",
+      businessImpact: "Uncaptioned video excludes deaf users and fails ADA accommodations.",
+    });
+  }
+
+  const lowContrastRisk = $("[style*='color']").filter((_, el) => {
+    const style = ($(el).attr("style") ?? "").toLowerCase();
+    return style.includes("color:#fff") && style.includes("background");
+  }).length;
+  if (lowContrastRisk > 2) {
+    findings.push({
+      category: "accessibility",
+      severity: "medium",
+      title: "Potential low-contrast inline styles",
+      description: "Multiple elements use inline color styles that may fail WCAG contrast.",
+      recommendation: "Audit text/background pairs for 4.5:1 contrast ratio.",
+      businessImpact: "Low contrast fails ADA visual accessibility requirements.",
+    });
+  }
+
   return {
     category: "accessibility",
     score: scoreFromFindings(findings),
     findings,
-    breakdown: { missingAlt, unlabeled, mode: "fetch" },
+    breakdown: { missingAlt, unlabeled, iframesWithoutTitle, mode: "fetch" },
   };
 }
 
@@ -643,19 +758,10 @@ function croFetchEngine(session: FetchSession): EngineResult {
   };
 }
 
-function complianceFetchEngine(session: FetchSession): EngineResult {
-  const { $ } = session;
+async function complianceFetchEngine(session: FetchSession): Promise<EngineResult> {
+  const { $, ctx } = session;
   const findings: AuditFindingInput[] = [];
-  const bodyText = $("body").text().toLowerCase();
-  const links = $("a")
-    .map((_, el) => ({
-      text: $(el).text().toLowerCase(),
-      href: ($(el).attr("href") ?? "").toLowerCase(),
-    }))
-    .get();
-
-  const matchLink = (patterns: RegExp[]) =>
-    links.some((l) => patterns.some((p) => p.test(l.text) || p.test(l.href)));
+  const origin = new URL(ctx.url).origin;
 
   const cookieBanner =
     $('[id*="cookie" i], [class*="cookie" i], [id*="consent" i], [class*="consent" i]').length >
@@ -671,45 +777,17 @@ function complianceFetchEngine(session: FetchSession): EngineResult {
       businessImpact: "Missing consent creates GDPR/ePrivacy exposure.",
     });
   }
-  if (!matchLink([/privacy/, /privacy-policy/])) {
-    findings.push({
-      category: "compliance",
-      severity: "high",
-      title: "Privacy policy link not found",
-      description: "No privacy policy link in HTML.",
-      recommendation: "Publish and link a privacy policy from the footer.",
-      businessImpact: "Privacy gaps block enterprise procurement.",
-    });
-  }
-  if (!matchLink([/terms/, /terms-of-service/, /terms-of-use/])) {
-    findings.push({
-      category: "compliance",
-      severity: "medium",
-      title: "Terms of service link not found",
-      description: "No terms-of-service link detected in page HTML.",
-      recommendation: "Publish and link terms from the footer.",
-      businessImpact: "Missing terms weaken legal clarity for B2B buyers.",
-    });
-  }
-  if (
-    !matchLink([/do-not-sell/, /donotsell/]) &&
-    (bodyText.includes("gdpr") || bodyText.includes("california"))
-  ) {
-    findings.push({
-      category: "compliance",
-      severity: "medium",
-      title: "CCPA opt-out link not detected",
-      description: "Privacy copy exists but no do-not-sell link found.",
-      recommendation: "Add CCPA opt-out for California visitors.",
-      businessImpact: "CCPA gaps limit US enterprise deals.",
-    });
-  }
+
+  const legalFindings = await analyzeLegalPages($, origin);
+  findings.push(...legalFindings.filter((f) => f.severity !== "info"));
+
+  const scored = findings.filter((f) => f.severity !== "info");
 
   return {
     category: "compliance",
-    score: scoreFromFindings(findings),
+    score: scoreFromFindings(scored),
     findings,
-    breakdown: { cookieBanner, mode: "fetch" },
+    breakdown: { cookieBanner, legalPagesAnalyzed: true, mode: "fetch" },
   };
 }
 
@@ -958,11 +1036,11 @@ function findDuplicateIds($: cheerio.CheerioAPI): string[] {
 
 const FETCH_ENGINES: FetchEngine[] = [
   { id: "seo", category: "seo", run: async (s) => seoFetchEngine(s) },
-  { id: "technical", category: "technical", run: async (s) => technicalFetchEngine(s) },
+  { id: "technical", category: "technical", run: (s) => technicalFetchEngine(s) },
   { id: "ux", category: "ux", run: async (s) => uxFetchEngine(s) },
   { id: "cro", category: "cro", run: async (s) => croFetchEngine(s) },
   { id: "security", category: "security", run: async (s) => securityFetchEngine(s) },
-  { id: "compliance", category: "compliance", run: async (s) => complianceFetchEngine(s) },
+  { id: "compliance", category: "compliance", run: (s) => complianceFetchEngine(s) },
   { id: "ai-readiness", category: "ai_readiness", run: async (s) => aiReadinessFetchEngine(s) },
   { id: "content", category: "content", run: async (s) => contentFetchEngine(s) },
   { id: "mobile", category: "mobile", run: async (s) => mobileFetchEngine(s) },

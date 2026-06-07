@@ -18,7 +18,10 @@ export async function GET(_request: Request, { params }: Params) {
       return NextResponse.json({ error: "Audit run not found" }, { status: 404 });
     }
 
-    if (shouldProcessOnVercel() && run.status === "queued") {
+    if (
+      shouldProcessOnVercel() &&
+      (run.status === "queued" || run.status === "running")
+    ) {
       const db = getDb();
       if (db) {
         await runVercelAuditProcessing(db, runId, { claim: true });

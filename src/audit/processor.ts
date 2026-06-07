@@ -180,12 +180,6 @@ async function processFetchAuditRun(db: Db, runId: string): Promise<void> {
       run.config ?? {}
     );
 
-    try {
-      await captureRemoteScreenshots(db, runId, url);
-    } catch (e) {
-      console.warn("[audit] remote screenshot capture failed", e);
-    }
-
     await updateRunProgress(db, runId, "analyzing", []);
 
     const { results, allFindings } = await runFetchAuditEngines(
@@ -206,6 +200,10 @@ async function processFetchAuditRun(db: Db, runId: string): Promise<void> {
       enginesCompleted,
       "fetch"
     );
+
+    void captureRemoteScreenshots(db, runId, url).catch((e) => {
+      console.warn("[audit] remote screenshot capture failed", e);
+    });
   } catch (e) {
     const message = e instanceof Error ? e.message : "Audit failed";
     await db

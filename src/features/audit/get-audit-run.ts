@@ -79,6 +79,7 @@ export async function getAuditRun(
       id: run.id,
       auditId: run.auditId,
       status: run.status,
+      errorMessage: run.errorMessage ?? undefined,
       stage: summary?.stage ?? (run.status === "queued" ? "queued" : undefined),
       url: run.audit.url,
       organizationId: run.audit.organizationId,

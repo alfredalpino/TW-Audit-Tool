@@ -81,6 +81,7 @@ export interface AuditRunResponse {
   id: string;
   auditId: string;
   status: AuditRunStatus;
+  errorMessage?: string;
   stage?: AuditStage;
   url: string;
   organizationId?: string | null;

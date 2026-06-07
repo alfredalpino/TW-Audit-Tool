@@ -20,7 +20,7 @@ export async function claimNextQueuedRun(db: Db): Promise<string | null> {
   return row?.id ?? null;
 }
 
-/** Claim a specific queued run (used when Vercel polls trigger processing). */
+/** Claim a queued or stale-running run for processing (Vercel poll recovery). */
 export async function claimQueuedRunById(
   db: Db,
   runId: string
@@ -28,7 +28,14 @@ export async function claimQueuedRunById(
   const rows = await db.execute<{ id: string }>(sql`
     UPDATE audit_runs
     SET status = 'running', started_at = NOW()
-    WHERE id = ${runId} AND status = 'queued'
+    WHERE id = ${runId}
+      AND (
+        status = 'queued'
+        OR (
+          status = 'running'
+          AND started_at < NOW() - INTERVAL '90 seconds'
+        )
+      )
     RETURNING id
   `);
 
