@@ -15,7 +15,7 @@ export type CreateAuditResult =
       ok: true;
       auditId: string;
       runId: string;
-      status: "queued" | "completed";
+      status: "queued" | "completed" | "failed";
       pollUrl: string;
       cached?: boolean;
     }

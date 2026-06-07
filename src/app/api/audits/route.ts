@@ -1,4 +1,4 @@
-import { after, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { createAuditSchema } from "@/lib/validations/audit";
 import { createAuditRun } from "@/features/audit/create-audit-run";
 import { getDb } from "@/lib/db";
@@ -12,6 +12,12 @@ import {
 import { validateAuditApiKey } from "@/lib/auth/api-key";
 import { normalizeAuditUrl } from "@/lib/url";
 import { createLogger } from "@/lib/logger";
+import {
+  runVercelAuditProcessing,
+  shouldProcessOnVercel,
+} from "@/lib/audit/run-vercel-processing";
+
+export const maxDuration = 60;
 
 export async function POST(request: Request) {
   const requestId = crypto.randomUUID();
@@ -107,23 +113,15 @@ export async function POST(request: Request) {
     auth: apiKeyAuth.valid ? "api_key" : "public",
   });
 
-  if (
-    process.env.VERCEL === "1" &&
-    result.status === "queued" &&
-    !result.cached
-  ) {
+  let responseStatus = result.status;
+
+  if (shouldProcessOnVercel() && result.status === "queued" && !result.cached) {
     const db = getDb();
     if (db) {
-      after(async () => {
-        try {
-          const { processAuditRun } = await import("@/audit/processor");
-          await processAuditRun(db, result.runId);
-        } catch (error) {
-          runLog.error("inline audit processing failed", {
-            error: error instanceof Error ? error.message : String(error),
-          });
-        }
-      });
+      const outcome = await runVercelAuditProcessing(db, result.runId);
+      if (outcome === "completed" || outcome === "failed") {
+        responseStatus = outcome;
+      }
     }
   }
 
@@ -131,7 +129,7 @@ export async function POST(request: Request) {
     {
       auditId: result.auditId,
       runId: result.runId,
-      status: result.status,
+      status: responseStatus,
       pollUrl: result.pollUrl,
       ...(result.cached ? { cached: true } : {}),
     },

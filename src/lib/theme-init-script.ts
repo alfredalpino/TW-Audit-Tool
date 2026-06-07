@@ -1,2 +1,2 @@
-/** Runs before paint to apply stored theme and avoid flash of wrong colors. */
-export const THEME_INIT_SCRIPT = `(function(){try{var k='torpedo-theme',t=localStorage.getItem(k),d=document.documentElement;if(t==='dark'||t==='light'){d.dataset.theme=t;d.style.colorScheme=t;}else{var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'dark':'light';d.style.colorScheme=dark?'dark':'light';}}catch(e){document.documentElement.dataset.theme='light';document.documentElement.style.colorScheme='light';}})();`;
+/** Runs before paint — app uses light theme only. */
+export const THEME_INIT_SCRIPT = `(function(){try{var d=document.documentElement;d.dataset.theme='light';d.style.colorScheme='light';localStorage.setItem('torpedo-theme','light');}catch(e){document.documentElement.dataset.theme='light';document.documentElement.style.colorScheme='light';}})();`;

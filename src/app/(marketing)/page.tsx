@@ -89,10 +89,10 @@ export default function HomePage() {
 
       <section id="pricing" className="border-b border-[var(--border)] bg-[var(--bg-void)] py-16 md:py-20">
         <div className="tw-section text-center">
-          <h2 className="font-display text-2xl font-bold">Improve your website today</h2>
+          <h2 className="font-display text-2xl font-bold">Free audits during launch</h2>
           <p className="tw-contain-text mx-auto mt-3 max-w-2xl text-[var(--fg-secondary)]">
             Live audits powered by Lighthouse, Playwright, and axe-core — with executive summaries
-            and email unlock for full recommendations.
+            and lead-gated full reports.
           </p>
         </div>
       </section>

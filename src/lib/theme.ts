@@ -8,19 +8,18 @@ export const THEME_COLORS: Record<Theme, string> = {
 };
 
 export function getTheme(): Theme {
-  if (typeof document === "undefined") return "light";
-  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  return "light";
 }
 
-export function applyTheme(theme: Theme, persist = true): void {
+export function applyTheme(_theme: Theme = "light", persist = true): void {
   if (typeof document === "undefined") return;
 
-  document.documentElement.dataset.theme = theme;
-  document.documentElement.style.colorScheme = theme;
+  document.documentElement.dataset.theme = "light";
+  document.documentElement.style.colorScheme = "light";
 
   if (persist) {
     try {
-      localStorage.setItem(THEME_STORAGE_KEY, theme);
+      localStorage.setItem(THEME_STORAGE_KEY, "light");
     } catch {
       /* ignore */
     }
@@ -28,7 +27,6 @@ export function applyTheme(theme: Theme, persist = true): void {
 }
 
 export function toggleTheme(): Theme {
-  const next: Theme = getTheme() === "dark" ? "light" : "dark";
-  applyTheme(next);
-  return next;
+  applyTheme("light");
+  return "light";
 }

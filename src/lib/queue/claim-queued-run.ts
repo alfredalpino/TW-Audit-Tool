@@ -19,3 +19,18 @@ export async function claimNextQueuedRun(db: Db): Promise<string | null> {
   const row = rows[0];
   return row?.id ?? null;
 }
+
+/** Claim a specific queued run (used when Vercel polls trigger processing). */
+export async function claimQueuedRunById(
+  db: Db,
+  runId: string
+): Promise<boolean> {
+  const rows = await db.execute<{ id: string }>(sql`
+    UPDATE audit_runs
+    SET status = 'running', started_at = NOW()
+    WHERE id = ${runId} AND status = 'queued'
+    RETURNING id
+  `);
+
+  return Boolean(rows[0]?.id);
+}

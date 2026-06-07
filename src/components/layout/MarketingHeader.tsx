@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useRef } from "react";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { ThemeToggle } from "@/components/theme/ThemeToggle";
-
 const nav = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "How It Works" },
@@ -74,10 +72,6 @@ export function MarketingHeader() {
             </Link>
           ))}
         </nav>
-
-        <div className="flex items-center gap-2 sm:gap-3">
-          <ThemeToggle size="nav" className="shrink-0" />
-        </div>
       </div>
     </header>
   );
