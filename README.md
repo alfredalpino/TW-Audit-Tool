@@ -26,24 +26,27 @@ Development uses **plain PostgreSQL** — no Supabase or other BaaS. Drizzle ORM
 cp .env.example .env.local   # DATABASE_URL matches compose defaults
 npm run db:up                # docker compose up -d
 npm run db:push              # apply schema (audits, leads, email_logs, etc.)
-npm run dev                  # terminal 1
-npm run worker               # terminal 2 — Playwright + Lighthouse + axe
+npm run dev                  # polls process audits when AUDIT_USE_FETCH=true
 ```
 
 Or point `DATABASE_URL` at your own local Postgres (same URL shape: `postgresql://user:pass@localhost:5432/tw_audit`). Create the database once if it does not exist: `CREATE DATABASE tw_audit;`
 
 Optional: `npm run db:studio` opens Drizzle Studio; `npm run db:down` stops containers.
 
-Without `DATABASE_URL`, audits use in-memory mock data. With Postgres, the API inserts `audit_runs` with `status=queued` and returns a poll URL — the worker processes the queue.
+Without `DATABASE_URL`, audits use in-memory mock data. With Postgres, `POST /api/audits` inserts `status=queued` and returns a poll URL — `GET /api/audits/[runId]` claims and runs the fetch/Cheerio pipeline (set `AUDIT_USE_FETCH=true` locally; automatic on Vercel).
 
-## Deployment (Vercel + Railway)
+Optional: `npm run worker` in a second terminal for Playwright + Lighthouse + axe (not needed for production).
+
+## Deployment (Vercel + Supabase)
 
 | Service | Role |
 |---------|------|
-| **Vercel** | Next.js API — creates queued `audit_runs`, serves polling + UI |
-| **Railway** | Long-running worker — `npm run worker`, same `DATABASE_URL` (direct Postgres, port 5432) |
+| **Vercel** | Next.js app — API, UI, and audit processing (fetch/Cheerio on poll) |
+| **Supabase** | Postgres database only (`DATABASE_URL` pooler port 6543 on Vercel) |
 
-The API never runs Playwright/Lighthouse on Vercel. Clients poll `GET /api/audits/[runId]` until the Railway worker marks the run complete.
+No separate worker deployment is required. Clients poll `GET /api/audits/[runId]`; the first poll claims the run and processes it serverlessly (50s budget, 60s `maxDuration`).
+
+Optional: deploy [`worker/`](./worker/README.md) on Render for Playwright/Lighthouse — do not run alongside Vercel processing on the same database.
 
 ## Phase 2 capabilities
 
@@ -52,7 +55,8 @@ The API never runs Playwright/Lighthouse on Vercel. Clients poll `GET /api/audit
 | SEO / technical / UX / CRO / security / AI readiness heuristics | Playwright DOM |
 | Speed | Lighthouse (mobile/desktop from audit config) |
 | Accessibility | axe-core via Playwright |
-| DB-backed worker | `npm run worker` (polls `audit_runs`) |
+| Vercel inline processing | `GET /api/audits/[runId]` (fetch/Cheerio) |
+| Optional DB worker | `npm run worker` (Playwright/Lighthouse) |
 | Dashboard polling + stage progress | `GET /api/audits/[runId]` |
 | Executive summary + priority matrix | Audit results page |
 | Lead capture + gated findings | `POST /api/leads` |
@@ -71,8 +75,8 @@ The API never runs Playwright/Lighthouse on Vercel. Clients poll `GET /api/audit
 | `npm run db:down` | Stop Docker services |
 | `npm run db:push` | Push Drizzle schema to local Postgres |
 | `npm run db:studio` | Drizzle Studio (inspect tables) |
-| `npm run worker` | Audit worker (real engines, DB queue) |
-| `npm run worker:stub` | Same worker entry (alias) |
+| `npm run worker` | Optional audit worker (Playwright/Lighthouse) |
+| `npm run worker:stub` | Same optional worker entry (alias) |
 
 ## Stack
 

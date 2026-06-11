@@ -1,0 +1,36 @@
+# Render Blueprint (OPTIONAL) — https://render.com/docs/blueprint-spec
+#
+# Production does NOT need this. Vercel processes audits inline on GET poll.
+# Use this only if you want Playwright/Lighthouse outside Vercel serverless limits.
+# Deploy: Render → New → Blueprint → select render.yaml
+# Shares Supabase Postgres with the Vercel app — do not run both processors on the same DB.
+
+services:
+  - type: worker
+    name: tw-audit-worker
+    runtime: docker
+    dockerfilePath: ./worker/Dockerfile
+    dockerContext: .
+    plan: starter
+    region: oregon
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AUDIT_USE_MOCK
+        value: "false"
+      - key: AUDIT_USE_FETCH
+        value: "false"
+      - key: WORKER_CONCURRENCY
+        value: "2"
+      - key: WORKER_POLL_INTERVAL_MS
+        value: "2000"
+      - key: SCREENSHOT_STORAGE_PATH
+        value: /tmp/tw-audit-screenshots
+      # Set in Render dashboard (secret):
+      - key: DATABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false

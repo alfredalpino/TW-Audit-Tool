@@ -152,7 +152,7 @@ export async function createAuditRun(
       .returning();
 
     const runLog = log.child({ runId: run.id, auditId: audit.id });
-    runLog.info("audit run queued for worker", { url: input.url, normalized });
+    runLog.info("audit run queued", { url: input.url, normalized });
 
     return {
       ok: true,

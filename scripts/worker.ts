@@ -1,13 +1,13 @@
 /**
- * PostgreSQL-backed audit worker — polls audit_runs WHERE status='queued'.
- * Run: npm run worker (requires DATABASE_URL)
- *
- * Deploy on Railway (or similar) alongside Vercel API — API enqueues rows;
- * this process claims and runs Playwright + Lighthouse + axe-core.
+ * OPTIONAL PostgreSQL-backed audit worker — polls audit_runs WHERE status='queued'.
+ * Production uses Vercel inline processing; only run this for Playwright/Lighthouse.
+ * Run locally: npm run worker
+ * Deploy: optional Render background worker (see worker/README.md + render.yaml)
  */
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { processAuditRun } from "../src/audit/processor";
+import { postgresOptions } from "../src/lib/db/postgres-options";
 import * as schema from "../src/lib/db/schema";
 import { requireDatabaseUrl } from "../src/lib/env";
 import { claimNextQueuedRun } from "../src/lib/queue/claim-queued-run";
@@ -22,12 +22,16 @@ try {
   process.exit(1);
 }
 
-const sql = postgres(databaseUrl, { max: 5 });
-const db = drizzle(sql, { schema });
-
-const concurrency = parseInt(process.env.WORKER_CONCURRENCY ?? "2", 10);
+const workerConcurrency = parseInt(process.env.WORKER_CONCURRENCY ?? "2", 10);
 const pollIntervalMs = parseInt(process.env.WORKER_POLL_INTERVAL_MS ?? "2000", 10);
-const workerCount = Number.isFinite(concurrency) && concurrency > 0 ? concurrency : 2;
+const workerCount =
+  Number.isFinite(workerConcurrency) && workerConcurrency > 0 ? workerConcurrency : 2;
+
+const sql = postgres(databaseUrl, {
+  ...postgresOptions(databaseUrl),
+  max: Math.max(workerCount + 2, 5),
+});
+const db = drizzle(sql, { schema });
 
 let running = true;
 
@@ -62,12 +66,10 @@ async function workerLoop(workerId: number): Promise<void> {
 }
 
 console.info(
-  `[worker] polling audit_runs (status=queued, concurrency=${workerCount}, poll=${pollIntervalMs}ms)`
+  `[worker] polling audit_runs (queued + stale running, concurrency=${workerCount}, poll=${pollIntervalMs}ms)`
 );
 
-void Promise.all(
-  Array.from({ length: workerCount }, (_, i) => workerLoop(i + 1))
-);
+void Promise.all(Array.from({ length: workerCount }, (_, i) => workerLoop(i + 1)));
 
 async function shutdown(): Promise<void> {
   running = false;

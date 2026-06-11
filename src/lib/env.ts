@@ -4,8 +4,8 @@
  * API keys (Dashboard → Project Settings → API):
  *   NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY
  *
- * Drizzle/worker also need direct Postgres (Dashboard → Database → Connection string):
- *   DATABASE_URL — use Transaction pooler (6543) on Vercel; direct (5432) for worker/migrations.
+ * Drizzle (Dashboard → Database → Connection string):
+ *   DATABASE_URL — Transaction pooler (6543) on Vercel; direct (5432) for local dev / optional worker / migrations.
  */
 
 function trim(value: string | undefined): string | undefined {
@@ -69,7 +69,7 @@ export function requireSupabaseApiEnv(): {
   return { url, anonKey, serviceRoleKey };
 }
 
-/** Drizzle + worker require DATABASE_URL (Postgres URI from the same Supabase project). */
+/** Drizzle requires DATABASE_URL (Postgres URI from the same Supabase project). */
 export function requireDatabaseUrl(): string {
   const url = getDatabaseUrl();
   if (url) return url;

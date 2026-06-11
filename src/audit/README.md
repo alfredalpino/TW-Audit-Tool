@@ -13,4 +13,6 @@ Phase 2 engines under `engines/`:
 | Security | `security.ts` | Headers + mixed content |
 | AI readiness | `ai-readiness.ts` | JSON-LD, llms.txt HEAD |
 
-Orchestration: `orchestrator.ts` · Pipeline: `processor.ts` · Worker: `npm run worker`
+Orchestration: `orchestrator.ts` · Fetch pipeline: `fetch-orchestrator.ts` · Processor: `processor.ts`
+
+Production (Vercel): fetch/Cheerio engines on `GET /api/audits/[runId]` poll. Optional Playwright worker: `npm run worker`

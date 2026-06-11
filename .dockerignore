@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.env
+.env.*
+!.env.example
+storage
+.cursor
+torpedo-main site
+**/*.md
+!worker/README.md
+.DS_Store
+coverage
+*.log

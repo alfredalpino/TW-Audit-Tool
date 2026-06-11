@@ -20,8 +20,12 @@ async function markRunFailed(db: Db, runId: string, message: string): Promise<vo
     .where(eq(auditRuns.id, runId));
 }
 
+/** True when GET poll should claim and run the fetch-based audit pipeline inline. */
 export function shouldProcessOnVercel(): boolean {
-  return process.env.VERCEL === "1";
+  if (process.env.VERCEL === "1") return true;
+  // Local dev without optional worker — set AUDIT_USE_FETCH=true in .env
+  if (process.env.AUDIT_USE_FETCH === "true") return true;
+  return false;
 }
 
 const PROCESSING_BUDGET_MS = 50_000;

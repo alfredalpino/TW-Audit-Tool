@@ -15,6 +15,7 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "worker": "tsx --env-file=.env scripts/worker.ts",
+    "worker:prod": "tsx scripts/worker.ts",
     "worker:stub": "tsx --env-file=.env scripts/worker-stub.ts",
     "postinstall": "playwright install chromium || true"
   },

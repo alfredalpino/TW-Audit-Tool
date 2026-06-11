@@ -9,6 +9,10 @@ export async function claimNextQueuedRun(db: Db): Promise<string | null> {
     WHERE id = (
       SELECT id FROM audit_runs
       WHERE status = 'queued'
+        OR (
+          status = 'running'
+          AND started_at < NOW() - INTERVAL '90 seconds'
+        )
       ORDER BY created_at ASC
       FOR UPDATE SKIP LOCKED
       LIMIT 1
