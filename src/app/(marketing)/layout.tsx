@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { MarketingHeader } from "@/components/layout/MarketingHeader";
+import { ComingSoonHeader } from "@/components/layout/ComingSoonHeader";
 
 export default function MarketingLayout({
   children,
@@ -8,7 +8,7 @@ export default function MarketingLayout({
 }) {
   return (
     <div className="flex min-h-0 flex-1 flex-col bg-[var(--bg-void)] text-[var(--fg-primary)]">
-      <MarketingHeader />
+      <ComingSoonHeader />
       <div className="w-full min-w-0 flex-1 pt-[var(--nav-h)]">{children}</div>
     </div>
   );

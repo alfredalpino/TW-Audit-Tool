@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { MarketingFooter } from "@/components/layout/MarketingFooter";
+import { ComingSoonFooter } from "@/components/layout/ComingSoonFooter";
 import { appFontClassName } from "@/lib/fonts";
 import { THEME_INIT_SCRIPT } from "@/lib/theme-init-script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Torpedo Website Intelligence Auditor",
+  title: "Coming Soon — Torpedo Website Intelligence Auditor",
   description:
-    "Find what is costing your website traffic, leads, and revenue. SEO, speed, accessibility, CRO, security, and more.",
+    "Torpedo Web is building a multi-engine website audit tool for SEO, speed, accessibility, conversions, and security. Coming soon.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
   ),
@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         {children}
-        <MarketingFooter />
+        <ComingSoonFooter />
       </body>
     </html>
   );
