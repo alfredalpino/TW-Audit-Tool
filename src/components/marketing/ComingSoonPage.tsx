@@ -54,8 +54,8 @@ export function ComingSoonPage() {
             <Button href={TORPEDO_WEB_SITE} variant="brand" size="lg" withArrow>
               Visit Torpedo Web
             </Button>
-            <Button href={`${TORPEDO_WEB_SITE}/process`} variant="secondary" size="lg">
-              How we work
+            <Button href="https://offer.torpedoweb.org" variant="secondary" size="lg">
+              View pricing
             </Button>
           </div>
         </ClayCard>
