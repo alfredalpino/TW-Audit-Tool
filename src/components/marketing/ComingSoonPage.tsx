@@ -35,8 +35,10 @@ export function ComingSoonPage() {
           [ Website Intelligence Auditor ]
         </p>
 
-        <h1 className="tw-hero-h1 mt-4 font-display font-extrabold tracking-[-0.02em] text-[var(--fg-primary)]">
-          Coming Soon
+        <h1 className="tw-hero-h1 mt-4 min-h-0 font-display font-extrabold tracking-[-0.02em] text-[var(--fg-primary)] md:min-h-[2.2em]">
+          Coming
+          <br />
+          Soon
         </h1>
 
         <p className="tw-hero-sub mt-6 max-w-2xl font-sans font-light text-[var(--fg-secondary)]">
